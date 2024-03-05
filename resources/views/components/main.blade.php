@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="owlcarousel\assets\owl.carousel.css">
     <link rel="stylesheet" href="owlcarousel\assets\owl.theme.default.css">
     <link rel="stylesheet" href="owlcarousel\assets\owl.theme.green.css">
+    <!-- Font Awesome -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
