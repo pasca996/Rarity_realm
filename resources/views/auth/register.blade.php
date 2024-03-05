@@ -1,58 +1,96 @@
-<section class="h-100 gradient-form" style="background-color: #eee;">
-    <div class="container py-5 h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col-xl-10">
-          <div class="card rounded-3 text-black">
-            <div class="row g-0">
-              <div class="col-lg-6">
-                <div class="card-body p-md-5 mx-md-4">
-  
-                  <div class="text-center">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
-                      style="width: 185px;" alt="logo">
-                    <h4 class="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
-                  </div>
-  
-                  <form>
-                    <p>Please login to your account</p>
-  
-                    <div class="form-outline mb-4">
-                      <input type="email" id="form2Example11" class="form-control"
-                        placeholder="Phone number or email address" />
-                      <label class="form-label" for="form2Example11">Username</label>
-                    </div>
-  
-                    <div class="form-outline mb-4">
-                      <input type="password" id="form2Example22" class="form-control" />
-                      <label class="form-label" for="form2Example22">Password</label>
-                    </div>
-  
-                    <div class="text-center pt-1 mb-5 pb-1">
-                      <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
-                        in</button>
-                      <a class="text-muted" href="#!">Forgot password?</a>
-                    </div>
-  
-                    <div class="d-flex align-items-center justify-content-center pb-4">
-                      <p class="mb-0 me-2">Don't have an account?</p>
-                      <button type="button" class="btn btn-outline-danger">Create new</button>
-                    </div>
-  
-                  </form>
-  
-                </div>
-              </div>
-              <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
-                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                  <h4 class="mb-4">We are more than just a company</h4>
-                  <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+<div class="container">
+  <div class="row">
+    
+    <div class="col-sm-6 col-md-5 hidden-xs hidden-sm">   
+       <img src="https://raw.githubusercontent.com/rexxars/react-hexagon/master/logo/react-hexagon.png" alt="" class="center-block img-responsive" />
       </div>
+    
+      <div class="col-md-1 hidden-xs hidden-sm">   
+        <div class="border-login"></div>
+      </div>
+    
+    
+      <div class="col-sm-12 col-xs-12 col-md-4">            
+         <div class="space-top">
+           
+           
+           <h3 class="text-center">/pandora</h3>
+          
+        <form class="form-signin" class="form-horizontal">
+          
+          <label class=""> Usuário </label>
+                                         
+          <input type="text" class="form-control" placeholder="" required autofocus>
+          
+           <label class=""> Senha </label>
+              <input type="password" class="form-control" placeholder="" required>
+          
+             <button class="btn btn-lg btn-primary btn-block" type="submit">
+                  Entrar
+          </button>   
+          
+        
+                 
+           
+              </form>
+          </div>
+        
+          <p class="text-center"> Ainda não tenho conta!  <a href="#"  data-toggle="modal" data-target="#myModal"> Criar agora mesmo!</a></p>
+         
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="myModalLabel">Pandora - Criar conta de acesso!</h4>
     </div>
-  </section>
+    <div class="modal-body">
+    <form>
+      
+      <div class="form-group">
+  <label class="label-register">Nome</label>
+        
+  <input type="text" class="form-control" id="email" placeholder="Insira seu nome completo">
+</div>
+      
+       <div class="form-group">
+  <label class="label-register">Usuário</label>
+        
+  <input type="text" class="form-control" id="email" placeholder="Insira nome de usuário">
+</div>
+      
+      
+<div class="form-group">
+  <label class="label-register" >E-mail</label>
+  <input type="email" class="form-control" id="email" placeholder="Insira seu e-mail!">
+</div>
+<div class="form-group">
+  <label class="label-register">Informe a senha</label>
+  <input type="password" class="form-control" id="senha1" placeholder="*****">
+</div>
+      
+       <div class="form-group">
+  <label class="label-register">Repita a senha</label>
+  <input type="password" class="form-control" id="senha2" placeholder="******">
+</div>
+
+
+</form>
+    </div>
+    <div class="modal-footer">
+      <div class="pull-left">
+         <button type="button" class="btn btn-primary">Salvar</button>
+        
+      <button type="button" class="btn btn-default" data-dismiss="modal">Sair</button>
+     
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+        
+      </div>
+  </div>
+</div>
