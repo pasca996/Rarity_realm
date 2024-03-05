@@ -61,7 +61,7 @@
                     <div class="offer-text">
                         <h6 class="text-white text-uppercase">Save 20%</h6>
                         <h3 class="text-white mb-3">Special Offer</h3>
-                        <a href="" class="btn btn-primary">Shop Now</a>
+                        <a href="{{route('announcement.create')}}" class="btn btn-primary">Crea il tuo annuncio</a>
                     </div>
                 </div>
                 <div class="product-offer mb-30" style="height: 200px;">
