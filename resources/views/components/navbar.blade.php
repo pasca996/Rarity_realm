@@ -25,9 +25,12 @@
                             </div>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
+        
                     </div>
                 </nav>
             </div>
+            
         </div>
+        
     </div>
     <!-- Navbar End -->

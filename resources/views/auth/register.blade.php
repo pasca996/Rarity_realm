@@ -1,96 +1,57 @@
-<div class="container">
-  <div class="row">
-    
-    <div class="col-sm-6 col-md-5 hidden-xs hidden-sm">   
-       <img src="https://raw.githubusercontent.com/rexxars/react-hexagon/master/logo/react-hexagon.png" alt="" class="center-block img-responsive" />
-      </div>
-    
-      <div class="col-md-1 hidden-xs hidden-sm">   
-        <div class="border-login"></div>
-      </div>
-    
-    
-      <div class="col-sm-12 col-xs-12 col-md-4">            
-         <div class="space-top">
-           
-           
-           <h3 class="text-center">/pandora</h3>
-          
-        <form class="form-signin" class="form-horizontal">
-          
-          <label class=""> Usuário </label>
-                                         
-          <input type="text" class="form-control" placeholder="" required autofocus>
-          
-           <label class=""> Senha </label>
-              <input type="password" class="form-control" placeholder="" required>
-          
-             <button class="btn btn-lg btn-primary btn-block" type="submit">
-                  Entrar
-          </button>   
-          
-        
-                 
-           
-              </form>
+<x-main>
+  <section class="vh-100 gradient-custom">
+    @if ($errors->any())
+    <div class="alert alert-danger">
+      <ul>
+        @foreach ($errors->all() as $error)
+        <li>{{$error}}</li>
+        @endforeach
+      </ul>
+    </div>
+    @endif
+<form action="{{route('register')}}" method="POST">
+    @csrf
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+                    <h2 class="fw-bold mb-2 text-uppercase">Crea un account</h2>
+                    <div class="form-outline form-white mb-4">
+                        <input type="text" name="name" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example1cg">Nome</label>
+                      </div>
+                    <div class="form-outline form-white mb-4">
+                      <input type="email" name="email" class="form-control form-control-lg" />
+                      <label class="form-label" for="typeEmailX">Email</label>
+                    </div>
+                    <div class="form-outline form-white mb-4">
+                      <input type="password" name="password" class="form-control form-control-lg" />
+                      <label class="form-label" for="typePasswordX">Password</label>
+                    </div>
+                    <div class="form-outline form-white mb-4">
+                        <input type="password" name="password_confirmation" class="form-control form-control-lg" />
+                        <label class="form-label" for="typePasswordX">Conferma Password</label>
+                      </div>
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Registrati</button>
+                    <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                      <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                      <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
+                      <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="mb-0">Hai già un account? <a href="{{route('login')}}" class="text-white-50 fw-bold">Accedi</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        
-          <p class="text-center"> Ainda não tenho conta!  <a href="#"  data-toggle="modal" data-target="#myModal"> Criar agora mesmo!</a></p>
-         
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-<div class="modal-dialog" role="document">
-  <div class="modal-content">
-    <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      <h4 class="modal-title" id="myModalLabel">Pandora - Criar conta de acesso!</h4>
-    </div>
-    <div class="modal-body">
-    <form>
-      
-      <div class="form-group">
-  <label class="label-register">Nome</label>
-        
-  <input type="text" class="form-control" id="email" placeholder="Insira seu nome completo">
-</div>
-      
-       <div class="form-group">
-  <label class="label-register">Usuário</label>
-        
-  <input type="text" class="form-control" id="email" placeholder="Insira nome de usuário">
-</div>
-      
-      
-<div class="form-group">
-  <label class="label-register" >E-mail</label>
-  <input type="email" class="form-control" id="email" placeholder="Insira seu e-mail!">
-</div>
-<div class="form-group">
-  <label class="label-register">Informe a senha</label>
-  <input type="password" class="form-control" id="senha1" placeholder="*****">
-</div>
-      
-       <div class="form-group">
-  <label class="label-register">Repita a senha</label>
-  <input type="password" class="form-control" id="senha2" placeholder="******">
-</div>
-
-
-</form>
-    </div>
-    <div class="modal-footer">
-      <div class="pull-left">
-         <button type="button" class="btn btn-primary">Salvar</button>
-        
-      <button type="button" class="btn btn-default" data-dismiss="modal">Sair</button>
-     
         </div>
-    </div>
-  </div>
-</div>
-</div>
-        
-      </div>
-  </div>
-</div>
+      </form>
+      </section>
+
+</x-main>
