@@ -120,7 +120,7 @@
                 <a class="text-decoration-none" href="">
                     <div class="cat-item d-flex align-items-center mb-4">
                         <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/cat-1.jpg" alt="">
+                            <img class="img-fluid" src="{{$category['image']}}" alt="">
                         </div>
                         <div class="flex-fill pl-3">
                             <h6>{{$category['name']}}</h6>
@@ -400,30 +400,6 @@
     </div>
     <!-- Products End -->
 
-
-    <!-- Create con livewire Start -->
-    <div class="container bg-dark text-white">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <form>
-                    <div class="form-group">
-                        <label for="text">Titolo annuncio</label>
-                        <input type="text" class="form-control" id="title">
-                    </div>
-                    <div class="form-group">
-                        <label for="text">Descrizione</label>
-                        <input type="text" class="form-control" id="description">
-                    </div>
-                    <div class="form-group">
-                        <label for="number">Prezzo</label>
-                        <input type="number" class="form-control" id="price">
-                    </div>
-                    <button type="submit" class="btn btn-success">Crea annuncio</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- Create con livewire End -->
     <!-- Vendor Start -->
     <div class="container-fluid py-5">
         <div class="row px-xl-5">
