@@ -13,12 +13,15 @@ class CreateAnnouncement extends Component
     public $description;
     public $price;
 
-    protected $rules = [
+    public function rules()
+     { 
+        return [
         'title' => 'required|min:4',
         'description' => 'required|min:10',
         'price' => 'required|numeric',
     ];
-
+    }
+    
     protected $messages = [
         'required' => 'Il campo :attribute è obbligatorio',
         'min' => 'Il campo :attribute è troppo corto',
@@ -27,6 +30,7 @@ class CreateAnnouncement extends Component
 
     public function store()
     {
+        $this->validate();
         Announcement::create([
             'title' => $this->title,
             'description' => $this->description,

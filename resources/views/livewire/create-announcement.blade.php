@@ -18,11 +18,13 @@
                     @error('title')
                       {{$message}}                  
                     @enderror
+                    <br>
                     <label for="description" class=""> Descrizione Annuncio </label>                                  
                     <textarea wire:model.live="description" type="text" class="form-control @error('description') is-invalid @enderror"></textarea>
                     @error('description')
                       {{$message}}                  
                     @enderror
+                    <br>
                     <label for="price" class=""> Prezzo </label>                                              
                     <input wire:model.live="price" type="number" class="form-control @error('price') is-invalid @enderror">
                     @error('price')
