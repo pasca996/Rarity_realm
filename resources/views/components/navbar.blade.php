@@ -29,28 +29,18 @@
                                            
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                                 @auth
-                                <li>
-                                    <div class="dropdown text-end">
-                                        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle " id="dropdownUser1"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            <img src="/img/login icon.jpg" alt="mdo" width="32" height="32"
-                                                class="rounded-circle">
-                                        </a>
-                                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="">
-                                            <li>
-                                                <span> Ciao, {{Auth::user()->name}}</span>
-                                            </li>
-                                            <li>
-                                                <form action="{{route('logout')}}" method="POST">
-                                                    @csrf
-                                                    <button class="dropdown-item" onclick="event.preventDefault(); this.closest('form').submit();">
-                                                        Esci
-                                                    </button>
-                                                </form>
-                                            </li>
-                                        </ul>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><span> Ciao, {{Auth::user()->name}}</span> <i
+                                            class="fa fa-angle-down mt-1"></i></a>
+                                    <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
+                                         <form action="{{route('logout')}}" method="POST">
+                                                        @csrf
+                                                        <button class="dropdown-item" onclick="event.preventDefault(); this.closest('form').submit();">
+                                                            Esci
+                                                        </button>
+                                                    </form>
                                     </div>
-                                </li>
+                                </div>
                                 @endauth
                                 @guest
                                 {{-- //Da visualizzare se sono un OSPITE (guest) --}}
