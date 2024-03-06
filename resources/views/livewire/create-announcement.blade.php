@@ -19,19 +19,22 @@
                 
               <form wire:submit.prevent="store" class="form-signin" class="form-horizontal">
                 
-                <label for="title" class=""> Titolo Annuncio </label>
-                                               
-                <input wire:model="title" type="text" class="form-control" placeholder="" >
-                
-                <label for="description" class=""> Descrizione Annuncio </label>
-                                               
-                <input wire:model="description" type="text" class="form-control" placeholder="" >
-
-                <label for="price" class=""> Prezzo </label>
-                                               
-                <input wire:model="price" type="number" class="form-control" placeholder="" >
-                
-                   <button class="btn btn-lg btn-primary btn-block" type="submit">
+                <label for="title" class=""> Titolo Annuncio </label>                                               
+                <input wire:model="title" type="text" class="form-control @error('title') is-invalid @enderror">
+                @error('title')
+                  {{$message}}                  
+                @enderror
+                <label for="description" class=""> Descrizione Annuncio </label>                                  
+                <textarea wire:model="description" type="text" class="form-control @error('description') is-invalid @enderror"></textarea>
+                @error('description')
+                  {{$message}}                  
+                @enderror
+                <label for="price" class=""> Prezzo </label>                                              
+                <input wire:model="price" type="number" class="form-control @error('price') is-invalid @enderror">
+                @error('price')
+                  {{$message}}                  
+                @enderror
+                <button class="btn btn-lg btn-primary btn-block" type="submit">
                         Crea Annuncio
                 </button>   
                 
