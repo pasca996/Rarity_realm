@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
-class AnnouncementController extends Controller
+class CategoryController extends Controller
 {
-    public function showCategory(Category $category)
+    public function show(Category $category)
     {
         return view('welcome', compact('category'));
     }
