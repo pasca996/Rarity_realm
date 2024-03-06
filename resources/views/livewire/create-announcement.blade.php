@@ -41,7 +41,7 @@
                     @error('category_id')
                         {{ $message }}
                     @enderror
-
+                    <br>
 
                     <label for="price" class=""> Prezzo </label>
                     <input wire:model.live="price" type="number"
@@ -49,9 +49,11 @@
                     @error('price')
                         {{ $message }}
                     @enderror
+                    <br>
                     <button class="btn btn-lg btn-primary btn-block" type="submit">
                         Crea Annuncio
                     </button>
+                    <br>
                     @if (session('status'))
                         <div class="alert alert-success">
                             {{ session('status') }}
