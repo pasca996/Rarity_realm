@@ -1,8 +1,11 @@
     <!-- Navbar Start -->
     <div class="container-fluid bg-dark mb-30">
         <div class="row px-xl-5 ">
+            
             <div class="col-lg">
+                
                 <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-0">
+                    <img class="navbar-brand" src="/img/logo.png" alt="logo" width="80">
                     <a href="" class="text-decoration-none d-block d-lg-none">
                         <span class="h1 text-uppercase text-dark bg-light px-2">Multi</span>
                         <span class="h1 text-uppercase text-light bg-primary px-2 ml-n1">Shop</span>
@@ -45,7 +48,7 @@
                                 @guest
                                 {{-- //Da visualizzare se sono un OSPITE (guest) --}}
                                 <li class="nav-item">
-                                    <a class="btn btn-primary m-3" href="{{route('login')}}">Accedi</a>
+                                    <a class="btn btn-primary m-3 " href="{{route('login')}}">Accedi</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="btn btn-primary m-3" href="{{route('register')}}">Registrati</a>

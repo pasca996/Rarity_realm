@@ -38,6 +38,7 @@ class CreateAnnouncement extends Component
             'title' => $this->title,
             'description' => $this->description,
             'price' => $this->price,
+            
         ]);
         $this->cleanForm();
     }
