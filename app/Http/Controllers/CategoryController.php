@@ -9,6 +9,6 @@ class CategoryController extends Controller
 {
     public function show(Category $category)
     {
-        return view('welcome', compact('category'));
+        return view('welcome',compact('category'));
     }
 }
