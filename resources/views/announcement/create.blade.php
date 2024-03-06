@@ -2,6 +2,5 @@
 
     <livewire:create-announcement />
 
-
 </x-main>
 
