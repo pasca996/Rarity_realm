@@ -23,9 +23,12 @@ class CreateAnnouncement extends Component
     }
     
     protected $messages = [
-        'required' => 'Il campo :attribute è obbligatorio',
-        'min' => 'Il campo :attribute è troppo corto',
-        'numeric' => 'Il campo :attribute deve essere un numero'
+        'title.required' => 'Il campo Titolo è obbligatorio',
+        'title.min' => 'Il campo Titolo deve contenere almeno :min caratteri',
+        'description.required' => 'Il campo Descrizione è obbligatorio',
+        'description.min' => 'Il campo Descrizione deve contenere almeno :min caratteri',
+        'price.required' => 'Il campo Prezzo è obbligatorio',
+        'price.numeric' => 'Il campo Prezzo deve essere un numero',
     ];
 
     public function store()
