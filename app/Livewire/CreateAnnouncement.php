@@ -3,7 +3,6 @@
 namespace App\Livewire;
 
 use App\Models\Announcement;
-use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 use Symfony\Contracts\Service\Attribute\Required;
@@ -14,17 +13,16 @@ class CreateAnnouncement extends Component
     public $title;
     public $description;
     public $price;
-    public $category;
-    public $announcement;
-    public function rules()
-    {
-        return [
-            'title' => 'required|min:4',
-            'description' => 'required|min:10',
-            'price' => 'required|numeric',
-        ];
-    }
 
+    public function rules()
+     { 
+        return [
+        'title' => 'required|min:4',
+        'description' => 'required|min:10',
+        'price' => 'required|numeric',
+    ];
+    }
+    
     protected $messages = [
         'title.required' => 'Il campo Titolo è obbligatorio',
         'title.min' => 'Il campo Titolo deve contenere almeno :min caratteri',
@@ -37,12 +35,11 @@ class CreateAnnouncement extends Component
     public function store()
     {
         $this->validate();
-        $this->announcement = Category::find($this->category)->announcements()->create([
+        Announcement::create([
             'title' => $this->title,
             'description' => $this->description,
             'price' => $this->price,
             'user_id' => Auth::user()->id,
-
         ]);
 
         // session()->flash('status', 'Post successfully updated.');
@@ -55,7 +52,7 @@ class CreateAnnouncement extends Component
         $this->validateOnly($propertyName);
     }
 
-    public function cleanForm()
+    public function cleanForm ()
     {
         $this->title = '';
         $this->description = '';
@@ -66,4 +63,5 @@ class CreateAnnouncement extends Component
     {
         return view('livewire.create-announcement');
     }
+   
 }
