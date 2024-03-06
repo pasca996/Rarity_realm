@@ -1,7 +1,7 @@
     <!-- Navbar Start -->
     <div class="container-fluid bg-dark mb-30">
         <div class="row px-xl-5 ">
-            <div class="col-lg-9">
+            <div class="col-lg">
                 <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-0">
                     <a href="" class="text-decoration-none d-block d-lg-none">
                         <span class="h1 text-uppercase text-dark bg-light px-2">Multi</span>
@@ -26,7 +26,7 @@
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                             <a href="{{route ('announcement.create')}}" class="nav-item nav-link">Crea annuncio</a>
                         </div> 
-                        <div class="collapse navbar-collapse">
+                                           
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                                 @auth
                                 <li>
@@ -61,9 +61,7 @@
                                     <a class="btn btn-primary m-3" href="{{route('register')}}">Registrati</a>
                                 </li>
                                 @endguest
-                            </ul>
-                            
-                        </div>   
+                            </ul> 
                     </div>
                 </div>
                 </nav>
