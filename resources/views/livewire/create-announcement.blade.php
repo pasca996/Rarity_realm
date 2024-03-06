@@ -27,6 +27,22 @@
                         {{ $message }}
                     @enderror
                     <br>
+
+
+                    <label for="category">Categoria</label>
+
+                    <select wire:model="category_id" id="category" class="form-control">
+                        <option value="">Seleziona Categoria</option>
+                      
+                      @foreach ($categories as $category)
+                            <option value="{{$category->id}}">{{$category->name }}</option>
+                        @endforeach
+                    </select>
+                    @error('category_id')
+                        {{ $message }}
+                    @enderror
+
+
                     <label for="price" class=""> Prezzo </label>
                     <input wire:model.live="price" type="number"
                         class="form-control @error('price') is-invalid @enderror">
@@ -36,11 +52,11 @@
                     <button class="btn btn-lg btn-primary btn-block" type="submit">
                         Crea Annuncio
                     </button>
-                    {{-- @if (session('status'))
+                    @if (session('status'))
                         <div class="alert alert-success">
                             {{ session('status') }}
                         </div>
-                    @endif --}}
+                    @endif
                 </form>
             </div>
         </div>
