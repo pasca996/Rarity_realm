@@ -12,19 +12,19 @@
               <div class="space-top">        
                  <h3 class="text-center">Crea il tuo annuncio</h3>
                   <form wire:submit.prevent="store" class="form-signin" class="form-horizontal">
-                
+                   
                     <label for="title" class=""> Titolo Annuncio </label>                                               
-                    <input wire:model="title" type="text" class="form-control @error('title') is-invalid @enderror">
+                    <input wire:model.live="title" type="text" class="form-control @error('title') is-invalid @enderror">
                     @error('title')
                       {{$message}}                  
                     @enderror
                     <label for="description" class=""> Descrizione Annuncio </label>                                  
-                    <textarea wire:model="description" type="text" class="form-control @error('description') is-invalid @enderror"></textarea>
+                    <textarea wire:model.live="description" type="text" class="form-control @error('description') is-invalid @enderror"></textarea>
                     @error('description')
                       {{$message}}                  
                     @enderror
                     <label for="price" class=""> Prezzo </label>                                              
-                    <input wire:model="price" type="number" class="form-control @error('price') is-invalid @enderror">
+                    <input wire:model.live="price" type="number" class="form-control @error('price') is-invalid @enderror">
                     @error('price')
                       {{$message}}                  
                     @enderror
