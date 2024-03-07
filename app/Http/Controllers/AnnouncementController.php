@@ -16,9 +16,12 @@ class AnnouncementController extends Controller
     public function showAnnouncement($announcement)
     {
         $announcement = Announcement::findOrFail($announcement);
-
+        $announcementCategories = Announcement::where('category_id', $announcement->category_id)
+        ->where('id', '!=', $announcement->id)
+        ->take(6)
+        ->get();
         $categories = Category::all();
 
-        return view('announcement.show', compact ('announcement', 'categories'));
+        return view('announcement.show', compact ('announcement', 'categories', 'announcementCategories'));
     }
 }
