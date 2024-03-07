@@ -152,12 +152,12 @@
                                             class="far fa-heart"></i></a>
                                     <a class="btn btn-outline-dark btn-square" href=""><i
                                             class="fa fa-sync-alt"></i></a>
-                                    <a class="btn btn-outline-dark btn-square" href=""><i
+                                    <a class="btn btn-outline-dark btn-square" href="{{route('announcement.show',  ['announcement' => $announcement->id])}}"><i
                                             class="fa fa-search"></i></a>
                                 </div>
                             </div>
                             <div class="text-center py-4">
-                                <a class="h4 text-decoration-none text-truncate" href="">{{$announcement->title}}</a>
+                                <a class="h4 text-decoration-none text-truncate" href="{{route('announcement.show',  ['announcement' => $announcement->id])}}">{{$announcement->title}}</a>
                                 <br>
                                 <a class="h6 text-decoration-none text-truncate" href="">{{$announcement->category->name}}</a>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
