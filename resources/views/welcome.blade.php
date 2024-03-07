@@ -16,7 +16,7 @@
                             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div class="p-3" style="max-width: 700px;">
                                     <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Hai oggetti da collezione?</h1>
-                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Dai al tuo usato una seconda occasione: vendi quello che non usi più, subito.</p>
+                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn h4">Dai al tuo usato una seconda occasione: vendi quello che non usi più, subito.</p>
                                     <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp"
                                         href="{{route ('announcement.create')}}">Vendi ora</a>
                                 </div>
@@ -153,7 +153,7 @@
                                 </div>
                             </div>
                             <div class="text-center py-4">
-                                <a class="h4 text-decoration-none d-inline-block text-truncate" style="max-width: 80%" href="{{route('announcement.show',  ['announcement' => $announcement->id])}}">{{$announcement->title}}</a>
+                                <a class="h4 text-decoration-none d-inline-block text-truncate" style="max-width: 80%" href="{{route('announcement.show',['announcement' => $announcement->id])}}">{{$announcement->title}}</a>
                                 <br>
                                 <a class="h6 text-decoration-none text-truncate"  href="">{{$announcement->category->name}}</a>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
