@@ -43,6 +43,7 @@
                                     <div class="dropdown-menu rounded-5 border-0 m-0">
                                      <form action="{{route('logout')}}" method="POST">
                                       @csrf
+                                      <a href="{{route('page.profile')}}" class="dropdown-item h5">Profilo</a>
                                       <button class="dropdown-item h5" onclick="event.preventDefault(); this.closest('form').submit();">
                                       Esci
                                      </button>

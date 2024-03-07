@@ -3,6 +3,7 @@
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\PageController;
 use App\Models\Announcement;
 use Illuminate\Support\Facades\Route;
 
@@ -17,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [Controller::class, 'welcome'])->name('welcome');
+Route::get('/', [PageController::class, 'welcome'])->name('welcome');
 
 //Route::get('/nuovo/annuncio', [AnnouncementController::class, 'createAnnouncement'])->name('announcement.create');
 
@@ -27,3 +28,4 @@ Route::get('annunci/{announcement}/show', [AnnouncementController::class, 'showA
 
 Route::get('categorie/{category}', [CategoryController::class, 'showCategory'])->name('categories.show');
 Route::get('annunci', [AnnouncementController::class, 'indexAnnouncement'])->name('announcement.index');
+Route::get('/profile', [PageController::class, 'profile'])->name('page.profile');

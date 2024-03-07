@@ -13,10 +13,5 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
 
-    public function welcome() {
-        
-        $announcements = Announcement::orderBy('created_at', 'desc')->take(8)->get();
-
-        return view('welcome' , compact('announcements'));
-    }
+    
 }
