@@ -8,7 +8,7 @@
                     <a href="{{route('welcome')}}">
                         <img class="navbar-brand" src="/img/logo.png" alt="logo" width="80">
                     </a>
-                    <a href="{{route('welcome')}}" class="text-decoration-none d-block d-lg-none">
+                    <a href="{{route('welcome')}}" class="text-decoration-none d-block">
                         <span class="h1 text-uppercase text-dark bg-light px-2 rounded-left">Rarity</span>
                         <span class="h1 text-uppercase text-light bg-primary px-2 ml-n1 rounded-right">Realm</span>
                     </a>
