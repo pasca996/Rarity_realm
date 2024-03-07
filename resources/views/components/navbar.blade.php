@@ -6,9 +6,9 @@
                 
                 <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-0">
                     <img class="navbar-brand" src="/img/logo.png" alt="logo" width="80">
-                    <a href="" class="text-decoration-none d-block d-lg-none">
-                        <span class="h1 text-uppercase text-dark bg-light px-2">Multi</span>
-                        <span class="h1 text-uppercase text-light bg-primary px-2 ml-n1">Shop</span>
+                    <a href="{{route('welcome')}}" class="text-decoration-none d-block d-lg-none">
+                        <span class="h1 text-uppercase text-dark bg-light px-2 rounded-left">Rarity</span>
+                        <span class="h1 text-uppercase text-light bg-primary px-2 ml-n1 rounded-right">Realm</span>
                     </a>
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
@@ -20,7 +20,7 @@
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Categorie <i
                                         class="fa fa-angle-down mt-1"></i></a>
-                                <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
+                                <div class="dropdown-menu rounded-5 border-0 m-0">
                                     @foreach ($categories as $category )    
                                     <a href="cart.html" class="dropdown-item">{{$category->name}}</a>
                                     @endforeach

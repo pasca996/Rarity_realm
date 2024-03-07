@@ -113,7 +113,7 @@
     <!-- Categories Start -->
     <div class="container-fluid pt-5">
         <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span
-                class="bg-secondary pr-3">Categories</span></h2>
+                class="bg-success px-3 rounded-pill">Categorie</span></h2>
         <div class="row px-xl-5 pb-3">
             @foreach ($categories as $category)
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
@@ -138,7 +138,7 @@
     <!-- Products Start -->
     <div class="container-fluid pt-5 pb-3">
         <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span
-                class="bg-secondary pr-3">Ultimi annunci</span></h2>
+                class="bg-success px-3 rounded-pill">Ultimi annunci</span></h2>
                 <div class="row px-xl-5">
                     @foreach ($announcements as $announcement)
                     <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
