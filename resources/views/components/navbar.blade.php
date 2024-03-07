@@ -33,7 +33,7 @@
                         </div> 
                         <form class="form-inline">
                             <input class="form-control mr-sm-2" type="search" placeholder="Cerca" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                            <button class="btn my-2 my-sm-0" style="background-color: #65cbad" type="submit"><i class="fas fa-search"></i></button>
                           </form>             
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                                 @auth
@@ -53,10 +53,10 @@
                                 @guest
                                 {{-- //Da visualizzare se sono un OSPITE (guest) --}}
                                 <li class="nav-item">
-                                    <a class="btn btn-primary m-3 " href="{{route('login')}}">Accedi</a>
+                                    <a class="btn m-3" style="background-color: #65cbad" href="{{route('login')}}">Accedi</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="btn btn-primary m-3" href="{{route('register')}}">Registrati</a>
+                                    <a class="btn m-3" style="background-color: #65cbad" href="{{route('register')}}">Registrati</a>
                                 </li>
                                 @endguest
                             </ul> 
