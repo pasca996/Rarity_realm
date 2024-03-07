@@ -3,6 +3,7 @@
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\Controller;
+use App\Models\Announcement;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +26,4 @@ Route::get('/nuovo/annuncio', [AnnouncementController::class, 'createAnnouncemen
 Route::get('annunci/{announcement}/show', [AnnouncementController::class, 'showAnnouncement'])->name('announcement.show');
 
 Route::get('categorie/{category}', [CategoryController::class, 'showCategory'])->name('categories.show');
+Route::get('annunci', [AnnouncementController::class, 'indexAnnouncement'])->name('announcement.index');

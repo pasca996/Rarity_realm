@@ -24,4 +24,10 @@ class AnnouncementController extends Controller
 
         return view('announcement.show', compact ('announcement', 'categories', 'announcementCategories'));
     }
+
+    public function indexAnnouncement() {
+        $category = Category::all();
+        $announcements = Announcement::all();
+        return view('announcement.index', compact('announcements', 'category'));
+    }
 }
