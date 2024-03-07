@@ -15,12 +15,10 @@
                                 style="object-fit: cover;">
                             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div class="p-3" style="max-width: 700px;">
-                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Men
-                                        Fashion</h1>
-                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Lorem rebum magna amet
-                                        lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam</p>
+                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Hai oggetti da collezione?</h1>
+                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Dai al tuo usato una seconda occasione: vendi quello che non usi più, subito.</p>
                                     <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp"
-                                        href="#">Shop Now</a>
+                                        href="{{route ('announcement.create')}}">Vendi ora</a>
                                 </div>
                             </div>
                         </div>
@@ -29,12 +27,10 @@
                                 style="object-fit: cover;">
                             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div class="p-3" style="max-width: 700px;">
-                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Women
-                                        Fashion</h1>
-                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Lorem rebum magna amet
-                                        lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam</p>
+                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Rarity Realm</h1>
+                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Non è assurdo avere tutte queste cose e non usarle mai?</p>
                                     <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp"
-                                        href="#">Shop Now</a>
+                                        href="{{route ('announcement.create')}}">Comincia a vendere</a>
                                 </div>
                             </div>
                         </div>
@@ -59,17 +55,17 @@
                 <div class="product-offer mb-30" style="height: 200px;">
                     <img class="img-fluid" src="img/offer-1.jpg" alt="">
                     <div class="offer-text">
-                        <h6 class="text-white text-uppercase">Save 20%</h6>
-                        <h3 class="text-white mb-3">Special Offer</h3>
-                        <a href="{{ route('announcement.create') }}" class="btn btn-primary">Crea il tuo annuncio</a>
+                    
+                        <h3 class="text-white mb-3">Lavora con noi</h3>
+                        <a href="#" class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp">Diventa Revisore</a>
                     </div>
                 </div>
                 <div class="product-offer mb-30" style="height: 200px;">
                     <img class="img-fluid" src="img/offer-2.jpg" alt="">
                     <div class="offer-text">
-                        <h6 class="text-white text-uppercase">Save 20%</h6>
-                        <h3 class="text-white mb-3">Special Offer</h3>
-                        <a href="" class="btn btn-primary">Shop Now</a>
+                        <h6 class="text-white text-uppercase">Sconti al 70%</h6>
+                        <h3 class="text-white mb-3">Offerte speciali</h3>
+                        <a href="" class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp">Compra ora</a>
                     </div>
                 </div>
             </div>
@@ -84,25 +80,25 @@
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
                     <h1 class="fa fa-check text-primary m-0 mr-3"></h1>
-                    <h5 class="font-weight-semi-bold m-0">Quality Product</h5>
+                    <h5 class="font-weight-semi-bold m-0">Qualità certificata</h5>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
                     <h1 class="fa fa-shipping-fast text-primary m-0 mr-2"></h1>
-                    <h5 class="font-weight-semi-bold m-0">Free Shipping</h5>
+                    <h5 class="font-weight-semi-bold m-0">Spedizione gratuita</h5>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
                     <h1 class="fas fa-exchange-alt text-primary m-0 mr-3"></h1>
-                    <h5 class="font-weight-semi-bold m-0">14-Day Return</h5>
+                    <h5 class="font-weight-semi-bold m-0">Reso entro 14 giorni</h5>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
                     <h1 class="fa fa-phone-volume text-primary m-0 mr-3"></h1>
-                    <h5 class="font-weight-semi-bold m-0">24/7 Support</h5>
+                    <h5 class="font-weight-semi-bold m-0">24/7 Supporto</h5>
                 </div>
             </div>
         </div>
@@ -141,7 +137,7 @@
                 class="bg-success px-3 rounded-pill">Ultimi annunci</span></h2>
                 <div class="row px-xl-5">
                     @foreach ($announcements as $announcement)
-                    <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                    <div class="col-lg-2 col-md-3 col-sm-6 pb-1">
                         <div class="product-item bg-light mb-4">
                             <div class="product-img position-relative overflow-hidden">
                                 <img class="img-fluid w-100" src="img/product-1.jpg" alt="">
@@ -180,7 +176,8 @@
     </div>
 
             <!-- Products End -->
-
+            <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span
+                class="bg-success px-3 rounded-pill">Altro da valutare </span></h2>
             <!-- Vendor Start -->
             <div class="container-fluid py-5">
                 <div class="row px-xl-5">
