@@ -24,4 +24,4 @@ Route::get('/nuovo/annuncio', [AnnouncementController::class, 'createAnnouncemen
 
 Route::get('annunci/{announcement}/show', [AnnouncementController::class, 'showAnnouncement'])->name('announcement.show');
 
-// Route::get('categorie/{category}/show', [CategoryController::class, 'showCategory'])->name('categories.show');
+Route::get('categorie/{category}', [CategoryController::class, 'showCategory'])->name('categories.show');

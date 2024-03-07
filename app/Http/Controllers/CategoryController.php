@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
-    public function show(Category $category)
+    public function showCategory(Category $category)
     {
-        return view('welcome',compact('category'));
+        return view('categories.show',compact('category'));
     }
 
 }
