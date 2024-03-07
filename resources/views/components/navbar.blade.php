@@ -17,13 +17,13 @@
                         <div class="navbar-nav mr-auto py-0">
                             <a href="{{route('welcome')}}" class="nav-item nav-link active">Home</a>
                             <a href="shop.html" class="nav-item nav-link">Shop</a>
-                            <a href="detail.html" class="nav-item nav-link">Shop Detail</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Categorie <i
                                         class="fa fa-angle-down mt-1"></i></a>
                                 <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
-                                    <a href="cart.html" class="dropdown-item">Shopping Cart</a>
-                                    <a href="checkout.html" class="dropdown-item">Checkout</a>
+                                    @foreach ($categories as $category )    
+                                    <a href="cart.html" class="dropdown-item">{{$category->name}}</a>
+                                    @endforeach
                                 </div>
                             </div>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
