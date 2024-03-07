@@ -153,9 +153,9 @@
                                 </div>
                             </div>
                             <div class="text-center py-4">
-                                <a class="h4 text-decoration-none text-truncate" href="{{route('announcement.show',  ['announcement' => $announcement->id])}}">{{$announcement->title}}</a>
+                                <a class="h4 text-decoration-none d-inline-block text-truncate" style="max-width: 80%" href="{{route('announcement.show',  ['announcement' => $announcement->id])}}">{{$announcement->title}}</a>
                                 <br>
-                                <a class="h6 text-decoration-none text-truncate" href="">{{$announcement->category->name}}</a>
+                                <a class="h6 text-decoration-none text-truncate"  href="">{{$announcement->category->name}}</a>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
                                     <h5>${{$announcement->price}}</h5>
                                     <h6 class="text-muted ml-2"><del>${{$announcement->price}}</del></h6>
