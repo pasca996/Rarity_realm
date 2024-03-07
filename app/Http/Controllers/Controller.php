@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Announcement;
+use App\Models\Category;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
@@ -13,10 +14,9 @@ class Controller extends BaseController
     use AuthorizesRequests, ValidatesRequests;
 
     public function welcome() {
-        // $announcements = Announcement::take(6)->get()->orderBy('created_at' , 'desc');
-        $announcements = DB::table('announcements')
-                ->orderBy('created_at', 'desc')
-                ->get();
+        
+        $announcements = Announcement::orderBy('created_at', 'desc')->take(8)->get();
+
         return view('welcome' , compact('announcements'));
     }
 }

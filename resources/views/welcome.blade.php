@@ -157,7 +157,8 @@
                                 </div>
                             </div>
                             <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate" href="">{{$announcement->title}}</a>
+                                <a class="h4 text-decoration-none text-truncate" href="">{{$announcement->title}}</a>
+                                <br>
                                 <a class="h6 text-decoration-none text-truncate" href="">{{$announcement->category->name}}</a>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
                                     <h5>${{$announcement->price}}</h5>
