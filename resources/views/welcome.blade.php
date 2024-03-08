@@ -63,7 +63,7 @@
                     <div class="offer-text">
                         <h6 class="text-white text-uppercase">Sconti al 70%</h6>
                         <h3 class="text-white mb-3">Offerte speciali</h3>
-                        <a href="" class="btn py-2 px-4 mt-3 animate__animated animate__fadeInUp" style="background-color: #65cbad">Compra ora</a>
+                        <a href="{{route('announcement.index')}}" class="btn py-2 px-4 mt-3 animate__animated animate__fadeInUp" style="background-color: #65cbad">Compra ora</a>
                     </div>
                 </div>
             </div>
