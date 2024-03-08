@@ -118,7 +118,7 @@
                             </div>
                             <div class="flex-fill pl-3">
                                 <h6 class="text-dark">{{ $category['name'] }}</h6>
-                                <small class="text-body">100 Products</small>
+                                <small class="text-body">{{ $category->announcements->count() }}</small>
                             </div>
                         </div>
                     </a>

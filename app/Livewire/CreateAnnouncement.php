@@ -70,7 +70,6 @@ class CreateAnnouncement extends Component
 
     public function render()
     {
-        // dd($this->all());
         return view('livewire.create-announcement');
     }
 }
