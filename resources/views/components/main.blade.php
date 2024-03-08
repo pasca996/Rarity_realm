@@ -33,11 +33,6 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-success back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-    <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"
-    ></script>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="easing/easing.min.js"></script>
