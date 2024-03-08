@@ -1,19 +1,14 @@
 <div>
-    <div class="row align-items-center">
+    <div class="row align-items-center bg-img">
         <div class="col-sm-6 col-md-5 hidden-xs hidden-sm">
-            <img src="https://raw.githubusercontent.com/rexxars/react-hexagon/master/logo/react-hexagon.png"
-                alt="" class="center-block img-responsive" />
+            <img src="\img\logo\logo_con_sfondo.png"
+                alt="" class="center-block img-responsive w-100" />
         </div>
 
-        <div class="col-md-1 hidden-xs hidden-sm">
-            <div class="border-login"></div>
-        </div>
-
-        <div class="col-sm-12 col-xs-12 col-md-4">
+        <div class="col-sm-12 col-xs-4 col-md-4 col-10">
             <div class="space-top">
-                <h3 class="text-center">Crea il tuo annuncio</h3>
-                <form wire:submit.prevent="store" class="form-signin" class="form-horizontal">
-
+                <h2 class="text-center text-green">Crea il tuo annuncio</h2>
+                <form wire:submit.prevent="store" class="form-signin ml-5" class="form-horizontal">
                     <label for="title" class=""> Titolo Annuncio </label>
                     <input wire:model.live="title" type="text"
                         class="form-control @error('title') is-invalid @enderror">
@@ -21,6 +16,7 @@
                         {{ $message }}
                     @enderror
                     <br>
+
                     <label for="description" class=""> Descrizione Annuncio </label>
                     <textarea wire:model.live="description" type="text" class="form-control @error('description') is-invalid @enderror"></textarea>
                     @error('description')
@@ -28,12 +24,9 @@
                     @enderror
                     <br>
 
-
                     <label for="category">Categoria</label>
-
                     <select wire:model="category_id" id="category" class="form-control">
                         <option value="">Seleziona Categoria</option>
-                      
                       @foreach ($categories as $category)
                             <option value="{{$category->id}}">{{$category->name }}</option>
                         @endforeach
@@ -50,7 +43,7 @@
                         {{ $message }}
                     @enderror
                     <br>
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">
+                    <button class="btn btn-lg bg-green btn-block" type="submit">
                         Crea Annuncio
                     </button>
                     <br>

@@ -17,8 +17,8 @@ class Profile extends Component
     public $job;
 
     public function toggleName()
-    { return $this->nameDisabled = !$this->nameDisabled;
-
+    { 
+        return $this->nameDisabled = !$this->nameDisabled;
     }
 
     public function rules()
@@ -35,9 +35,9 @@ class Profile extends Component
     public function store()
     {
         $this->validate();
+        // User::where('id',$this->id)->update($valid);
 
         $this->user->update([
-
             'name' => $this->name,
             'job' => $this->job,
             'age' => $this->age,
@@ -45,7 +45,7 @@ class Profile extends Component
             'gender' => $this->gender
         ]);
 
-        // user = User::find($this->user_id)->users()->create([
+        // $user = User::find($this->user_id)->users()->update([
         //     'name' => $this->name,
         //     'job' => $this->job,
         //     'age' => $this->age,
@@ -55,7 +55,6 @@ class Profile extends Component
 
         session()->flash('status', 'Dati Profilo Salvati');
 
-        $this->cleanForm();
     }
 
     public function updated($propertyName)
@@ -74,6 +73,7 @@ class Profile extends Component
 
     public function render()
     {
+        
         return view('livewire.profile');
     }
 }

@@ -110,15 +110,15 @@
                 class="px-3 rounded-pill" style="background-color: #65cbad">Categorie</span></h2>
         <div class="row px-xl-5 pb-3">
             @foreach ($categories as $category)
-                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                    <a class="text-decoration-none" href="{{route('categories.show', compact('category'))}}">
-                        <div class="cat-item d-flex align-items-center mb-4">
-                            <div class="overflow-hidden" style="width: 100px; height: 100px; ">
-                                <img class="img-fluid" src="{{ $category['image'] }}" alt="">
-                            </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a class="text-decoration-none rounded-lg d-flex cat-item img-hover" href="{{route('categories.show', compact('category'))}}">
+                        <div class="overflow-hidden" style="width: 100px; height: 100px; ">
+                            <img class="img-fluid" src="{{ $category['image'] }}" alt="">
+                        </div>
+                        <div class="d-flex flex-grow-1 align-items-center">
                             <div class="flex-fill pl-3">
                                 <h6 class="text-dark">{{ $category['name'] }}</h6>
-                                <small class="text-body">{{ $category->announcements->count() }}</small>
+                                <small class="text-body">{{ $category->announcements->count() }} Annunci</small>
                             </div>
                         </div>
                     </a>

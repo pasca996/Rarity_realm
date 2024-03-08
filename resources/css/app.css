@@ -167,6 +167,14 @@
   transform: scale(1.2) rotate(5deg);
 }
 
+.img-hover img {
+  transition: .5s;
+}
+
+.img-hover:hover img{
+  transform: scale(1.2) rotate(5deg);
+
+}
 .product-item {
   transition: .5s;
 }
@@ -263,3 +271,32 @@
   }
 }
 
+/* .bg-img {
+  position: relative;
+}
+
+.bg-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/img/logo/logo_con_sfondo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
+  z-index: -1;
+} */
+
+.height-form {
+  min-height: 1000px;
+}
+
+.text-green {
+  color: #65cbad;
+}
+
+.bg-green {
+  background-color: #65cbad;
+}

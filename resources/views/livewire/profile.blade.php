@@ -12,56 +12,50 @@
             <div class="col-md-5 border-right">
                 <div class="p-3 py-5">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <h4 class="text-right">Profile Settings</h4>
+                        <h4 class="text-right">Profilo</h4>
                     </div>
-                    <div class="row mt-2">
-                        <form wire:submit.prevent="store">
-                            <div class="col-md-6"><label class="labels">Name <button wire:click="toggleName"> M
-                                    </button></label>
+                    <div>
+                        <form class="row mt-2" wire:submit.prevent="store">
+                            <div class="col-md-12">
+                                <label class="labels">Nome 
+                                </label>
                                 <input @disabled($nameDisabled) type="text" class="form-control"
-                                    placeholder="first name" value="{{ $user->name }}">
-                            </div>
-                            <div class="col-md-6"><label class="labels">Surname</label><input type="text"
-                                    class="form-control" value="" placeholder="surname">
-                            </div>
+                                    placeholder="Inserisci il tuo nome" wire:model="name" value="">
+                                    <button class="" wire:click="toggleName">
+                                        Modifica
+                                    </button>
+                                </div>
                     </div>
                     <div class="row mt-3">
-                        <div class="col-md-12"><label class="labels">Mobile Number</label><input type="text"
-                                class="form-control" placeholder="enter phone number" value="">
+                        <div class="col-md-12">
+                            <label class="labels">Anni</label>
+                            <input type="text"
+                                class="form-control" placeholder="Inserisci la tua età" value="">
                         </div>
-                        <div class="col-md-12"><label class="labels">Address Line 1</label><input type="text"
-                                class="form-control" placeholder="enter address line 1" value="">
+                        <div class="col-md-12">
+                            <label class="labels">Sesso</label>
+                            <input type="text"
+                                class="form-control" placeholder="Inserisci il tuo sesso" value="">
                         </div>
-                        <div class="col-md-12"><label class="labels">Address Line 2</label><input type="text"
-                                class="form-control" placeholder="enter address line 2" value="">
+                        <div class="col-md-12">
+                            <label class="labels">Hobby</label>
+                            <input type="text"
+                                class="form-control" placeholder="Inserisci i tuoi hobby" value="">
                         </div>
-                        <div class="col-md-12"><label class="labels">Postcode</label><input type="text"
-                                class="form-control" placeholder="enter address line 2" value="">
-                        </div>
-                        <div class="col-md-12"><label class="labels">State</label><input type="text"
-                                class="form-control" placeholder="enter address line 2" value="">
-                        </div>
-                        <div class="col-md-12"><label class="labels">Area</label><input type="text"
-                                class="form-control" placeholder="enter address line 2" value="">
-                        </div>
-                        <div class="col-md-12"><label class="labels">Email ID</label><input type="text"
-                                class="form-control" placeholder="enter email id" value="">
-                        </div>
-                        <div class="col-md-12"><label class="labels">Education</label><input type="text"
-                                class="form-control" placeholder="education" value="">
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-6"><label class="labels">Country</label><input type="text"
-                                class="form-control" placeholder="country" value="">
-                        </div>
-                        <div class="col-md-6"><label class="labels">State/Region</label><input type="text"
-                                class="form-control" value="" placeholder="state">
+                        <div class="col-md-12">
+                            <label class="labels">Lavoro</label>
+                            <input type="text"
+                                class="form-control" placeholder="Inserisci il tuo lavoro" value="">
                         </div>
                     </div>
                     <div class="mt-5 text-center">
-                        <button class="btn btn-primary profile-button" type="submit">Save Profile</button>
+                        <button class="btn bg-green profile-button" type="submit">Save Profile</button>
                     </div>
+                    @if (session('status'))
+                        <div class="alert alert-success">
+                            {{ session('status') }}
+                        </div>
+                    @endif
                     </form>
                 </div>
             </div>
