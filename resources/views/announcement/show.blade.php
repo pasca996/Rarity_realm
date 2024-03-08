@@ -211,12 +211,12 @@
         <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4">
             <span class="px-3 rounded-pill" style="background-color: #65cbad">Annunci correlati</span></h2>
         <div class="row px-xl-5">
-            <div class="col">
+            <div class="col-md-2">
                 <div class="owl-carousel related-carousel">
                     @forelse ($announcementCategories as $announcementCategory)
                     <div class="product-item bg-light">
                         <div class="product-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/product-1.jpg" alt="">
+                            <img class="img-fluid w-100" src="https://picsum.photos/200" alt="">
                             <div class="product-action">
                                       
                                 <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
