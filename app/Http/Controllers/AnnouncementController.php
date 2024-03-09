@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class AnnouncementController extends Controller
 {
+    
     public function createAnnouncement()
     {
         return view('announcement.create');
@@ -16,6 +17,7 @@ class AnnouncementController extends Controller
     public function showAnnouncement($announcement)
     {
         $announcement = Announcement::findOrFail($announcement);
+
         $announcementCategories = Announcement::where('category_id', $announcement->category_id)
         ->where('id', '!=', $announcement->id)
         ->take(6)
