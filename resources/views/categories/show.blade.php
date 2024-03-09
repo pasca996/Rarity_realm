@@ -167,7 +167,7 @@
                             <div class="text-center py-4">
                                 <a class="h6 text-decoration-none text-truncate" href="{{route('announcement.show',  ['announcement' => $announcement->id])}}">{{$announcement->title}}</a>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>{{$announcement->price}}</h5><h6 class="text-muted ml-2"><del>${{$announcement->price}}</del></h6>
+                                    <h5>{{$announcement->price}} €</h5><h6 class="text-muted ml-2"><del>{{$announcement->price *1.15}} €</del></h6>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-center mb-1">
                                     <small class="fa fa-star text-primary mr-1"></small>

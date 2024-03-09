@@ -56,7 +56,8 @@
                         </div>
                         <small class="pt-1">(99 Reviews)</small>
                     </div>
-                    <h3 class="font-weight-semi-bold mb-4">{{$announcement->price}}</h3>
+                    <h3 class="font-weight-semi-bold mb-4">{{$announcement->price}} €</h3>
+                    <h3 class="text-muted mb-4"><del>{{$announcement->price *1.15}} €</del></h3>
                     <p class="mb-4"></p>
                     <div class="d-flex align-items-center mb-4 pt-2">
                         <div class="input-group quantity mr-3" style="width: 130px;">
@@ -229,7 +230,7 @@
                             <a class="h6 text-decoration-none text-truncate" href="">{{$announcementCategory->title}}</a>
                             <p>{{$announcementCategory->category->name}}</p>
                             <div class="d-flex align-items-center justify-content-center mt-2">
-                                <h5>{{$announcementCategory->price}}</h5><h6 class="text-muted ml-2"><del>{{$announcementCategory->price}}</del></h6>
+                                <h5>{{$announcementCategory->price}} €</h5><h6 class="text-muted ml-2"><del>{{$announcementCategory->price *1.15}} €</del></h6>
                             </div>
                             <div class="d-flex align-items-center justify-content-center mb-1">
                                 <small class="fa fa-star text-primary mr-1"></small>
