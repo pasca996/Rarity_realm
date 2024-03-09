@@ -270,6 +270,7 @@
     transform: translateY(-15px);
   }
 }
+   /* Nostre classi */
 
 /* .bg-img {
   position: relative;
@@ -306,10 +307,10 @@
   background: #fccb90;
   
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  background: -webkit-linear-gradient(to right, #7f5fbe, #6284b1, #46a59f, #31b890);
   
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  background: linear-gradient(to right, #7f5fbe, #6284b1, #46a59f, #31b890);
   }
   
   @media (min-width: 768px) {
@@ -324,7 +325,7 @@
   }
   }
 
-  /* Nostre classi */
+ 
 
     .move-form-group {
       position: relative;

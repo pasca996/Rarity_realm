@@ -34,16 +34,20 @@
                         <input type="password" id="password" name="password" placeholder=" " required class="move-input">
                         <label for="password" class="move-label">Password</label>
                       </div>
+                      <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Ricordami</label>
+                      </div>
     
                       <div class="text-center pt-1 mb-5 pb-1">
-                        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Accedi</button>
+                        <button class="btn btn-block fa-lg gradient-custom-2 mb-3 text-white" type="submit">Accedi</button>
                         
                       </div>
     
                       <div class="d-flex align-items-center justify-content-center pb-4">
                         <p class="mb-0 me-2">Non hai un account?</p>
                         
-                        <a href="{{route('register')}}" class="btn btn-outline-danger">Registrati</a>
+                        <a href="{{route('register')}}" class="btn fa-lg gradient-custom-2 mb-3 ml-3 px-4 text-white">Registrati</a>
                       </div>
     
                     </form>
@@ -52,10 +56,8 @@
                 </div>
                 <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
                   <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                    <h4 class="mb-4">We are more than just a company</h4>
-                    <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h4 class="mb-4">Perchè noi?</h4>
+                    <p class="small mb-0">Ci sono milioni di annunci ed la sicurezza del nostro sito è il massimo</p>
                   </div>
                 </div>
               </div>
