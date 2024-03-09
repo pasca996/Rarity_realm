@@ -105,3 +105,41 @@ import 'bootstrap';
     
 })(jQuery);
 
+// document.addEventListener('DOMContentLoaded', function () {
+//     const inputs = document.querySelectorAll('input');
+
+//     inputs.forEach(input => {
+//       const label = input.nextElementSibling;
+
+//       input.addEventListener('focus', () => {
+//         label.classList.add('active');
+//       });
+
+//       input.addEventListener('blur', () => {
+//         if (input.value === '') {
+//           label.classList.remove('active');
+//         }
+//       });
+//     });
+//   });
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const formGroups = document.querySelectorAll('.move-form-group');
+
+    formGroups.forEach(formGroup => {
+      const input = formGroup.querySelector('.move-input');
+      const label = formGroup.querySelector('.move-label');
+
+      input.addEventListener('focus', () => {
+        label.classList.add('active');
+      });
+
+      input.addEventListener('blur', () => {
+        if (input.value === '') {
+          label.classList.remove('active');
+        }
+      });
+    });
+  });
+

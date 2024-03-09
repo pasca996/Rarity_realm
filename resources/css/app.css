@@ -323,3 +323,41 @@
   border-bottom-right-radius: .3rem;
   }
   }
+
+  /* Nostre classi */
+
+    .move-form-group {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+
+    .move-label {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      pointer-events: none;
+      transition: 0.2s ease all;
+      color: #777;
+    }
+
+    .move-input:focus + .move-label,
+    .move-input:not(:placeholder-shown) + .move-label {
+      top: 0;
+      font-size: 0.75rem;
+      color: #333;
+    }
+
+    .move-input {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      outline: none;
+      background-color: #ffffff;
+    }
+
+
+
+  

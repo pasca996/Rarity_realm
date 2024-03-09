@@ -40,6 +40,7 @@
     <script src="owlcarousel/owl.carousel.min.js"></script>
     <!-- Contact Javascript File -->
     {{-- <script src="mail/jqBootstrapValidation.min.js"></script> --}}
+
 </body>
 
 </html>

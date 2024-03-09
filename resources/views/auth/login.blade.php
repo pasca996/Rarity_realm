@@ -25,14 +25,14 @@
     
                     <form action="{{route('login')}}" method="POST">
                       @csrf
-                      <div class="form-outline mb-4">
-                        <input type="email" name="email" class="form-control" id="email" required>
-                        <label class="form-label" for="typeEmailX">Email</label>
+                      <div class="move-form-group">
+                        <input type="text" id="username" name="username" placeholder=" " required class="move-input">
+                        <label for="username" class="move-label">Nome Utente</label>
                       </div>
-    
-                      <div class="form-outline mb-4">
-                        <input type="password" name="password" class="form-control" id="password" required>
-                        <label class="form-label" for="typePasswordX">Password</label>
+                      
+                      <div class="move-form-group">
+                        <input type="password" id="password" name="password" placeholder=" " required class="move-input">
+                        <label for="password" class="move-label">Password</label>
                       </div>
     
                       <div class="text-center pt-1 mb-5 pb-1">
