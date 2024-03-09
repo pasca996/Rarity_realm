@@ -13,10 +13,10 @@
     <!-- Libraries Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     {{-- owlcarousel --}}
-    <link rel="stylesheet" href="owlcarousel\assets\owl.carousel.css">
-    <link rel="stylesheet" href="owlcarousel\assets\owl.theme.default.css">
-    <link rel="stylesheet" href="owlcarousel\assets\owl.theme.green.css">
-    <!-- Font Awesome -->
+    <link rel="stylesheet" href="\owlcarousel\assets\owl.carousel.css">
+    <link rel="stylesheet" href="\owlcarousel\assets\owl.theme.default.css">
+    <link rel="stylesheet" href="\owlcarousel\assets\owl.theme.green.css">
+    <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="192x192"  href="/img/logo/icona_192x192.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
@@ -35,9 +35,9 @@
     <a href="#" class="btn btn-success back-to-top"><i class="fa fa-angle-double-up"></i></a>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="easing/easing.min.js"></script>
+    <script src="/easing/easing.min.js"></script>
     {{-- owlcarousel --}}
-    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="/owlcarousel/owl.carousel.min.js"></script>
     <!-- Contact Javascript File -->
     {{-- <script src="mail/jqBootstrapValidation.min.js"></script> --}}
 
