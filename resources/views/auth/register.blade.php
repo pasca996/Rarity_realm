@@ -1,5 +1,5 @@
 <x-main>
-  <section class="vh-100 gradient-custom">
+  <section class="h-100" style="background-color: #eeeeee63;">
     @if ($errors->any())
     <div class="alert alert-danger">
       <ul>
@@ -9,48 +9,63 @@
       </ul>
     </div>
     @endif
-<form action="{{route('register')}}" method="POST">
-    @csrf
-        <div class="container py-5 h-100">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-              <div class="card bg-dark text-white" style="border-radius: 1rem;">
-                <div class="card-body p-5 text-center">
-      
-                  <div class="mb-md-5 mt-md-4 pb-5">
-                    <h2 class="fw-bold mb-2 text-uppercase">Crea un account</h2>
-                    <div class="form-outline form-white mb-4">
-                        <input type="text" name="name" class="form-control form-control-lg" />
-                        <label class="form-label" for="form3Example1cg">Nome</label>
-                      </div>
-                    <div class="form-outline form-white mb-4">
-                      <input type="email" name="email" class="form-control form-control-lg" />
-                      <label class="form-label" for="typeEmailX">Email</label>
-                    </div>
-                    <div class="form-outline form-white mb-4">
-                      <input type="password" name="password" class="form-control form-control-lg" />
-                      <label class="form-label" for="typePasswordX">Password</label>
-                    </div>
-                    <div class="form-outline form-white mb-4">
-                        <input type="password" name="password_confirmation" class="form-control form-control-lg" />
-                        <label class="form-label" for="typePasswordX">Conferma Password</label>
-                      </div>
-                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Registrati</button>
-                    <div class="d-flex justify-content-center text-center mt-4 pt-1">
-                      <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
-                      <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
-                      <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
-                    </div>
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-10">
+          <div class="card rounded-3 text-black">
+            <div class="row g-0">
+              <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                  <h4 class="mb-4 text-center">Registrati su Rarity Realm</h4>
+                  <p class="text-md mb-5">Crea il tuo account per iniziare a vendere e comprare in tutta Italia!</p>
+                  <p class="text-md mb-3"><i class="fa fa-eye" aria-hidden="true"></i> Consulti solo annunci che sono stati controllati prima della pubblicazione.</p>
+                  <p class="text-md mb-3"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Trova oggetti autentici e preziosi.</p>
+                  <p class="text-md mb-3"><i class="fa fa-globe" aria-hidden="true"></i> Comprando e vendendo usato ci guadagni tu e anche il pianeta.</p>
+                  
+                  
+
+                </div>
+              </div>
+              <div class="col-lg-6 bg-white rounded-lg">
+                <div class="card-body p-md-5 mx-md-4">
+                  <div class="text-center">
+                    <img src="/img/logo/logo_senza_sfondo.png"style="width: 300px;" alt="logo">
+                    <h4 class="mt-1 mb-5 pb-1">Scopri i tesori del passato!</h4>
                   </div>
-                  <div>
-                    <p class="mb-0">Hai già un account? <a href="{{route('login')}}" class="text-white-50 fw-bold">Accedi</a>
-                    </p>
-                  </div>
+                  <form action="{{route('register')}}" method="POST">
+                    @csrf
+                    <div class="move-form-group">
+                      <input type="text" id="name" name="name" placeholder=" " required class="move-input">
+                      <label for="name" class="move-label">Nome</label>
+                    </div>
+                    <div class="move-form-group">
+                      <input type="text" id="email" name="email" placeholder=" " required class="move-input">
+                      <label for="email" class="move-label">Email</label>
+                    </div>
+                    <div class="move-form-group">
+                      <input type="password" id="password" name="password" placeholder=" " required class="move-input">
+                      <label for="password" class="move-label">Password</label>
+                    </div>
+
+                    <div class="move-form-group">
+                      <input type="password" id="password" name="password_confirmation"" placeholder=" " required class="move-input">
+                      <label for="password" class="move-label">Conferma Password</label>
+                    </div>
+  
+                    <div class="text-center pt-1 mb-5 pb-1">
+                      <button class="btn btn-block fa-lg gradient-custom-2 mb-3 text-white" type="submit">Registrati</button> 
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center pb-4">
+                      <p class="mb-0 me-2">Hai già un account?</p>
+                      <a href="{{route('login')}}" class="btn fa-lg gradient-custom-2 mb-3 ml-3 px-4 text-white">Accedi</a>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </form>
-      </section>
+      </div>
+    </div>
+  </section>
 </x-main>

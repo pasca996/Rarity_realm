@@ -1,6 +1,6 @@
 
   <x-main>
-    <section class="h-100 gradient-form" style="background-color: #eee;">
+    <section class="h-100 " style="background-color: #eeeeee6b;">
       @if ($errors->any())
       <div class="alert alert-danger">
         <ul>
@@ -19,8 +19,8 @@
                   <div class="card-body p-md-5 mx-md-4">
     
                     <div class="text-center">
-                      <img src="/img/logo/logo_senza_sfondo.png"style="width: 185px;" alt="logo">
-                      <h4 class="mt-1 mb-5 pb-1">Accedi a Rarity Realm</h4>
+                      <img src="/img/logo/logo_senza_sfondo.png"style="width: 300px;" alt="logo">
+                      <h4 class="mt-1 mb-5 pb-1">Accedi su Rarity Realm</h4>
                     </div>
     
                     <form action="{{route('login')}}" method="POST">
@@ -56,8 +56,10 @@
                 </div>
                 <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
                   <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                    <h4 class="mb-4">Perchè noi?</h4>
-                    <p class="small mb-0">Ci sono milioni di annunci ed la sicurezza del nostro sito è il massimo</p>
+                    <h4 class="mb-5 text-center">Il portale online dei collezionisti</h4>
+                    <p class="text-md mb-3">Compra e vendi in una community con oltre 2 milioni di utenti.</p>
+                    <p class="text-md mb-3">Il mondo del collezionismo è nelle tue mani: scorri tutti gli annunci e non perderti nemmeno un’occasione.</p>
+                    <p class="text-md mb-3"> Qui puoi trovare tutto ciò di cui hai bisogno!</p>
                   </div>
                 </div>
               </div>

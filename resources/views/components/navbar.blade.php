@@ -18,7 +18,7 @@
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
                             <a href="{{route('welcome')}}" class="nav-item nav-link active h5">Home</a>
-                            <a href="shop.html" class="nav-item nav-link h5">Shop</a>
+                            <a href="{{route('announcement.index')}}" class="nav-item nav-link h5">Shop</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle h5" data-toggle="dropdown">Categorie <i
                                         class="fa fa-angle-down mt-1"></i></a>
