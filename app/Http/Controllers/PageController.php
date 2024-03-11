@@ -20,4 +20,21 @@ class PageController extends Controller
         $user = Auth::user();
         return view('profiles.profile', compact('user'));
     }
+
+
+
+
+
+
+
+
+
+
+
+    public function searchAnnouncements(Request $request){
+        $announcements = Announcement::search($request->searched)->paginate(10);
+        return view('announcement.index', compact('announcements'));
+
+        // ->where('is_accepted',true) ,in attesa US03
+}
 }

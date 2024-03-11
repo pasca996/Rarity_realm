@@ -36,8 +36,8 @@
                             @endif
                             @endauth
                         </div> 
-                        <form class="form-inline">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Cerca" aria-label="Search">
+                        <form action="{{ route ('announcement.search') }}" method="GET" class="form-inline">
+                            <input class="form-control mr-sm-2" name="searched" type="search" placeholder="Cerca" aria-label="Search">
                             <button class="btn my-2 my-sm-0" style="background-color: #65cbad" type="submit"><i class="fas fa-search"></i></button>
                           </form>             
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">

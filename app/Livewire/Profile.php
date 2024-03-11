@@ -10,6 +10,10 @@ class Profile extends Component
     public $user;
     public $name;
     public $nameDisabled = true;
+    public $ageDisabled = true;
+    public $hobbiesDisabled = true;
+    public $genderDisabled = true;
+    public $jobDisabled = true;
     public $email;
     public $age;
     public $gender;
@@ -19,6 +23,26 @@ class Profile extends Component
     public function toggleName()
     { 
         return $this->nameDisabled = !$this->nameDisabled;
+    }
+
+    public function toggleAge()
+    { 
+        return $this->ageDisabled = !$this->ageDisabled;
+    }
+
+    public function toggleGender()
+    { 
+        return $this->genderDisabled = !$this->genderDisabled;
+    }
+
+    public function toggleHobbies()
+    { 
+        return $this->hobbiesDisabled = !$this->hobbiesDisabled;
+    }
+
+    public function toggleJob()
+    { 
+        return $this->jobDisabled = !$this->jobDisabled;
     }
 
     public function rules()
@@ -33,8 +57,8 @@ class Profile extends Component
     }
 
     public function store()
-    {
-        $this->validate();
+    { 
+        // $this->validate(); da riattivare appena fatto il mount a tutti i valori
         // User::where('id',$this->id)->update($valid);
 
         $this->user->update([
