@@ -143,3 +143,16 @@ import 'bootstrap';
     });
   });
 
+// navbar
+
+document.addEventListener("scroll", () => {
+    const navbar = document.querySelector("#navbar");
+    let scrollY = window.scrollY;
+    console.log("ScrollY:", scrollY);
+
+    if (scrollY > 80) {
+        navbar.classList.add("scrolled")
+    } else {
+        navbar.classList.remove("scrolled")
+    }
+})

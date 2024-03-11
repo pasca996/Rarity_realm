@@ -1,10 +1,8 @@
     <!-- Navbar Start -->
-    <div class="container-fluid navbar-light mb-30" style="background-color: #f2f6fa">
+    <div class="container-fluid navbar-light mb-30">
         <div class="row px-xl-5 ">
-            
             <div class="col-lg">
-                
-                <nav class="navbar navbar-expand-lg navbar-light py-3 py-lg-0 px-0">
+                <nav class="navbar navbar-expand-lg navbar-light py-3 py-lg-0 px-0 fixed-top" id="navbar">
                     <a href="{{route('welcome')}}">
                         <img class="navbar-brand" src="/img/logo.png" alt="logo" width="80">
                     </a>
