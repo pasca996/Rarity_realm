@@ -2,8 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\BecomeRevisor;
 use App\Models\Announcement;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class RevisorController extends Controller
 {
@@ -23,5 +28,17 @@ class RevisorController extends Controller
     {
         $announcement->setAccepted(false);
         return redirect()->back()->with('message', 'Complimenti, hai accettato rifiutato.' );
+    }
+
+    public function becomeRevisor()
+    {
+        Mail::to('admin@rarityrealm.it')->send(new BecomeRevisor(Auth::user()));
+        return redirect()->back()->with('message', 'Complimenti, hai richiesto di diventare revisore');
+    }
+
+    public function makeRevisor(User $user)
+    {
+        Artisan::call('app:MakeUserRevisor', ["email" =>$user->email]);
+        return redirect('/')->with('message', 'Complimenti, l\'utente è diventato revisore');
     }
 }

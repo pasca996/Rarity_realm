@@ -55,7 +55,7 @@
                     <div class="offer-text">
                     
                         <h3 class="text-white mb-3">Lavora con noi</h3>
-                        <a href="#" class="btn py-2 px-4 mt-3 animate__animated animate__fadeInUp" style="background-color: #65cbad">Diventa Revisore</a>
+                        <a href="{{route('become.revisor')}}" class="btn py-2 px-4 mt-3 animate__animated animate__fadeInUp" style="background-color: #65cbad">Diventa Revisore</a>
                     </div>
                 </div>
                 <div class="product-offer mb-30" style="height: 200px;">
