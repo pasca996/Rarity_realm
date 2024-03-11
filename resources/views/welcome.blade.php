@@ -77,25 +77,25 @@
         <div class="row px-xl-5 pb-3">
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
-                    <h1 class="fa fa-check text-success m-0 mr-3"></h1>
+                    <h1 class="fa fa-check m-0 mr-3" style="color: #65cbad"></h1>
                     <h5 class="font-weight-semi-bold m-0">Qualità certificata</h5>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
-                    <h1 class="fa fa-shipping-fast text-success m-0 mr-2"></h1>
+                    <h1 class="fa fa-shipping-fast  m-0 mr-2" style="color: #65cbad"></h1>
                     <h5 class="font-weight-semi-bold m-0">Spedizione in 48 Ore</h5>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
-                    <h1 class="fas fa-exchange-alt text-success m-0 mr-3"></h1>
+                    <h1 class="fas fa-exchange-alt  m-0 mr-3" style="color: #65cbad"></h1>
                     <h5 class="font-weight-semi-bold m-0">Reso entro 14 giorni</h5>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
-                    <h1 class="fa fa-phone-volume text-success m-0 mr-3"></h1>
+                    <h1 class="fa fa-phone-volume  m-0 mr-3" style="color: #65cbad"></h1>
                     <h5 class="font-weight-semi-bold m-0">24/7 Supporto</h5>
                 </div>
             </div>

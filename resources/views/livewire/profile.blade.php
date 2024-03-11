@@ -19,9 +19,9 @@
                             <div class="col-md-12 mb-2">
                                 <label class="labels">Nome
                                 </label>
-                                <input @disabled($nameDisabled) type="text" class="form-control"
+                                <input @disabled($nameDisabled) type="text" class="form-control move-input"
                                     placeholder="Inserisci il tuo nome" wire:model="name" value="">
-                                <button class="" wire:click.prevent="toggleName">
+                                <button class="btn  fa-lg gradient-custom-2 mb-3 text-white mt-1" wire:click.prevent="toggleName">
                                     Modifica
                                 </button>
                             </div>
@@ -30,43 +30,43 @@
                         <div class="col-md-12 mb-2">
                             <label class="labels">Età
                             </label>
-                            <input @disabled($ageDisabled) type="text" class="form-control"
+                            <input @disabled($ageDisabled) type="text" class="form-control move-input"
                                 placeholder="Inserisci la tua età" wire:model="age" value="">
-                            <button class="mb-2" wire:click.prevent="toggleAge">
+                            <button class="btn  fa-lg gradient-custom-2 mb-3 text-white mt-1 mb-2" wire:click.prevent="toggleAge">
                                 Modifica
                             </button>
                         </div>
                         <div class="col-md-12 mb-2">
                             <label class="labels">Gender</label>
-                            <select @disabled($genderDisabled) type="text" class="form-control" wire:model="gender">
+                            <select @disabled($genderDisabled) type="text" class="form-control move-input" wire:model="gender">
                                 <option value="" hidden>Inserisci genere</option>
                                 <option value="male">Maschio</option>
                                 <option value="female">Femmina</option>
                                 <option value="other">Non voglio specificare</option>
                             </select>
-                            <button type="submit" class="mb-2" wire:click.prevent="toggleGender">Modifica</button>
+                            <button type="submit" class="btn  fa-lg gradient-custom-2 mb-3 text-white mt-1 mb-2" wire:click.prevent="toggleGender">Modifica</button>
                         </div>
                         <div class="col-md-12 mb-2">
                             <label class="labels">Hobby
                             </label>
-                            <input @disabled($hobbiesDisabled) type="text" class="form-control"
+                            <input @disabled($hobbiesDisabled) type="text" class="form-control move-input"
                                 placeholder="Inserisci i tuoi hobbies" wire:model="hobbies" value="">
-                            <button class="mb-2" wire:click.prevent="toggleHobbies">
+                            <button class="btn  fa-lg gradient-custom-2 mb-3 text-white mt-1 mb-2" wire:click.prevent="toggleHobbies">
                                 Modifica
                             </button>
                         </div>
                         <div class="col-md-12 mb-2">
                             <label class="labels">Occupazione
                             </label>
-                            <input @disabled($jobDisabled) type="text" class="form-control"
+                            <input @disabled($jobDisabled) type="text" class="form-control move-input"
                                 placeholder="Inserisci il tuo nome" wire:model="job" value="">
-                            <button class=" mb-2" wire:click.prevent="toggleJob">
+                            <button class="btn  fa-lg gradient-custom-2 mb-3 text-white mt-1 mb-2" wire:click.prevent="toggleJob">
                                 Modifica
                             </button>
                         </div>
                     </div>
                     <div class="mt-5 text-center">
-                        <button class="btn bg-green profile-button" type="submit">Save Profile</button>
+                        <button class="btn  fa-lg gradient-custom-2 mb-3 text-white mt-1" type="submit">Save Profile</button>
                     </div>
                     @if (session('status'))
                         <div class="alert alert-success">
