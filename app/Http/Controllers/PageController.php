@@ -11,7 +11,7 @@ class PageController extends Controller
 {
     public function welcome() {
         
-        $announcements = Announcement::orderBy('created_at', 'desc')->take(8)->get();
+        $announcements = Announcement::orderBy('created_at', 'desc')->where('is_accepted', true)->take(8)->get();
         return view('welcome' , compact('announcements'));
     }
 
@@ -20,15 +20,6 @@ class PageController extends Controller
         $user = Auth::user();
         return view('profiles.profile', compact('user'));
     }
-
-
-
-
-
-
-
-
-
 
 
     public function searchAnnouncements(Request $request){

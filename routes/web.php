@@ -32,7 +32,11 @@ Route::get('annunci', [AnnouncementController::class, 'indexAnnouncement'])->nam
 Route::get('/profile', [PageController::class, 'profile'])->name('page.profile');
 
 
-Route::get('/revisor/home', [RevisorController::class, 'index'])->name('revisor.index');
-Route::patch('/accetta/annuncio{announcement}', [RevisorController::class, 'acceptAnnouncement'])->name('revisor.accept_announcement');
-Route::patch('/rifiuta/annuncio{announcement}', [RevisorController::class, 'rejectAnnouncement'])->name('revisor.reject_announcement');
+Route::get('/revisor/home', [RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor.index');
+Route::patch('/accetta/annuncio{announcement}', [RevisorController::class, 'acceptAnnouncement'])->middleware('isRevisor')->name('revisor.accept_announcement');
+Route::patch('/rifiuta/annuncio{announcement}', [RevisorController::class, 'rejectAnnouncement'])->middleware('isRevisor')->name('revisor.reject_announcement');
+Route::get('/richiesta/revisore', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become.revisor');
+//*Rendi un utente revisore
+Route::get('/rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->name('make.index');
+
 Route::get('/ricerca/annuncio', [PageController::class,'searchAnnouncements'])->name('announcement.search');
