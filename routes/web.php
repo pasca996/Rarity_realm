@@ -29,3 +29,5 @@ Route::get('annunci/{announcement}/show', [AnnouncementController::class, 'showA
 Route::get('categorie/{category}', [CategoryController::class, 'showCategory'])->name('categories.show');
 Route::get('annunci', [AnnouncementController::class, 'indexAnnouncement'])->name('announcement.index');
 Route::get('/profile', [PageController::class, 'profile'])->name('page.profile');
+
+Route::get('/ricerca/annuncio', [PageController::class,'searchAnnouncements'])->name('announcement.search');
