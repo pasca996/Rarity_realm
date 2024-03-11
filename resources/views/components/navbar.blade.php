@@ -28,6 +28,13 @@
                             </div>
                             <a href="contact.html" class="nav-item nav-link h5">Contattaci</a>
                             <a href="{{route ('announcement.create')}}" class="nav-item nav-link h5">Crea annuncio</a>
+                            @auth
+                            @if (Auth::user()->is_revisor)
+                                <a href="{{route('revisor.index')}}" class="dropdown-item h5">Sezione Revisore</a>
+                                {{App\Models\Announcement::toBeRevisionedCount()}}
+                                <span>Messaggi non letti</span>
+                            @endif
+                            @endauth
                         </div> 
                         <form class="form-inline">
                             <input class="form-control mr-sm-2" type="search" placeholder="Cerca" aria-label="Search">
