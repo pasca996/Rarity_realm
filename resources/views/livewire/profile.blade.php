@@ -37,13 +37,14 @@
                             </button>
                         </div>
                         <div class="col-md-12 mb-2">
-                            <label class="labels">Gender
-                            </label>
-                            <input @disabled($genderDisabled) type="text" class="form-control"
-                                placeholder="Inserisci genere" wire:model="gender" value="">
-                            <button class="mb-2" wire:click.prevent="toggleGender">
-                                Modifica
-                            </button>
+                            <label class="labels">Gender</label>
+                            <select @disabled($genderDisabled) type="text" class="form-control" wire:model="gender">
+                                <option value="" hidden>Inserisci genere</option>
+                                <option value="male">Maschio</option>
+                                <option value="female">Femmina</option>
+                                <option value="other">Non voglio specificare</option>
+                            </select>
+                            <button type="submit" class="mb-2" wire:click.prevent="toggleGender">Modifica</button>
                         </div>
                         <div class="col-md-12 mb-2">
                             <label class="labels">Hobby
