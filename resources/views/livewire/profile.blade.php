@@ -21,12 +21,12 @@
                                 </label>
                                 <input @disabled($nameDisabled) type="text" class="form-control"
                                     placeholder="Inserisci il tuo nome" wire:model="name" value="">
-                                <button class="mb-2" wire:click.prevent="toggleName">
+                                <button class="" wire:click.prevent="toggleName">
                                     Modifica
                                 </button>
                             </div>
                     </div>
-                    <div class="row mt-3">
+                    <div class="row mt-2">
                         <div class="col-md-12 mb-2">
                             <label class="labels">Età
                             </label>
