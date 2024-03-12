@@ -152,7 +152,7 @@
                         </div>
                     </div>
 
-                    @forelse ($category->announcements as $announcement)
+                    @forelse ($category->announcements->where('is_accepted',true) as $announcement)
                     <div class="col-lg-3 col-md-6 col-sm-6 pb-1">
                         <div class="product-item bg-light mb-4">
                             <div class="product-img position-relative overflow-hidden">
