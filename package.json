@@ -11,7 +11,7 @@
         "vite": "^5.0.0"
     },
     "dependencies": {
-        "bootstrap": "^4.5.3",
+        "bootstrap": "^4.6.2",
         "composer": "^4.1.0"
     }
 }
