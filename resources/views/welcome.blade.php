@@ -49,6 +49,11 @@
                     </div>
                 </div>
             </div>
+            @if (session('message'))
+                <div class="alert alert-success">
+                    {{ session('message') }}
+                </div>
+             @endif
             <div class="col-lg-4">
                 <div class="product-offer mb-30" style="height: 200px;">
                     <img class="img-fluid" src="/img/img_welcome/Revisore.jpeg" alt="">
