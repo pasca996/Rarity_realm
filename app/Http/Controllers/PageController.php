@@ -11,7 +11,7 @@ class PageController extends Controller
 {
     public function welcome() {
         
-        $announcements = Announcement::orderBy('created_at', 'desc')->where('is_accepted', true)->take(8)->get();
+        $announcements = Announcement::orderBy('created_at', 'desc')->where('is_accepted', true)->take(12)->get();
         return view('welcome' , compact('announcements'));
     }
 
@@ -23,7 +23,7 @@ class PageController extends Controller
 
 
     public function searchAnnouncements(Request $request){
-        $announcements = Announcement::search($request->searched)->paginate(10);
+        $announcements = Announcement::search($request->searched)->where('is_accepted',true)->paginate(10);
         return view('announcement.index', compact('announcements'));
 
         // ->where('is_accepted',true) ,in attesa US03

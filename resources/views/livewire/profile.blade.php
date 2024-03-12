@@ -21,7 +21,7 @@
                                 </label>
                                 <input @disabled($nameDisabled) type="text" class="form-control move-input"
                                     placeholder="Inserisci il tuo nome" wire:model="name" value="">
-                                <button class="btn  fa-lg gradient-custom-2 mb-3 text-white mt-1" wire:click.prevent="toggleName">
+                                <button class="btn  fa-lg bg-green mb-3 text-white mt-1" wire:click.prevent="toggleName">
                                     Modifica
                                 </button>
                             </div>
@@ -32,7 +32,7 @@
                             </label>
                             <input @disabled($ageDisabled) type="text" class="form-control move-input"
                                 placeholder="Inserisci la tua età" wire:model="age" value="">
-                            <button class="btn  fa-lg gradient-custom-2 mb-3 text-white mt-1 mb-2" wire:click.prevent="toggleAge">
+                            <button class="btn  fa-lg bg-green mb-3 text-white mt-1 mb-2" wire:click.prevent="toggleAge">
                                 Modifica
                             </button>
                         </div>
@@ -44,14 +44,14 @@
                                 <option value="female">Femmina</option>
                                 <option value="other">Non voglio specificare</option>
                             </select>
-                            <button type="submit" class="btn  fa-lg gradient-custom-2 mb-3 text-white mt-1 mb-2" wire:click.prevent="toggleGender">Modifica</button>
+                            <button type="submit" class="btn  fa-lg bg-green mb-3 text-white mt-1 mb-2" wire:click.prevent="toggleGender">Modifica</button>
                         </div>
                         <div class="col-md-12 mb-2">
                             <label class="labels">Hobby
                             </label>
                             <input @disabled($hobbiesDisabled) type="text" class="form-control move-input"
                                 placeholder="Inserisci i tuoi hobbies" wire:model="hobbies" value="">
-                            <button class="btn  fa-lg gradient-custom-2 mb-3 text-white mt-1 mb-2" wire:click.prevent="toggleHobbies">
+                            <button class="btn  fa-lg bg-green mb-3 text-white mt-1 mb-2" wire:click.prevent="toggleHobbies">
                                 Modifica
                             </button>
                         </div>
@@ -60,7 +60,7 @@
                             </label>
                             <input @disabled($jobDisabled) type="text" class="form-control move-input"
                                 placeholder="Inserisci il tuo nome" wire:model="job" value="">
-                            <button class="btn  fa-lg gradient-custom-2 mb-3 text-white mt-1 mb-2" wire:click.prevent="toggleJob">
+                            <button class="btn  fa-lg bg-green mb-3 text-white mt-1 mb-2" wire:click.prevent="toggleJob">
                                 Modifica
                             </button>
                         </div>
