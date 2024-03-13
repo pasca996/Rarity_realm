@@ -31,7 +31,6 @@ class AnnouncementController extends Controller
 
     public function indexAnnouncement() {
         $category = Category::all();
-        $announcements = Announcement::all();
         $announcements = Announcement::where('is_accepted', true)->get();
         return view('announcement.index', compact('announcements', 'category'));
     }
