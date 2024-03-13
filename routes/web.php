@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\RevisorController;
 use App\Models\Announcement;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,7 +30,7 @@ Route::get('annunci/{announcement}/show', [AnnouncementController::class, 'showA
 
 Route::get('categorie/{category}', [CategoryController::class, 'showCategory'])->name('categories.show');
 Route::get('annunci', [AnnouncementController::class, 'indexAnnouncement'])->name('announcement.index');
-Route::get('/profile', [PageController::class, 'profile'])->name('page.profile')->middleware('auth');;
+Route::get('/profilo', [PageController::class, 'profile'])->name('page.profile')->middleware('auth');;
 
 
 Route::get('/revisor/home', [RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor.index');
@@ -41,3 +42,6 @@ Route::get('/rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])-
 
 
 Route::get('/ricerca/annuncio', [PageController::class,'searchAnnouncements'])->name('announcement.search');
+
+Route::get('profilo/annunci', [AnnouncementController::class, 'showAnnouncementProfile'])->name('profiles.show');
+

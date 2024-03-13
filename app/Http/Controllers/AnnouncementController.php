@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Announcement;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AnnouncementController extends Controller
 {
@@ -33,5 +34,12 @@ class AnnouncementController extends Controller
         $announcements = Announcement::all();
         $announcements = Announcement::where('is_accepted', true)->get();
         return view('announcement.index', compact('announcements', 'category'));
+    }
+
+    public function showAnnouncementProfile() 
+    {
+        $user = Auth::user() ;
+        $announcements = $user->announcements;
+        return view('profiles.show', compact('announcements'));
     }
 }

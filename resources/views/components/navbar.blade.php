@@ -68,6 +68,7 @@
                                         <form action="{{ route('logout') }}" method="POST">
                                             @csrf
                                             <a href="{{ route('page.profile') }}" class="dropdown-item h5">Profilo</a>
+                                            <a href="{{route('profiles.show')}}" class="dropdown-item h5">I miei annunci</a>
                                             <button class="dropdown-item h5"
                                                 onclick="event.preventDefault(); this.closest('form').submit();">
                                                 Esci
