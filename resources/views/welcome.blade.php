@@ -150,13 +150,24 @@
         </div>
     </div>
     <!-- Featured End -->
+    <header>
+        <div class="jumbotron jumbotron-fluid" style=" background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.525)); background-color: #8260c25b">
+          <div class="container">
+            <p class="lead font-italic text-white">La collezione nasce dal bisogno di trasformare lo scorrere della propria esistenza in una serie di oggetti salvati dalla dispersione, o in una serie di righe scritte, cristallizzate, fuori dal flusso continuo dei pensieri.</p>
+            <p class="lead font-italic text-white">Italo Calvino, Collezione di sabbia, 1984</p>
+          </div>
+        </div>
+      </header>
 
 
     <!-- Categories Start -->
     <div class="container-fluid pt-5">
-        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="px-3 rounded-pill"
-                style="background-color: #65cbad">Categorie</span></h2>
-        <div class="row px-xl-5 pb-3">
+        <div class="col-12 border-bottom">
+            <h3 class="text-center">Il market place delle passioni:</h3>
+            <h4 class="text-center">
+                Esplora tutte le categorie </h4>
+        </div>
+        <div class="row px-xl-5 pb-3 mt-5">
             @foreach ($categories as $category)
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <a class="text-decoration-none rounded-lg d-flex cat-item img-hover"
@@ -182,8 +193,11 @@
 
     <!-- Products Start -->
     <div class="container-fluid pt-5 pb-3">
-        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="px-3 rounded-pill"
-                style="background-color: #65cbad">Ultimi annunci</span></h2>
+        <div class="col-12 border-bottom">
+            <h3 class="text-center">Ultimi annunci</h3>
+            <h4 class="text-center">
+                Visualizza tutti gli ultimi annunci inseriti dai collezionisti</h4>
+        </div>
         <div class="row px-xl-5">
             @foreach ($announcements as $announcement)
                 <div class="col-lg-2 col-md-3 col-sm-6 pb-1">
@@ -191,12 +205,6 @@
                         <div class="product-img position-relative overflow-hidden">
                             <img class="img-fluid w-100" src="img/product-1.jpg" alt="">
                             <div class="product-action">
-                                <a class="btn btn-outline-dark btn-square" href=""><i
-                                        class="fa fa-shopping-cart"></i></a>
-                                <a class="btn btn-outline-dark btn-square" href=""><i
-                                        class="far fa-heart"></i></a>
-                                <a class="btn btn-outline-dark btn-square" href=""><i
-                                        class="fa fa-sync-alt"></i></a>
                                 <a class="btn btn-outline-dark btn-square"
                                     href="{{ route('announcement.show', ['announcement' => $announcement->id]) }}"><i
                                         class="fa fa-search"></i></a>
@@ -213,14 +221,7 @@
                                 <h5>{{ $announcement->price }} €</h5>
                                 <h6 class="text-muted ml-2"><del>{{ $announcement->price * 1.15 }} €</del></h6>
                             </div>
-                            <div class="d-flex align-items-center justify-content-center mb-1">
-                                <small class="fa fa-star text-warning mr-1"></small>
-                                <small class="fa fa-star text-warning mr-1"></small>
-                                <small class="fa fa-star text-warning mr-1"></small>
-                                <small class="fa fa-star text-warning mr-1"></small>
-                                <small class="fa fa-star text-warning mr-1"></small>
-                                <small>(99)</small>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -229,41 +230,43 @@
     </div>
 
     <!-- Products End -->
-    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="px-3 rounded-pill"
-            style="background-color: #65cbad">Altro da valutare </span></h2>
-    <!-- Vendor Start -->
-    <div class="container-fluid py-5">
-        <div class="row px-xl-5">
-            <div class="col">
-                <div class="owl-carousel vendor-carousel">
-                    <div class="bg-light p-4">
-                        <img src="/img/img_welcome/download.jpeg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="/img/img_welcome/download.jpeg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="/img/img_welcome/download.jpeg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="/img/img_welcome/download.jpeg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="/img/img_welcome/download.jpeg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="/img/img_welcome/download.jpeg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="/img/img_welcome/download.jpeg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="/img/img_welcome/download.jpeg" alt="">
-                    </div>
+    <div class="col-12 border-bottom">
+        <h3 class="text-center">Cosa dicono di noi</h3>
+        <h4 class="text-center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, nobis? Impedit vitae deserunt, aut ullam quaerat tempore magni itaque distinctio harum. .</h4>
+    </div>
+<!-- Vendor Start -->
+<div class="container-fluid py-5">
+    <div class="row px-xl-5">
+        <div class="col">
+            <div class="owl-carousel vendor-carousel">
+                <div class="bg-light p-4">
+                    <img src="/img/img_welcome/download.jpeg" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="/img/img_welcome/download.jpeg" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="/img/img_welcome/download.jpeg" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="/img/img_welcome/download.jpeg" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="/img/img_welcome/download.jpeg" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="/img/img_welcome/download.jpeg" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="/img/img_welcome/download.jpeg" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="/img/img_welcome/download.jpeg" alt="">
                 </div>
             </div>
         </div>
     </div>
-    <!-- Vendor End -->
-
+</div>
+<!-- Vendor End -->
 </x-main>
