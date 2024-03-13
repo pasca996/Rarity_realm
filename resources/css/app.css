@@ -382,3 +382,8 @@
 body {
   margin-top: 90px;
 }
+
+
+.buttonNone {
+  display: none;
+}

@@ -1,12 +1,12 @@
-<x-main> 
+<x-main>
     <!-- Breadcrumb Start -->
     <div class="container-fluid">
         <div class="row px-xl-5">
             <div class="col-12">
                 <nav class="breadcrumb bg-light mb-30">
-                    <a class="breadcrumb-item text-dark" href="{{route('welcome')}}">Home</a>
-                    <a class="breadcrumb-item text-dark" href="{{route('announcement.index')}}">Annunci</a>
-                    <span class="breadcrumb-item active">{{$announcement->title}}</span>
+                    <a class="breadcrumb-item text-dark" href="{{ route('welcome') }}">Home</a>
+                    <a class="breadcrumb-item text-dark" href="{{ route('announcement.index') }}">Annunci</a>
+                    <span class="breadcrumb-item active">{{ $announcement->title }}</span>
                 </nav>
             </div>
         </div>
@@ -44,33 +44,53 @@
 
             <div class="col-lg-7 h-auto mb-30">
                 <div class="h-100 bg-light p-30">
-                    <h3>{{$announcement->title}}</h3>
-                    <h4>{{$announcement->category->name}}</h4>
-                    
-                        
-                    <h3 class="font-weight-semi-bold mb-4">{{$announcement->price}} €</h3>
-                    <h3 class="text-muted mb-4"><del>{{$announcement->price *1.15}} €</del></h3>
+                    <h3>{{ $announcement->title }}</h3>
+                    <h4>{{ $announcement->category->name }}</h4>
+
+
+                    <h3 class="font-weight-semi-bold mb-4">{{ $announcement->price }} €</h3>
+                    <h3 class="text-muted mb-4"><del>{{ $announcement->price * 1.15 }} €</del></h3>
                     <p class="mb-4"></p>
                     <div class="d-flex align-items-center mb-4 pt-2">
-                        
-                        <button class="btn  fa-lg gradient-custom-2 mb-3 text-white mt-1"><i class="fa fa-shopping-cart mr-1"></i> Contatta il venditore</button>
-                    </div>
-                    <div class="d-flex pt-2">
-                        <strong class="text-dark mr-2">Share on:</strong>
-                        <div class="d-inline-flex">
-                            <a class="text-dark px-2" href="">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a class="text-dark px-2" href="">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a class="text-dark px-2" href="">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a class="text-dark px-2" href="">
-                                <i class="fab fa-pinterest"></i>
-                            </a>
+                        <div>
+                            <h4>Descrizione Prodotto</h4>
+                            <h5>{{ $announcement->description }}</h5>
                         </div>
+
+                    </div>
+                    <div class=" container d-flex mt-5 justify-content-end">
+                        <div class="d-flex align-items-end flex-column">
+                            <div class="row mt-5">
+                                <button class="btn gradient-custom-2 mb-3 text-white mt-1"> Contatta il venditore</button>
+                            </div>
+                            <div class="row d-flex pt-2">
+                                <strong class="text-dark mr-2">Annuncio Creato da </strong>
+                                <div class="d-inline-flex">
+                                    <span class="text-dark px-2">{{ $announcement->user->name }} </span>
+                                </div>
+                            </div>
+                            <div class="row d-flex pt-2">
+                                <strong class="text-dark mr-2">Caricato il </strong>
+                                <div class="d-inline-flex">
+                                    <span class="text-dark px-2">{{ $announcement->created_at }} </span>
+                                </div>
+                            </div>
+
+                            <div class="row d-flex pt-1">
+                                <div class="d-flex align-items-center bg-light mb-2" style="padding: 10px;">
+                                    <h1 class="fa fa-check m-0 mr-3" style="color: #65cbad"></h1>
+                                    <h5 class=" font-weight-semi-bold m-0" style="font-size: 100%">Qualità certificata</h5>
+                                </div>
+                            </div>
+
+                            <div class="row d-flex pt-1">
+                                <div class="d-flex align-items-center bg-light mb-2" style="padding: 10px;">
+                                    <h1 class="fa fa-shipping-fast  m-0 mr-2" style="color: #65cbad"></h1>
+                                    <h5 class="font-weight-semi-bold m-0" style="font-size: 100%">Spedizione in 48 Ore</h5>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -79,34 +99,31 @@
             <div class="col">
                 <div class="bg-light p-30">
                     <div class="nav nav-tabs mb-4">
-                        <a class="nav-item nav-link text-dark active" data-toggle="tab" href="#tab-pane-1">Description</a>
+
                         <a class="nav-item nav-link text-dark" data-toggle="tab" href="#tab-pane-2">Information</a>
-                        
+
                     </div>
                     <div class="tab-content">
+                       
                         <div class="tab-pane fade show active" id="tab-pane-1">
-                            <h4 class="mb-3">Descrizione prodotto</h4>
-                            <p>{{$announcement->description}}</p>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-2">
                             <h4 class="mb-3">Maggiori Informazioni</h4>
                             <p>Informazioni sulla vita e la storia di questo fantastico tesoro </p>
                             <div class="row">
                                 <div class="col-md-6">
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item px-0">
-                                            Vita prodotto : 
+                                            Vita prodotto :
                                         </li>
                                         <li class="list-group-item px-0">
-                                            Materiali : 
+                                            Materiali :
                                         </li>
                                         <li class="list-group-item px-0">
-                                            Paese produzione : 
+                                            Paese produzione :
                                         </li>
                                         <li class="list-group-item px-0">
-                                            Altro : 
+                                            Altro :
                                         </li>
-                                      </ul> 
+                                    </ul>
                                 </div>
                                 <div class="col-md-6">
                                     <ul class="list-group list-group-flush">
@@ -122,107 +139,52 @@
                                         <li class="list-group-item px-0">
                                             Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
                                         </li>
-                                      </ul> 
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="tab-pane-3">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h4 class="mb-4">1 review for "Product Name"</h4>
-                                    <div class="media mb-4">
-                                        <img src="img/user.jpg" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
-                                        <div class="media-body">
-                                            <h6>John Doe<small> - <i>01 Jan 2045</i></small></h6>
-                                            <div class="text-primary mb-2">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                            <p>Diam amet duo labore stet elitr ea clita ipsum, tempor labore accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h4 class="mb-4">Leave a review</h4>
-                                    <small>Your email address will not be published. Required fields are marked *</small>
-                                    <div class="d-flex my-3">
-                                        <p class="mb-0 mr-2">Your Rating * :</p>
-                                        <div class="text-primary">
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <form>
-                                        <div class="form-group">
-                                            <label for="message">Your Review *</label>
-                                            <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="name">Your Name *</label>
-                                            <input type="text" class="form-control" id="name">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="email">Your Email *</label>
-                                            <input type="email" class="form-control" id="email">
-                                        </div>
-                                        <div class="form-group mb-0">
-                                            <input type="submit" value="Leave Your Review" class="btn btn-primary px-3">
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                        
     <!-- Shop Detail End -->
 
 
     <!-- Products Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5 ">
         <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4">
-            <span class="px-3 rounded-pill" style="background-color: #65cbad">Annunci correlati</span></h2>
-        <div class="row px-xl-5">
-            <div class="col-md-2">
-                <div class="owl-carousel related-carousel">
+            <span class="px-3 rounded-pill mb-5" style="background-color: #65cbad">Annunci correlati</span>
+        </h2>
+        <div class="row px-xl-5 justify-content-around mt-5">
+            <div class="col-md-8 ">
+                <div class="owl-carousel related-carousel ">
                     @forelse ($announcementCategories as $announcementCategory)
-                    <div class="product-item bg-light">
-                        <div class="product-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="https://picsum.photos/200" alt="">
-                            <div class="product-action">
-                                      
-                                <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
-                                <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
-                                <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-sync-alt"></i></a>
-                                <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
+                        <div class="product-item bg-light ">
+                            <div class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="https://picsum.photos/200" alt="">
+                                <div class="product-action">
+                                    <a class="btn btn-outline-dark btn-square" href="{{ route('announcement.show', ['announcement' => $announcementCategory->id]) }}"><i
+                                            class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="h6 text-decoration-none text-truncate"
+                                    href="">{{ $announcementCategory->title }}</a>
+                                <p>{{ $announcementCategory->category->name }}</p>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>{{ $announcementCategory->price }} €</h5>
+                                    <h6 class="text-muted ml-2"><del>{{ $announcementCategory->price * 1.15 }} €</del>
+                                    </h6>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mb-1">
+                                    <small class="fa text-primary mr-1">{{ $announcementCategory->created_at }}</small>
+                                    
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mb-1">
+                                    <small class="fa text-primary mr-1">Inserito da {{ $announcementCategory->user->name }}</small>
+                                    
+                                </div>
                             </div>
                         </div>
-                        <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate" href="">{{$announcementCategory->title}}</a>
-                            <p>{{$announcementCategory->category->name}}</p>
-                            <div class="d-flex align-items-center justify-content-center mt-2">
-                                <h5>{{$announcementCategory->price}} €</h5><h6 class="text-muted ml-2"><del>{{$announcementCategory->price *1.15}} €</del></h6>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center mb-1">
-                                <small class="fa fa-star text-primary mr-1"></small>
-                                <small class="fa fa-star text-primary mr-1"></small>
-                                <small class="fa fa-star text-primary mr-1"></small>
-                                <small class="fa fa-star text-primary mr-1"></small>
-                                <small class="fa fa-star text-primary mr-1"></small>
-                                <small>(99)</small>
-                            </div>
-                        </div>
-                    </div>
                     @empty
-                    <p>Vuoto</p>
+                        <p>Vuoto</p>
                     @endforelse
                 </div>
             </div>
