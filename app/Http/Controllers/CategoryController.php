@@ -9,7 +9,9 @@ class CategoryController extends Controller
 {
     public function showCategory(Category $category)
     {
-        return view('categories.show',compact('category'));
+        $announcements = $category->announcements->where('is_accepted',true);
+
+        return view('categories.show',compact('category', 'announcements'));
     }
 
 }
