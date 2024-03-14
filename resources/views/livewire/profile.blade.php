@@ -15,17 +15,28 @@
                         <h4 class="text-right">Profilo</h4>
                     </div>
                     <div>
-                        <form  class="row mt-2" wire:submit.prevent="store">
-                            <div class="col-md-12 mb-2">
-                                <label class="labels">Nome
-                                </label>
-                                <input @disabled($nameDisabled) type="text" class="form-control move-input"
-                                    placeholder="Inserisci il tuo nome" wire:model="name" value="">
-                                <button class="btn  fa-lg bg-green mb-3 text-white mt-1"
-                                    wire:click.prevent="toggleName">
-                                    Modifica
-                                </button>
+                        <form class="row mt-2" wire:submit.prevent="store">
+
+                            <div class="container">
+
+                                <div class="col-md-12 mb-2 align-items-center">
+                                    <label class="labels ml-3">Nome
+                                    </label>
+                                    <div class="col-md-12 d-flex">
+                                        
+                                        <input @disabled($nameDisabled) type="text"
+                                            class="form-control move-input" placeholder="Inserisci il tuo nome"
+                                            wire:model="name" value="">
+                                     
+                                        <button class="btn searchAnimation fa-lg bg-green text-white mx-3"
+                                            wire:click.prevent="toggleName">
+                                            <i class="far fa-edit"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
                             </div>
+
                     </div>
                     <div class="row mt-2">
                         <div class="col-md-12 mb-2">
@@ -33,7 +44,7 @@
                             </label>
                             <input @disabled($ageDisabled) type="text" class="form-control move-input"
                                 placeholder="Inserisci la tua età" wire:model="age" value="">
-                            <button class="btn  fa-lg bg-green mb-3 text-white mt-1 mb-2"
+                            <button class="btn searchAnimation fa-lg bg-green mb-3 text-white mt-1 mb-2"
                                 wire:click.prevent="toggleAge">
                                 Modifica
                             </button>
@@ -47,7 +58,7 @@
                                 <option value="female">Femmina</option>
                                 <option value="other">Non voglio specificare</option>
                             </select>
-                            <button type="submit" class="btn  fa-lg bg-green mb-3 text-white mt-1 mb-2"
+                            <button type="submit" class="btn searchAnimation fa-lg bg-green mb-3 text-white mt-1 mb-2"
                                 wire:click.prevent="toggleGender">Modifica</button>
                         </div>
                         <div class="col-md-12 mb-2">
@@ -55,7 +66,7 @@
                             </label>
                             <input @disabled($hobbiesDisabled) type="text" class="form-control move-input"
                                 placeholder="Inserisci i tuoi hobbies" wire:model="hobbies" value="">
-                            <button class="btn  fa-lg bg-green mb-3 text-white mt-1 mb-2"
+                            <button class="btn searchAnimation fa-lg bg-green mb-3 text-white mt-1 mb-2"
                                 wire:click.prevent="toggleHobbies">
                                 Modifica
                             </button>
@@ -65,7 +76,7 @@
                             </label>
                             <input @disabled($jobDisabled) type="text" class="form-control move-input"
                                 placeholder="Inserisci il lavoro" wire:model="job" value="">
-                            <button class="btn  fa-lg bg-green mb-3 text-white mt-1 mb-2"
+                            <button class="btn searchAnimation fa-lg bg-green mb-3 text-white mt-1 mb-2"
                                 wire:click.prevent="toggleJob">
                                 Modifica
                             </button>
@@ -73,12 +84,13 @@
                     </div>
 
                     <div class="mt-5 text-center">
-                        
-                        <button class="btn  fa-lg gradient-custom-2 mb-3 text-white mt-1" type="submit">Save
+
+                        <button class="btn button-71 fa-lg gradient-custom-2 mb-3 text-white mt-1" type="submit">Save
                             Profile</button>
-                            <div>
-                                <a wire:loading wire:target="store" class="buttonNone" href="#"><i class="fab fa-twitter"></i></a>
-                            </div>
+                        <div>
+                            <a wire:loading wire:target="store" class="buttonNone" href="#"><i
+                                    class="fab fa-twitter"></i></a>
+                        </div>
                     </div>
                     @if (session('status'))
                         <div class="alert alert-success  ">
