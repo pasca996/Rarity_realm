@@ -46,16 +46,21 @@ class Form extends Component
     {
 
         $this->validate();
+        // $this->announcement->update([
+        //      'title' => $this->title,
+        //      'description' => $this->description,
+        //      'price' => $this->price,
+        //      'category_id' =>$this->category_id
+        // ]);
 
-        Announcement::find($this->announcement->id)->update([
-             'title' => $this->title,
-             'description' => $this->description,
-             'price' => $this->price,
-             'user_id' => Auth::user()->id,
-             'category' =>$this->category_id
-        ]);
+        $this->announcement->title = $this->title;
+        $this->announcement->description = $this->description;
+        $this->announcement->price = $this->price;
+        $this->announcement->category_id = $this->category_id;
+        $this->announcement->is_accepted = null;
+        $this->announcement->save();
 
-        $this->newAnnouncement();
+        // $this->newAnnouncement();
         session()->flash('success', 'Annuncio modificato correttamente.');
         // $this->dispatch('user-ads');
     }
@@ -67,7 +72,7 @@ class Form extends Component
         $this->title = $announcement->title;
         $this->description = $announcement->description;
         $this->price = $announcement->price;
-        $this->category = $announcement->category->name;
+        $this->category_id = $announcement->category_id;
         
     }
     public function updated($propertyName)
@@ -76,14 +81,14 @@ class Form extends Component
     }
 
 
-    public function newAnnouncement()
-    {
-        $this->announcement = $this->announcement;
-        $this->title = $this->title;
-        $this->description = $this->description;
-        $this->price = $this->price;
-        $this->category = $this->category_id;
-    }
+    // public function newAnnouncement()
+    // {
+    //     $this->announcement = $this->announcement;
+    //     $this->title = $this->title;
+    //     $this->description = $this->description;
+    //     $this->price = $this->price;
+    //     $this->category = $this->category_id;
+    // }
 
     public function render()
     {

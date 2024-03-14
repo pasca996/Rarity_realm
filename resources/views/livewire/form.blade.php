@@ -38,7 +38,7 @@
                                     
                                 <label for="category">Categoria</label>
                                 <select wire:model.live="category_id" id="category" class="form-control">
-                                        <option value="">{{$category}}</option>
+                                        {{-- <option value="">{{$category}}</option> --}}
                                 @foreach ($categories as $category)
                                         <option value="{{$category->id}}">{{$category->name }}</option>
                                     @endforeach
@@ -52,8 +52,8 @@
                                         </div>
                                     @endif
 
-                                </div>
-                                <button type="submit" class="btn bg-green me-md-2">Save changes</button>
+                                    <button type="submit" class="btn bg-green me-md-2">Save changes</button>
+                            </div>
                         </div>
                     </form>
                 <div class="modal-footer">
