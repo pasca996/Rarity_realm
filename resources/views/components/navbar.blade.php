@@ -18,7 +18,7 @@
                     <div class="collapse navbar-collapse  justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
                             <a href="{{ route('welcome') }}" class="nav-item nav-link active h5">Home</a>
-                            <a href="{{ route('announcement.index') }}" class="nav-item nav-link h5">Shop</a>
+                            <a href="{{ route('announcement.index') }}" class="nav-item nav-link h5">Annunci</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle h5" data-toggle="dropdown">Categorie
                                     <i class="fa fa-angle-down mt-1"></i></a>
@@ -64,7 +64,7 @@
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><span
                                             class="h5"> Ciao, {{ Auth::user()->name }}</span> <i
                                             class="fa fa-angle-down mt-1"></i></a>
-                                    <div class="dropdown-menu rounded-5 border-0 m-0">
+                                    <div class="dropdown-menu dropdown-menu-right rounded-5 border-0 m-0 mt-2">
                                         <form action="{{ route('logout') }}" method="POST">
                                             @csrf
                                             <a href="{{ route('page.profile') }}" class="dropdown-item h5">Profilo</a>

@@ -37,6 +37,7 @@
 
                             </div>
 
+<<<<<<< HEAD
                             <div class="container">
 
                                 <div class="col-md-12 mb-2 align-items-center">
@@ -65,12 +66,30 @@
                                     <div class="col-md-12 d-flex">
                                         
                                         <select @disabled($genderDisabled) type="text" class="form-control move-input"
+=======
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-12 mb-2">
+                            <label class="labels">Età
+                            </label>
+                            <input @disabled($ageDisabled) type="text" class="form-control move-input"
+                                placeholder="Inserisci la tua età" wire:model="age" value="">
+                            <button class="btn searchAnimation fa-lg bg-green mb-3 text-white mt-1"
+                                wire:click.prevent="toggleAge">
+                                Modifica
+                            </button>
+                        </div>
+                        <div class="col-md-12 mb-2">
+                            <label class="labels">Gender</label>
+                            <select @disabled($genderDisabled) type="text" class="form-control move-input"
+>>>>>>> 0452a1a2906d6149aef1fda14a6dd7e803c1c893
                                 wire:model="gender">
                                 <option value="" hidden>Inserisci genere</option>
                                 <option value="male">Maschio</option>
                                 <option value="female">Femmina</option>
                                 <option value="other">Non voglio specificare</option>
                             </select>
+<<<<<<< HEAD
                                      
                                         <button class="btn searchAnimation fa-lg bg-green text-white mx-3"
                                             wire:click.prevent="toggleGender">
@@ -125,6 +144,31 @@
                     
                         
                 
+=======
+                            <button type="submit" class="btn searchAnimation fa-lg bg-green mb-3 text-white mt-1"
+                                wire:click.prevent="toggleGender">Modifica</button>
+                        </div>
+                        <div class="col-md-12 mb-2">
+                            <label class="labels">Hobby
+                            </label>
+                            <input @disabled($hobbiesDisabled) type="text" class="form-control move-input"
+                                placeholder="Inserisci i tuoi hobbies" wire:model="hobbies" value="">
+                            <button class="btn searchAnimation fa-lg bg-green mb-3 text-white mt-1"
+                                wire:click.prevent="toggleHobbies">
+                                Modifica
+                            </button>
+                        </div>
+                        <div class="col-md-12 mb-2">
+                            <label class="labels">Occupazione
+                            </label>
+                            <input @disabled($jobDisabled) type="text" class="form-control move-input"
+                                placeholder="Inserisci il lavoro" wire:model="job" value="">
+                            <button class="btn searchAnimation fa-lg bg-green mb-3 text-white mt-1"
+                                wire:click.prevent="toggleJob">
+                                Modifica
+                            </button>
+                        </div>
+>>>>>>> 0452a1a2906d6149aef1fda14a6dd7e803c1c893
                     </div>
 
                     <div class="mt-5 text-center">
