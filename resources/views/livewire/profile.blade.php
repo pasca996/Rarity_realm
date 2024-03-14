@@ -44,7 +44,7 @@
                             </label>
                             <input @disabled($ageDisabled) type="text" class="form-control move-input"
                                 placeholder="Inserisci la tua età" wire:model="age" value="">
-                            <button class="btn searchAnimation fa-lg bg-green mb-3 text-white mt-1 mb-2"
+                            <button class="btn searchAnimation fa-lg bg-green mb-3 text-white mt-1"
                                 wire:click.prevent="toggleAge">
                                 Modifica
                             </button>
@@ -58,7 +58,7 @@
                                 <option value="female">Femmina</option>
                                 <option value="other">Non voglio specificare</option>
                             </select>
-                            <button type="submit" class="btn searchAnimation fa-lg bg-green mb-3 text-white mt-1 mb-2"
+                            <button type="submit" class="btn searchAnimation fa-lg bg-green mb-3 text-white mt-1"
                                 wire:click.prevent="toggleGender">Modifica</button>
                         </div>
                         <div class="col-md-12 mb-2">
@@ -66,7 +66,7 @@
                             </label>
                             <input @disabled($hobbiesDisabled) type="text" class="form-control move-input"
                                 placeholder="Inserisci i tuoi hobbies" wire:model="hobbies" value="">
-                            <button class="btn searchAnimation fa-lg bg-green mb-3 text-white mt-1 mb-2"
+                            <button class="btn searchAnimation fa-lg bg-green mb-3 text-white mt-1"
                                 wire:click.prevent="toggleHobbies">
                                 Modifica
                             </button>
@@ -76,7 +76,7 @@
                             </label>
                             <input @disabled($jobDisabled) type="text" class="form-control move-input"
                                 placeholder="Inserisci il lavoro" wire:model="job" value="">
-                            <button class="btn searchAnimation fa-lg bg-green mb-3 text-white mt-1 mb-2"
+                            <button class="btn searchAnimation fa-lg bg-green mb-3 text-white mt-1"
                                 wire:click.prevent="toggleJob">
                                 Modifica
                             </button>
