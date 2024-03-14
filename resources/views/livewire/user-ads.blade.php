@@ -40,18 +40,18 @@
                                     <a href="{{route('announcement.show',  ['announcement' => $announcement->id])}}" class="btn me-md-2">
                                         Vedi annuncio
                                     </a>
-                                    <a href="" class="btn me-md-2">
-                                        Modifica
-                                    </a>
+                                        <button wire:click="edit({{$announcement}})" type="button" class="btn me-md-2" data-toggle="modal" data-target="#exampleModal">
+                                            Modifica
+                                        </button>
                                         <button wire:click="delete({{ $announcement }})" class="btn btn-danger me-md-2">Elimina</button>
                                 </div>
                             </td>
                         </tr>
                     @endforeach
-
                 </tbody>
             </table>
-            {{-- {{ $articles->links() }} --}}
+            <livewire:form >
+            {{-- {{ $announcements->links() }} --}}
         </div>
     </div>
 </div>

@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use App\Models\Announcement;
 use Livewire\Component;
+use LivewireUI\Modal\ModalComponent;
 
 class UserAds extends Component
 {
@@ -19,5 +20,10 @@ class UserAds extends Component
     public function delete(Announcement $Announcement)
     {
         $Announcement->delete();
+    }
+
+    public function edit(Announcement $announcement)
+    {
+        $this->dispatch('announcement-edit', announcement: $announcement)->to(Form::class);
     }
 }

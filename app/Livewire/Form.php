@@ -1,12 +1,17 @@
 <?php
 
 namespace App\Livewire;
+use LivewireUI\Modal\ModalComponent;
 
+use App\Models\Announcement;
+use Illuminate\Support\Facades\Auth;
+use Livewire\Attributes\On;
+use Livewire\Attributes\Validate;
 use Livewire\Component;
 
 class Form extends Component
 {
-
+    #[Validate]
     public $title;
     public $description;
     public $price;
@@ -16,7 +21,7 @@ class Form extends Component
 
 
 
-    
+
     public function rules()
     {
         return [
@@ -42,23 +47,44 @@ class Form extends Component
 
         $this->validate();
 
-        $category = Category::find($this->category_id)->announcements()->create([
-            'title' => $this->title,
-            'description' => $this->description,
-            'price' => $this->price,
-            'user_id' => Auth::user()->id,
-            'category' =>$this->category_id
+        Announcement::find($this->announcement->id)->update([
+             'title' => $this->title,
+             'description' => $this->description,
+             'price' => $this->price,
+             'user_id' => Auth::user()->id,
+             'category' =>$this->category_id
         ]);
 
-        session()->flash('status', 'Annuncio inserito correttamente');
+        $this->newAnnouncement();
+        session()->flash('success', 'Annuncio modificato correttamente.');
+        // $this->dispatch('user-ads');
+    }
 
-        $this->cleanForm();
+    #[On('announcement-edit')]
+    public function edit(Announcement $announcement)
+    {
+        $this->announcement = $announcement;
+        $this->title = $announcement->title;
+        $this->description = $announcement->description;
+        $this->price = $announcement->price;
+        $this->category = $announcement->category->name;
     }
 
     public function updated($propertyName)
     {
         $this->validateOnly($propertyName);
     }
+
+
+    public function newAnnouncement()
+    {
+        $this->announcement = $this->announcement;
+        $this->title = $this->title;
+        $this->description = $this->description;
+        $this->price = $this->price;
+        $this->category = $this->category_id;
+    }
+
     public function render()
     {
         return view('livewire.form');
