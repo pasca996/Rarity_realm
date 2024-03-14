@@ -52,12 +52,12 @@
                                         </div>
                                     @endif
 
-                                    <button type="submit" class="btn bg-green me-md-2">Save changes</button>
+                                    <button type="submit" class="btn searchAnimation mt-2 bg-green me-md-2">Save changes</button>
                             </div>
                         </div>
                     </form>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn searchAnimation btn-secondary" data-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>

@@ -43,7 +43,7 @@
                         {{ $message }}
                     @enderror
                     <br>
-                    <button class="btn btn-lg bg-green btn-block" type="submit">
+                    <button class="btn button-71 btn-lg bg-green btn-block" type="submit">
                         Crea Annuncio
                     </button>
                     <br>

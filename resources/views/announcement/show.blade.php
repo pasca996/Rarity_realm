@@ -61,7 +61,7 @@
                     <div class=" container d-flex mt-5 justify-content-end">
                         <div class="d-flex align-items-end flex-column">
                             <div class="row mt-5">
-                                <button class="btn gradient-custom-2 mb-3 text-white mt-1"> Contatta il venditore</button>
+                                <button class="button-71 gradient-custom-2 mb-3 text-white mt-1"> Contatta il venditore</button>
                             </div>
                             <div class="row d-flex pt-2">
                                 <strong class="text-dark mr-2">Annuncio Creato da </strong>
@@ -70,9 +70,9 @@
                                 </div>
                             </div>
                             <div class="row d-flex pt-2">
-                                <strong class="text-dark mr-2">Caricato il </strong>
+                                <strong class="text-dark mr-2">Caricato </strong>
                                 <div class="d-inline-flex">
-                                    <span class="text-dark px-2">{{ $announcement->created_at }} </span>
+                                    <span class="text-dark px-2">{{ $announcement->created_at->diffForHumans() }} </span>
                                 </div>
                             </div>
 
@@ -149,9 +149,12 @@
 
     <!-- Products Start -->
     <div class="container-fluid py-5 ">
-        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4">
-            <span class="px-3 rounded-pill mb-5" style="background-color: #65cbad">Annunci correlati</span>
-        </h2>
+        <div class="container-fluid pt-5 pb-3">
+            <div class="col-12 border-bottom">
+                <h3 class="text-center">Annunci Correlati</h3>
+                <h4 class="text-center">
+                    Visualizza gli annunci simili </h4>
+            </div>
         <div class="row px-xl-5 justify-content-around mt-5">
             <div class="col-md-8 ">
                 <div class="owl-carousel related-carousel ">
@@ -174,7 +177,7 @@
                                     </h6>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa text-primary mr-1">{{ $announcementCategory->created_at }}</small>
+                                    <small class="fa text-primary mr-1">{{ $announcementCategory->created_at->diffForHumans() }}</small>
                                     
                                 </div>
                                 <div class="d-flex align-items-center justify-content-center mb-1">
@@ -194,3 +197,7 @@
 
 
 </x-main>
+
+
+<!-- HTML !-->
+<button class="button-71" role="button">Button 71</button>

@@ -20,7 +20,7 @@
                                         Realm</h1>
                                     <p class="mx-md-5 px-5 animate__animated animate__bounceIn h4">Non è assurdo avere
                                         tutte queste cose e non usarle mai?</p>
-                                    <a class="btn py-2 px-4 mt-3 animate__animated animate__fadeInUp"
+                                    <a class="btn buttonAnimation py-2 px-4 mt-3"
                                         style="background-color: #65cbad"
                                         href="{{ route('announcement.create') }}">Vendi ora</a>
                                 </div>
@@ -35,7 +35,7 @@
                                         oggetti da collezione?</h1>
                                     <p class="mx-md-5 px-5 animate__animated animate__bounceIn h4">Dai al tuo usato una
                                         seconda occasione: vendi quello che non usi più, subito.</p>
-                                    <a class="btn py-2 px-4 mt-3 animate__animated animate__fadeInUp"
+                                    <a class="btn buttonAnimation py-2 px-4 mt-3"
                                         style="background-color: #65cbad"
                                         href="{{ route('announcement.create') }}">Comincia a vendere</a>
                                 </div>
@@ -46,11 +46,11 @@
                                 style="object-fit: cover;">
                             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div class="p-3" style="max-width: 700px;">
-                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Vedi
+                                    <h1 class="display-4 text-white mb-3 animateanimated animatefadeInDown">Vedi
                                         tutti gli annunci</h1>
                                     <p class="mx-md-5 px-5 animate__animated animate__bounceIn h4"> scopri subito
                                         migliaia di annunci di antiquariato, mobili e oggetti da collezione</p>
-                                    <a class="btn py-2 px-4 mt-3 animate__animated animate__fadeInUp"
+                                    <a class="btn buttonAnimation py-2 px-4 mt-3"
                                         style="background-color: #65cbad"
                                         href="{{ route('announcement.index') }}">Annunci</a>
                                 </div>
@@ -69,7 +69,7 @@
                             <div class="offer-text">
                                 <h3 class="text-white mb-3">Lavora con noi</h3>
                                 <a href="{{ route('become.revisor') }}"
-                                    class="btn py-2 px-4 mt-3 animateanimated animatefadeInUp"
+                                    class="btn buttonAnimation py-2 px-4 mt-3"
                                     style="background-color: #65cbad">Diventa Revisore</a>
                             </div>
                         </div>
@@ -81,7 +81,7 @@
                                 <div class="offer-text">
                                     <h3 class="text-white mb-3">Controlla gli Annunci</h3>
                                     <a href="{{ route('revisor.index') }}"
-                                        class="btn py-2 px-4 mt-3 animateanimated animatefadeInUp"
+                                        class="btn buttonAnimation py-2 px-4 mt-3"
                                         style="background-color: #65cbad">Inizia Ora</a>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@
                                 <div class="offer-text">
                                     <h3 class="text-white mb-3">Lavora con noi</h3>
                                     <a href="{{ route('become.revisor') }}"
-                                        class="btn py-2 px-4 mt-3 animateanimated animatefadeInUp"
+                                        class="btn buttonAnimation py-2 px-4 mt-3"
                                         style="background-color: #65cbad">Diventa Revisore</a>
                                 </div>
                             </div>
@@ -106,7 +106,7 @@
                         <h6 class="text-white text-uppercase">Sconti al 70%</h6>
                         <h3 class="text-white mb-3">Offerte speciali</h3>
                         <a href="{{ route('announcement.index') }}"
-                            class="btn py-2 px-4 mt-3 animate__animated animate__fadeInUp"
+                            class="btn buttonAnimation py-2 px-4 mt-3"
                             style="background-color: #65cbad">Compra ora</a>
                     </div>
                 </div>

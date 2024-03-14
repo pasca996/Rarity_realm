@@ -14,7 +14,7 @@
                     <a data-toggle="collapse" data-parent="#accordion" href="#accordionBodyOne" aria-expanded="false" aria-controls="accordionBodyOne"
                       class="collapsed ">
                       <i class="fa fa-angle-down text-green" aria-hidden="true" style="font-size: 2.5em; float: right;"></i>
-                      <h3 style="color: #000000 !important;">1. Panoramica</h3>
+                      <h3  style="color: #000000 !important;">1. Panoramica</h3>
                     </a>
                   </div>
                 </div>

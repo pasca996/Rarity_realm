@@ -26,6 +26,6 @@ class PageController extends Controller
         $announcements = Announcement::search($request->searched)->where('is_accepted',true)->paginate(10);
         return view('announcement.index', compact('announcements'));
 
-        // ->where('is_accepted',true) ,in attesa US03
+
 }
 }

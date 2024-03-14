@@ -8,7 +8,7 @@
                     <input class="form-control me-2" name="searched" type="search" placeholder="Cerca"
                     aria-label="Search">
                 </form>
-                <a href="{{ route('announcement.create') }}" class="btn bg-green me-md-2">
+                <a href="{{ route('announcement.create') }}" class="btn searchAnimation bg-green me-md-2">
                     Crea Nuovo Articolo
                 </a>
             </div>
@@ -37,13 +37,13 @@
                             <td>
 
                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                    <a href="{{route('announcement.show',  ['announcement' => $announcement->id])}}" class="btn me-md-2">
+                                    <a href="{{route('announcement.show',  ['announcement' => $announcement->id])}}" class="btn searchAnimation mx-2 me-md-2">
                                         Vedi annuncio
                                     </a>
-                                        <button wire:click="edit({{$announcement}})" type="button" class="btn me-md-2" data-toggle="modal" data-target="#exampleModal">
+                                        <button wire:click="edit({{$announcement}})" type="button" class="btn searchAnimation mx-2 me-md-2" data-toggle="modal" data-target="#exampleModal">
                                             Modifica
                                         </button>
-                                        <button wire:click="delete({{ $announcement }})" class="btn btn-danger me-md-2">Elimina</button>
+                                        <button wire:click="delete({{ $announcement }})" class="btn rounded-lg searchAnimation btn-danger mx-2 me-md-2">Elimina</button>
                                 </div>
                             </td>
                         </tr>
