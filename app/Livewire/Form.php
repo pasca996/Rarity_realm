@@ -68,8 +68,8 @@ class Form extends Component
         $this->description = $announcement->description;
         $this->price = $announcement->price;
         $this->category = $announcement->category->name;
+        
     }
-
     public function updated($propertyName)
     {
         $this->validateOnly($propertyName);

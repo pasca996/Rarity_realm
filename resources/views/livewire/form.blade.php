@@ -35,10 +35,10 @@
                                         {{ $message }}
                                     </div>
                                 @enderror
-
+                                    
                                 <label for="category">Categoria</label>
                                 <select wire:model.live="category_id" id="category" class="form-control">
-                                    <option value="{{$category_id}}">{{$category}}</option>
+                                        <option value="">{{$category}}</option>
                                 @foreach ($categories as $category)
                                         <option value="{{$category->id}}">{{$category->name }}</option>
                                     @endforeach
@@ -46,15 +46,15 @@
                                 @error('category_id')
                                     {{ $message }}
                                 @enderror
-                                    @if (session('message'))
+                                    @if (session('success'))
                                         <div class="container alert alert-success">
-                                            {{ session('message') }}
+                                            {{ session('success') }}
                                         </div>
                                     @endif
 
-                            </div>
+                                </div>
+                                <button type="submit" class="btn bg-green me-md-2">Save changes</button>
                         </div>
-                        <button type="submit" class="btn bg-green me-md-2">Save changes</button>
                     </form>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
