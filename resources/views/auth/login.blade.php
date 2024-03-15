@@ -40,14 +40,14 @@
                       </div>
     
                       <div class="text-center pt-1 mb-5 pb-1">
-                        <button class="btn btn-block fa-lg gradient-custom-2 mb-3 text-white" type="submit">Accedi</button>
+                        <button class="btn searchAnimation btn-block fa-lg gradient-custom-2 mb-3 text-white" type="submit">Accedi</button>
                         
                       </div>
     
                       <div class="d-flex align-items-center justify-content-center pb-4">
                         <p class="mb-0 me-2">Non hai un account?</p>
                         
-                        <a href="{{route('register')}}" class="btn fa-lg gradient-custom-2 mb-3 ml-3 px-4 text-white">Registrati</a>
+                        <a href="{{route('register')}}" class="btn searchAnimation fa-lg gradient-custom-2 mb-3 ml-3 px-4 text-white">Registrati</a>
                       </div>
     
                     </form>

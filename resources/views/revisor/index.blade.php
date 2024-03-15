@@ -139,14 +139,14 @@
                     <form action="{{route('revisor.accept_announcement',['announcement'=>$announcement_to_check])}}" method="POST">
                         @csrf
                         @method('PATCH')
-                        <button type="submit" class="btn m-3" style="background-color: #65cbad">Accetta</button>
+                        <button type="submit" class="btn searchAnimation m-3" style="background-color: #65cbad">Accetta</button>
                         </form>
                 </div>
                 <div class="">
                     <form action="{{route('revisor.reject_announcement',['announcement'=>$announcement_to_check])}}" method="POST">
                         @csrf
                         @method('PATCH')
-                        <button type="submit" class="btn m-3 bg-danger">Rifiuta</button>
+                        <button type="submit" class="btn searchAnimation m-3 bg-danger">Rifiuta</button>
                         </form>
                 </div>
               </div>

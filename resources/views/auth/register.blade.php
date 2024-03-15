@@ -53,11 +53,11 @@
                     </div>
   
                     <div class="text-center pt-1 mb-5 pb-1">
-                      <button class="btn btn-block fa-lg gradient-custom-2 mb-3 text-white" type="submit">Registrati</button> 
+                      <button class="btn searchAnimation btn-block fa-lg gradient-custom-2 mb-3 text-white" type="submit">Registrati</button> 
                     </div>
                     <div class="d-flex align-items-center justify-content-center pb-4">
                       <p class="mb-0 me-2">Hai già un account?</p>
-                      <a href="{{route('login')}}" class="btn fa-lg gradient-custom-2 mb-3 ml-3 px-4 text-white">Accedi</a>
+                      <a href="{{route('login')}}" class="btn searchAnimation fa-lg gradient-custom-2 mb-3 ml-3 px-4 text-white">Accedi</a>
                     </div>
                   </form>
                 </div>

@@ -80,11 +80,11 @@
                             @guest
                                 {{-- //Da visualizzare se sono un OSPITE (guest) --}}
                                 <li class="nav-item">
-                                    <a class="btn m-3" style="background-color: #65cbad"
+                                    <a class="btn m-3 searchAnimation" style="background-color: #65cbad"
                                         href="{{ route('login') }}">Accedi</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="btn m-3" style="background-color: #65cbad"
+                                    <a class="btn m-3 searchAnimation" style="background-color: #65cbad"
                                         href="{{ route('register') }}">Registrati</a>
                                 </li>
                             @endguest
