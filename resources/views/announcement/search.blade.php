@@ -15,27 +15,27 @@
 
                         <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
                             <input type="radio" name="priceFilter" value="0-50" class="custom-control-input" id="price-1">
-                            <label class="custom-control-label" for="price-1">$0 - $50</label>
+                            <label class="custom-control-label" for="price-1">€0 - €50</label>
                         </div>
 
                         <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
                             <input type="radio" name="priceFilter" value="50-100" class="custom-control-input" id="price-2">
-                            <label class="custom-control-label" for="price-2">$50 - $100</label>
+                            <label class="custom-control-label" for="price-2">€50 - €100</label>
                         </div>
 
                         <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
                             <input type="radio" name="priceFilter" value="100-200" class="custom-control-input" id="price-3">
-                            <label class="custom-control-label" for="price-3">$100 - $200</label>
+                            <label class="custom-control-label" for="price-3">€100 - €200</label>
                         </div>
 
                         <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
                             <input type="radio" name="priceFilter" value="200-500" class="custom-control-input" id="price-4">
-                            <label class="custom-control-label" for="price-4">$200 - $500</label>
+                            <label class="custom-control-label" for="price-4">€200 - €500</label>
                         </div>
 
                         <div class="custom-control custom-radio d-flex align-items-center justify-content-between">
                             <input type="radio" name="priceFilter" value="500-9999999" class="custom-control-input" id="price-5">
-                            <label class="custom-control-label" for="price-5">+$500</label>
+                            <label class="custom-control-label" for="price-5">+€500</label>
                         </div>
                     </form>
                 </div>

@@ -5,10 +5,10 @@
             <div class="col-lg-8">
                 <div id="header-carousel" class="carousel slide carousel-fade mb-30 mb-lg-0" data-ride="carousel">
                     <ol class="carousel-indicators">
-                        <li style="background-color: #65cbad" data-target="#header-carousel" data-slide-to="0"
-                            class="active"></li>
-                        <li style="background-color: #65cbad" data-target="#header-carousel" data-slide-to="1"></li>
-                        <li style="background-color: #65cbad" data-target="#header-carousel" data-slide-to="2"></li>
+                        <li data-target="#header-carousel" data-slide-to="0"
+                            class="bg-green active"></li>
+                        <li class="bg-green" data-target="#header-carousel" data-slide-to="1"></li>
+                        <li class="bg-green" data-target="#header-carousel" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item position-relative active" style="height: 430px;">
