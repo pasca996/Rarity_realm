@@ -163,4 +163,45 @@ document.addEventListener("scroll", () => {
     }
 })
 
+// filtri per prezzo
+document.addEventListener("DOMContentLoaded", function() {
+    let priceFilterRadios = document.getElementsByName('priceFilter');
+
+    for (let i = 0; i < priceFilterRadios.length; i++) {
+        priceFilterRadios[i].addEventListener('change', function() {
+            let priceFilterValue = this.value;
+            let priceRange = priceFilterValue.split('-');
+            let minPrice = parseFloat(priceRange[0]);
+            let maxPrice = parseFloat(priceRange[1]);
+
+            let annunciContainers = document.querySelectorAll('.col-lg-3.col-md-6.col-sm-6.pb-1');
+
+            annunciContainers.forEach(function(annuncioContainer) {
+                let prezzoElement = annuncioContainer.querySelector('.prezzo');
+                let prezzoText = prezzoElement.textContent;
+                let prezzo = parseFloat(prezzoText.replace('€', '').trim());
+
+                if ((minPrice <= prezzo && prezzo <= maxPrice) || priceFilterValue === "0-9999999") {
+                    annuncioContainer.classList.remove('hidden');
+                } else {
+                    annuncioContainer.classList.add('hidden');
+                }
+            });
+        });
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
