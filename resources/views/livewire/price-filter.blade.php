@@ -47,7 +47,7 @@
             <!-- Shop Product Start -->
             <div class="col-lg-9 col-md-8">
                 <div class="row pb-3">
-                    <div class="col-12 pb-1">
+                    {{-- <div class="col-12 pb-1">
                         <div class="d-flex align-items-center justify-content-between mb-4">
                             <div>
                                 <button class="btn btn-sm btn-light"><i class="fa fa-th-large"></i></button>
@@ -63,7 +63,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
                     @forelse ($announcements as $announcement)
                     <div class="col-lg-3 col-md-6 col-sm-6 pb-1">
