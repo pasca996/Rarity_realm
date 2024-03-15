@@ -14,16 +14,12 @@
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <h4 class="text-right">Profilo</h4>
                     </div>
-                    <div>
                         <form class="row mt-2" wire:submit.prevent="store">
-
                             <div class="container">
-
                                 <div class="col-md-12 mb-2 align-items-center">
                                     <label class="labels ml-3">Nome
                                     </label>
                                     <div class="col-md-12 d-flex">
-                                        
                                         <input @disabled($nameDisabled) type="text"
                                             class="form-control move-input" placeholder="Inserisci il tuo nome"
                                             wire:model="name" value="">
@@ -34,62 +30,36 @@
                                         </button>
                                     </div>
                                 </div>
-
                             </div>
 
-<<<<<<< HEAD
                             <div class="container">
-
                                 <div class="col-md-12 mb-2 align-items-center">
                                     <label class="labels ml-3">Age
                                     </label>
                                     <div class="col-md-12 d-flex">
-                                        
                                         <input @disabled($ageDisabled) type="text"
                                             class="form-control move-input" placeholder="Inserisci la tua età"
                                             wire:model="age" value="">
-                                     
                                         <button class="btn searchAnimation fa-lg bg-green text-white mx-3"
                                             wire:click.prevent="toggleAge">
                                             <i class="far fa-edit"></i>
                                         </button>
                                     </div>
                                 </div>
-
                             </div>
 
                             <div class="container">
-
                                 <div class="col-md-12 mb-2 align-items-center">
                                     <label class="labels ml-3">Gender
                                     </label>
                                     <div class="col-md-12 d-flex">
-                                        
                                         <select @disabled($genderDisabled) type="text" class="form-control move-input"
-=======
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-md-12 mb-2">
-                            <label class="labels">Età
-                            </label>
-                            <input @disabled($ageDisabled) type="text" class="form-control move-input"
-                                placeholder="Inserisci la tua età" wire:model="age" value="">
-                            <button class="btn searchAnimation fa-lg bg-green mb-3 text-white mt-1"
-                                wire:click.prevent="toggleAge">
-                                Modifica
-                            </button>
-                        </div>
-                        <div class="col-md-12 mb-2">
-                            <label class="labels">Gender</label>
-                            <select @disabled($genderDisabled) type="text" class="form-control move-input"
->>>>>>> 0452a1a2906d6149aef1fda14a6dd7e803c1c893
-                                wire:model="gender">
-                                <option value="" hidden>Inserisci genere</option>
-                                <option value="male">Maschio</option>
-                                <option value="female">Femmina</option>
-                                <option value="other">Non voglio specificare</option>
-                            </select>
-<<<<<<< HEAD
+                                        wire:model="gender">
+                                            <option value="" hidden>Inserisci genere</option>
+                                            <option value="male">Maschio</option>
+                                            <option value="female">Femmina</option>
+                                            <option value="other">Non voglio specificare</option>
+                                        </select>
                                      
                                         <button class="btn searchAnimation fa-lg bg-green text-white mx-3"
                                             wire:click.prevent="toggleGender">
@@ -97,36 +67,29 @@
                                         </button>
                                     </div>
                                 </div>
-
                             </div>
 
                             <div class="container">
-
                                 <div class="col-md-12 mb-2 align-items-center">
                                     <label class="labels ml-3">Hobby
                                     </label>
                                     <div class="col-md-12 d-flex">
-                                        
                                         <input @disabled($hobbiesDisabled) type="text"
                                             class="form-control move-input" placeholder="Inserisci i tuoi hobbies"
-                                            wire:model="hobbies" value="">
-                                     
+                                            wire:model="hobbies" value=""> 
                                         <button class="btn searchAnimation fa-lg bg-green text-white mx-3"
                                             wire:click.prevent="toggleHobbies">
                                             <i class="far fa-edit"></i>
                                         </button>
                                     </div>
                                 </div>
-
                             </div>
 
                             <div class="container">
-
                                 <div class="col-md-12 mb-2 align-items-center">
                                     <label class="labels ml-3">Occupazione
                                     </label>
                                     <div class="col-md-12 d-flex">
-                                        
                                         <input @disabled($jobDisabled) type="text"
                                             class="form-control move-input" placeholder="Inserisci la tua occupazione"
                                             wire:model="job" value="">
@@ -137,54 +100,21 @@
                                         </button>
                                     </div>
                                 </div>
-        
                             </div>
-                    </div>
-                    
-                    
-                        
-                
-=======
-                            <button type="submit" class="btn searchAnimation fa-lg bg-green mb-3 text-white mt-1"
-                                wire:click.prevent="toggleGender">Modifica</button>
+                        <div class="container mt-5">
+                            <div class="row justify-content-center">
+                                <button class="btn button-71 fa-lg gradient-custom-2 mb-3 text-white mt-1" type="submit">Save Profile</button>
+                                <div>
+                                    <a wire:loading wire:target="store" class="buttonNone" href="#"><i
+                                            class="fas fa-spinner"></i></a>
+                                </div>
+                           </div>
                         </div>
-                        <div class="col-md-12 mb-2">
-                            <label class="labels">Hobby
-                            </label>
-                            <input @disabled($hobbiesDisabled) type="text" class="form-control move-input"
-                                placeholder="Inserisci i tuoi hobbies" wire:model="hobbies" value="">
-                            <button class="btn searchAnimation fa-lg bg-green mb-3 text-white mt-1"
-                                wire:click.prevent="toggleHobbies">
-                                Modifica
-                            </button>
-                        </div>
-                        <div class="col-md-12 mb-2">
-                            <label class="labels">Occupazione
-                            </label>
-                            <input @disabled($jobDisabled) type="text" class="form-control move-input"
-                                placeholder="Inserisci il lavoro" wire:model="job" value="">
-                            <button class="btn searchAnimation fa-lg bg-green mb-3 text-white mt-1"
-                                wire:click.prevent="toggleJob">
-                                Modifica
-                            </button>
-                        </div>
->>>>>>> 0452a1a2906d6149aef1fda14a6dd7e803c1c893
-                    </div>
-
-                    <div class="mt-5 text-center">
-
-                        <button class="btn button-71 fa-lg gradient-custom-2 mb-3 text-white mt-1" type="submit">Save
-                            Profile</button>
-                        <div>
-                            <a wire:loading wire:target="store" class="buttonNone" href="#"><i
-                                    class="fas fa-spinner"></i></a>
-                        </div>
-                    </div>
-                    @if (session('status'))
-                        <div class="alert alert-success  ">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                            @if (session('status'))
+                                <div class="alert alert-success  ">
+                                    {{ session('status') }}
+                                </div>
+                            @endif
                     </form>
                 </div>
             </div>

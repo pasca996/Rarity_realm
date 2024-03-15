@@ -5,8 +5,8 @@
             <!-- Shop Sidebar Start -->
             <div class="col-lg-3 col-md-4">
                 <!-- Price Start -->
-                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Filtro prezzo</span></h5>
-                <div class="bg-light p-4 mb-30">
+                <h5 class=" text-uppercase text-center my-3"><span class="bg-green rounded-lg px-2 py-2">Filtro prezzo</span></h5>
+                <div class="bg-light p-4 mb-30 mt-5">
                     <form>
                         <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
                             <input type="radio" name="priceFilter" value="0-9999999" class="custom-control-input" id="price-all" name="price-option">
