@@ -22,12 +22,25 @@
                 <div id="product-carousel" class="carousel slide" data-ride="carousel">
                     
                     <div class="carousel-inner bg-light">
-                    
-                        <div class="carousel-item active">
+
+                    @if ($announcement->images->isEmpty())
+
+                    <div class="carousel-item active">
                             
-                            <img class="img-fluid w-100" src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) :  'https://picsum.photos/200/300'}}" alt="">
+                            <img class="img-fluid w-100" src="https://picsum.photos/200/200" alt="">
                                 
                         </div>
+
+
+                    @else
+                    
+                    <div class="carousel-item active">
+                            
+                            <img class="img-fluid w-100" src="{{Storage::url($announcement->images()->first()->path)}}">
+                                    
+                        </div>
+
+                    @endif
                     
                         
                     </div>
