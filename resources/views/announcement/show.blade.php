@@ -18,28 +18,31 @@
     <div class="container-fluid pb-5">
         <div class="row px-xl-5">
             <div class="col-lg-5 mb-30">
-                <div id="product-carousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner bg-light">
+            <div id="product-carousel" class="carousel slide" data-ride="carousel">   
+                <div class="carousel-inner bg-light">
+                    @if ($announcement->images->isEmpty())
                         <div class="carousel-item active">
-                            <img class="w-100 h-100" src="\img\logo\segnaposto.png" alt="Image">
+                            <img class="img-fluid w-100" src="https://picsum.photos/200/200" alt="">
                         </div>
-                        <div class="carousel-item">
-                            <img class="w-100 h-100" src="\img\logo\segnaposto.png" alt="Image">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="w-100 h-100" src="\img\logo\segnaposto.png" alt="Image">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="w-100 h-100" src="\img\logo\segnaposto.png" alt="Image">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
-                        <i class="fa fa-2x fa-angle-left text-dark"></i>
-                    </a>
-                    <a class="carousel-control-next" href="#product-carousel" data-slide="next">
-                        <i class="fa fa-2x fa-angle-right text-dark"></i>
-                    </a>
+
+                    @else
+
+                        @foreach ($announcement->images as $image)
+                            <div class="carousel-item{{ $loop->first ? ' active' : '' }}">
+                                <img class="img-fluid w-100" src="{{ Storage::url($image->path) }}" alt="">
+                            </div>
+                        @endforeach
+
+                    @endif 
                 </div>
+        <a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
+            <i class="fa fa-2x fa-angle-left text-dark"></i>
+        </a>
+        <a class="carousel-control-next" href="#product-carousel" data-slide="next">
+            <i class="fa fa-2x fa-angle-right text-dark"></i>
+        </a>
+    </div>
+                
             </div>
 
             <div class="col-lg-7 h-auto mb-30">
@@ -161,7 +164,7 @@
                     @forelse ($announcementCategories as $announcementCategory)
                         <div class="product-item bg-light ">
                             <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="https://picsum.photos/200" alt="">
+                                <img class="img-fluid w-100" src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) :  'https://picsum.photos/200/300'}}" alt="">
                                 <div class="product-action">
                                     <a class="btn btn-outline-dark btn-square" href="{{ route('announcement.show', ['announcement' => $announcementCategory->id]) }}"><i
                                             class="fa fa-search"></i></a>

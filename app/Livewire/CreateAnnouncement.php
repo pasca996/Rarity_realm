@@ -6,28 +6,35 @@ use App\Models\Announcement;
 use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 use Symfony\Contracts\Service\Attribute\Required;
 
 class CreateAnnouncement extends Component
 {
-
+    use WithFileUploads;
+    
     public $title;
     public $description;
     public $price;
     public $category;
     public $category_id;
     public $announcement;
-
+    public $images = [];
+    public $image = [];
+    public $temporary_images;
+    
     public function rules()
     {
         return [
             'title' => 'required|min:4',
             'description' => 'required|min:10',
             'price' => 'required|numeric',
-            'category_id' =>'required' 
+            'category_id' =>'required',
+            'images.*'=>'image|max:1024',
+            'temporary_images.*'=>'image|max:1024',
         ];
     }
-
+    
     protected $messages = [
         'title.required' => 'Il campo Titolo è obbligatorio',
         'title.min' => 'Il campo Titolo deve contenere almeno :min caratteri',
@@ -36,40 +43,80 @@ class CreateAnnouncement extends Component
         'price.required' => 'Il campo Prezzo è obbligatorio',
         'price.numeric' => 'Il campo Prezzo deve essere un numero',
         'category_id.required' => 'La categoria è obbligatoria',
+        'temporary_images.required' => 'L\'immagine è obbligatoria',
+        'temporary_images.*.image' => 'I file caricati devono essere immagini',
+        'temporary_images.*.max' => 'L\'immagine deve essere massimo di 1 mb',
+        'images.image' => 'Il file deve essere un\'immagine',
+        'images.max' => 'L\'immagine deve essere massimo di 1 mb',
     ];
-
-    public function store()
+    
+    public function updatedTemporaryImages()
     {
+        if($this->validate([
+            'temporary_images.*'=>'image|max:1024',
+            ])) {
+                foreach ($this->temporary_images as $image) {
+                    $this->images[] = $image;
+                }
+            }
+        }
+        
+        public function removeImage($key)
+        {
+            if(in_array($key, array_keys($this->images))) {
+                unset($this->images[$key]);
+            }
+        }
+        
+        public function store()
+        {
+            
+             $this->validate();
 
-        $this->validate();
+             $this->announcement = Category::find($this->category_id)->announcements()->create([
 
-        $category = Category::find($this->category_id)->announcements()->create([
-            'title' => $this->title,
-            'description' => $this->description,
-            'price' => $this->price,
-            'user_id' => Auth::user()->id,
-            'category' =>$this->category_id
-        ]);
+                'title' => $this->title,
+                'description' => $this->description,
+                'price' => $this->price,
+                'user_id' => Auth::user()->id,
+                'category' => $this->category_id,
+                'temporary_images' =>$this->temporary_images,
+                'images.*' =>$this->images,
+                
+                 
+            ]);
 
-        session()->flash('status', 'Annuncio inserito correttamente');
 
-        $this->cleanForm();
+             if(count($this->images)){
+                foreach ($this->images as $image) {
+                $this->announcement->images()->create(['path' => $image->store('images', 'public')]);
+                }
+                }
+
+
+            session()->flash('status', 'Annuncio inserito correttamente, sarà pubblicato dopo la revisione');
+            
+            $this->cleanForm();
+        }
+        
+        public function updated($propertyName)
+        {
+            $this->validateOnly($propertyName);
+        }
+        
+        public function cleanForm()
+        {
+            $this->title = '';
+            $this->description = '';
+            $this->price = '';
+            $this->images = '';
+            $this->images = [];
+            $this->temporary_images = [];
+        }
+        
+        public function render()
+        {
+            return view('livewire.create-announcement');
+        }
     }
-
-    public function updated($propertyName)
-    {
-        $this->validateOnly($propertyName);
-    }
-
-    public function cleanForm()
-    {
-        $this->title = '';
-        $this->description = '';
-        $this->price = '';
-    }
-
-    public function render()
-    {
-        return view('livewire.create-announcement');
-    }
-}
+    
