@@ -119,7 +119,9 @@
         @if ($announcement_to_check)
         <div class="container m-4">
             <div class="card border-0 rounded-0 shadow" style="width: 18rem;">
-                <img class="img-fluid w-100" src="https://picsum.photos/200" alt="">
+              @foreach ($announcement_to_check->images as $image)
+                <img class="img-fluid w-100" src="{{Storage::url($image->path)}}" alt="">
+                @endforeach
               <div class="card-body mt-3 mb-3">
                 <div class="row">
                   <div class="col-10">
