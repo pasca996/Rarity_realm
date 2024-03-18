@@ -18,40 +18,30 @@
     <div class="container-fluid pb-5">
         <div class="row px-xl-5">
             <div class="col-lg-5 mb-30">
-                
-                <div id="product-carousel" class="carousel slide" data-ride="carousel">
-                    
-                    <div class="carousel-inner bg-light">
-
+            <div id="product-carousel" class="carousel slide" data-ride="carousel">   
+                <div class="carousel-inner bg-light">
                     @if ($announcement->images->isEmpty())
-
-                    <div class="carousel-item active">
-                            
+                        <div class="carousel-item active">
                             <img class="img-fluid w-100" src="https://picsum.photos/200/200" alt="">
-                                
                         </div>
-
 
                     @else
-                    
-                    <div class="carousel-item active">
-                            
-                            <img class="img-fluid w-100" src="{{Storage::url($announcement->images()->first()->path)}}">
-                                    
-                        </div>
 
-                    @endif
-                    
-                        
-                    </div>
-                    
-                    <a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
-                        <i class="fa fa-2x fa-angle-left text-dark"></i>
-                    </a>
-                    <a class="carousel-control-next" href="#product-carousel" data-slide="next">
-                        <i class="fa fa-2x fa-angle-right text-dark"></i>
-                    </a>
+                        @foreach ($announcement->images as $image)
+                            <div class="carousel-item{{ $loop->first ? ' active' : '' }}">
+                                <img class="img-fluid w-100" src="{{ Storage::url($image->path) }}" alt="">
+                            </div>
+                        @endforeach
+
+                    @endif 
                 </div>
+        <a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
+            <i class="fa fa-2x fa-angle-left text-dark"></i>
+        </a>
+        <a class="carousel-control-next" href="#product-carousel" data-slide="next">
+            <i class="fa fa-2x fa-angle-right text-dark"></i>
+        </a>
+    </div>
                 
             </div>
 
