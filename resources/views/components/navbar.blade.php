@@ -12,6 +12,7 @@
                         <span class="h2 text-uppercase text-light px-2 ml-n1 rounded-right"
                             style="background-color: #8260c2">Realm</span>
                     </a>
+
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -51,12 +52,22 @@
 
                             @endauth
                         </div>
+                        <div>
+                            <div>
+                                <span class="nav-item rounded">
+                                    <x-_locale lang='it' nation='it' />
+                                </span>
 
+                                <span class="nav-item">
+                                    <x-_locale lang='en' nation='gb' />
+                                </span>
+                            </div>
+                        </div>
                         <form action="{{ route('announcement.search') }}" method="GET" class="form-inline">
                             <input class="form-control mr-sm-2" name="searched" type="search" placeholder="Cerca"
                                 aria-label="Search">
-                            <button class="btn searchAnimation my-2 my-sm-0" style="background-color: #65cbad" type="submit"><i
-                                    class="fas fa-search"></i></button>
+                            <button class="btn searchAnimation my-2 my-sm-0" style="background-color: #65cbad"
+                                type="submit"><i class="fas fa-search"></i></button>
                         </form>
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                             @auth
@@ -68,7 +79,8 @@
                                         <form action="{{ route('logout') }}" method="POST">
                                             @csrf
                                             <a href="{{ route('page.profile') }}" class="dropdown-item h5">Profilo</a>
-                                            <a href="{{route('profiles.show')}}" class="dropdown-item h5">I miei annunci</a>
+                                            <a href="{{ route('profiles.show') }}" class="dropdown-item h5">I miei
+                                                annunci</a>
                                             <button class="dropdown-item h5"
                                                 onclick="event.preventDefault(); this.closest('form').submit();">
                                                 Esci

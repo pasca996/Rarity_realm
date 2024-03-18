@@ -5,8 +5,7 @@
             <div class="col-lg-8">
                 <div id="header-carousel" class="carousel slide carousel-fade mb-30 mb-lg-0" data-ride="carousel">
                     <ol class="carousel-indicators">
-                        <li data-target="#header-carousel" data-slide-to="0"
-                            class="bg-green active"></li>
+                        <li data-target="#header-carousel" data-slide-to="0" class="bg-green active"></li>
                         <li class="bg-green" data-target="#header-carousel" data-slide-to="1"></li>
                         <li class="bg-green" data-target="#header-carousel" data-slide-to="2"></li>
                     </ol>
@@ -18,11 +17,9 @@
                                 <div class="p-3" style="max-width: 700px;">
                                     <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Rarity
                                         Realm</h1>
-                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn h4">Non è assurdo avere
-                                        tutte queste cose e non usarle mai?</p>
-                                    <a class="btn buttonAnimation py-2 px-4 mt-3"
-                                        style="background-color: #65cbad"
-                                        href="{{ route('announcement.create') }}">Vendi ora</a>
+                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn h4">{{__('ui.headerA2')}}</p>
+                                    <a class="btn buttonAnimation py-2 px-4 mt-3" style="background-color: #65cbad"
+                                        href="{{ route('announcement.create') }}">{{__('ui.headerAbtn')}}</a>
                                 </div>
                             </div>
                         </div>
@@ -31,13 +28,10 @@
                                 style="object-fit: cover;">
                             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div class="p-3" style="max-width: 700px;">
-                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Hai
-                                        oggetti da collezione?</h1>
-                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn h4">Dai al tuo usato una
-                                        seconda occasione: vendi quello che non usi più, subito.</p>
-                                    <a class="btn buttonAnimation py-2 px-4 mt-3"
-                                        style="background-color: #65cbad"
-                                        href="{{ route('announcement.create') }}">Comincia a vendere</a>
+                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">{{__('ui.headerB1')}}</h1>
+                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn h4">{{__('ui.headerB2')}}</p>
+                                    <a class="btn buttonAnimation py-2 px-4 mt-3" style="background-color: #65cbad"
+                                        href="{{ route('announcement.create') }}">{{__('ui.headerBbtn')}}</a>
                                 </div>
                             </div>
                         </div>
@@ -46,13 +40,10 @@
                                 style="object-fit: cover;">
                             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div class="p-3" style="max-width: 700px;">
-                                    <h1 class="display-4 text-white mb-3 animateanimated animatefadeInDown">Vedi
-                                        tutti gli annunci</h1>
-                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn h4"> scopri subito
-                                        migliaia di annunci di antiquariato, mobili e oggetti da collezione</p>
-                                    <a class="btn buttonAnimation py-2 px-4 mt-3"
-                                        style="background-color: #65cbad"
-                                        href="{{ route('announcement.index') }}">Annunci</a>
+                                    <h1 class="display-4 text-white mb-3 animateanimated animatefadeInDown">{{__('ui.headerC1')}}</h1>
+                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn h4"> {{__('ui.headerC2')}}</p>
+                                    <a class="btn buttonAnimation py-2 px-4 mt-3" style="background-color: #65cbad"
+                                        href="{{ route('announcement.index') }}">{{__('ui.headerCbtn')}}</a>
                                 </div>
                             </div>
                         </div>
@@ -67,10 +58,9 @@
                         <div class="product-offer mb-30" style="height: 200px;">
                             <img class="img-fluid" src="/img/img_welcome/Revisore.jpeg" alt="">
                             <div class="offer-text">
-                                <h3 class="text-white mb-3">Lavora con noi</h3>
-                                <a href="{{ route('become.revisor') }}"
-                                    class="btn buttonAnimation py-2 px-4 mt-3"
-                                    style="background-color: #65cbad">Diventa Revisore</a>
+                                <h3 class="text-white mb-3">{{__('ui.workWithUs1')}}</h3>
+                                <a href="{{ route('become.revisor') }}" class="btn buttonAnimation py-2 px-4 mt-3"
+                                    style="background-color: #65cbad">{{__('ui.workWithUs2')}}</a>
                             </div>
                         </div>
                     @endguest
@@ -79,20 +69,18 @@
                             <div class="product-offer mb-30" style="height: 200px;">
                                 <img class="img-fluid" src="/img/img_welcome/Revisore.jpeg" alt="">
                                 <div class="offer-text">
-                                    <h3 class="text-white mb-3">Controlla gli Annunci</h3>
-                                    <a href="{{ route('revisor.index') }}"
-                                        class="btn buttonAnimation py-2 px-4 mt-3"
-                                        style="background-color: #65cbad">Inizia Ora</a>
+                                    <h3 class="text-white mb-3">{{__('ui.workWithUs3')}}</h3>
+                                    <a href="{{ route('revisor.index') }}" class="btn buttonAnimation py-2 px-4 mt-3"
+                                        style="background-color: #65cbad">{{__('ui.workWithUs4')}}</a>
                                 </div>
                             </div>
                         @else
                             <div class="product-offer mb-30" style="height: 200px;">
                                 <img class="img-fluid" src="/img/img_welcome/Revisore.jpeg" alt="">
                                 <div class="offer-text">
-                                    <h3 class="text-white mb-3">Lavora con noi</h3>
-                                    <a href="{{ route('become.revisor') }}"
-                                        class="btn buttonAnimation py-2 px-4 mt-3"
-                                        style="background-color: #65cbad">Diventa Revisore</a>
+                                    <h3 class="text-white mb-3">{{__('ui.workWithUs1')}}</h3>
+                                    <a href="{{ route('become.revisor') }}" class="btn buttonAnimation py-2 px-4 mt-3"
+                                        style="background-color: #65cbad">{{__('ui.workWithUs2')}}</a>
                                 </div>
                             </div>
                         @endif
@@ -103,11 +91,10 @@
                 <div class="product-offer mb-30" style="height: 200px;">
                     <img class="img-fluid" src="/img/img_welcome/monete.jpg" alt="">
                     <div class="offer-text">
-                        <h6 class="text-white text-uppercase">Sconti al 70%</h6>
-                        <h3 class="text-white mb-3">Offerte speciali</h3>
-                        <a href="{{ route('announcement.index') }}"
-                            class="btn buttonAnimation py-2 px-4 mt-3"
-                            style="background-color: #65cbad">Compra ora</a>
+                        <h6 class="text-white text-uppercase">{{__('ui.specialOffer3')}}</h6>
+                        <h3 class="text-white mb-3">{{__('ui.specialOffer1')}}</h3>
+                        <a href="{{ route('announcement.index') }}" class="btn buttonAnimation py-2 px-4 mt-3"
+                            style="background-color: #65cbad">{{__('ui.specialOffer2')}}</a>
                     </div>
                 </div>
             </div>
@@ -126,38 +113,41 @@
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
                     <h1 class="fa fa-check m-0 mr-3" style="color: #65cbad"></h1>
-                    <h5 class="font-weight-semi-bold m-0">Qualità certificata</h5>
+                    <h5 class="font-weight-semi-bold m-0">{{__('ui.service1')}}</h5>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
                     <h1 class="fa fa-shipping-fast  m-0 mr-2" style="color: #65cbad"></h1>
-                    <h5 class="font-weight-semi-bold m-0">Spedizione in 48 Ore</h5>
+                    <h5 class="font-weight-semi-bold m-0">{{__('ui.service2')}}</h5>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
                     <h1 class="fas fa-exchange-alt  m-0 mr-3" style="color: #65cbad"></h1>
-                    <h5 class="font-weight-semi-bold m-0">Reso entro 14 giorni</h5>
+                    <h5 class="font-weight-semi-bold m-0">{{__('ui.service3')}}</h5>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
                     <h1 class="fa fa-phone-volume  m-0 mr-3" style="color: #65cbad"></h1>
-                    <h5 class="font-weight-semi-bold m-0">24/7 Supporto</h5>
+                    <h5 class="font-weight-semi-bold m-0">{{__('ui.service4')}}</h5>
                 </div>
             </div>
         </div>
     </div>
     <!-- Featured End -->
     <header>
-        <div class="jumbotron jumbotron-fluid" style=" background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.525)); background-color: #8260c25b">
-          <div class="container">
-            <p class="lead font-italic text-white">La collezione nasce dal bisogno di trasformare lo scorrere della propria esistenza in una serie di oggetti salvati dalla dispersione, o in una serie di righe scritte, cristallizzate, fuori dal flusso continuo dei pensieri.</p>
-            <p class="lead font-italic text-white">Italo Calvino, Collezione di sabbia, 1984</p>
-          </div>
+        <div class="jumbotron jumbotron-fluid"
+            style=" background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.525)); background-color: #8260c25b">
+            <div class="container">
+                <p class="lead font-italic text-white">La collezione nasce dal bisogno di trasformare lo scorrere della
+                    propria esistenza in una serie di oggetti salvati dalla dispersione, o in una serie di righe
+                    scritte, cristallizzate, fuori dal flusso continuo dei pensieri.</p>
+                <p class="lead font-italic text-white">Italo Calvino, Collezione di sabbia, 1984</p>
+            </div>
         </div>
-      </header>
+    </header>
 
 
     <!-- Categories Start -->
@@ -169,10 +159,11 @@
         </div>
         <div class="row px-xl-5 pb-3 mt-5">
             @foreach ($categories as $category)
-                <div class="col-lg-3 col-md-4 col-sm-6">
+                
+                <div class="col-lg-4 col-md-4 col-sm-6">
                     <a class="text-decoration-none rounded-lg d-flex cat-item img-hover"
                         href="{{ route('categories.show', compact('category')) }}">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px; ">
+                        <div class="overflow-hidden" style="width: 125px; height: 125px; ">
                             <img class="img-fluid" src="{{ $category['image'] }}" alt="">
                         </div>
                         <div class="d-flex flex-grow-1 align-items-center">
@@ -226,7 +217,7 @@
                     </div>
                 </div>
             @endforeach
-            
+
         </div>
     </div>
 
@@ -234,40 +225,41 @@
     <div class="col-12 border-bottom">
         <h3 class="text-center">Cosa dicono di noi</h3>
         <h4 class="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, nobis? Impedit vitae deserunt, aut ullam quaerat tempore magni itaque distinctio harum. .</h4>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, nobis? Impedit vitae deserunt, aut ullam
+            quaerat tempore magni itaque distinctio harum. .</h4>
     </div>
-<!-- Vendor Start -->
-<div class="container-fluid py-5">
-    <div class="row px-xl-5">
-        <div class="col">
-            <div class="owl-carousel vendor-carousel">
-                <div class="bg-light p-4">
-                    <img src="/img/img_welcome/download.jpeg" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="/img/img_welcome/download.jpeg" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="/img/img_welcome/download.jpeg" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="/img/img_welcome/download.jpeg" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="/img/img_welcome/download.jpeg" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="/img/img_welcome/download.jpeg" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="/img/img_welcome/download.jpeg" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="/img/img_welcome/download.jpeg" alt="">
+    <!-- Vendor Start -->
+    <div class="container-fluid py-5">
+        <div class="row px-xl-5">
+            <div class="col">
+                <div class="owl-carousel vendor-carousel">
+                    <div class="bg-light p-4">
+                        <img src="/img/img_welcome/download.jpeg" alt="">
+                    </div>
+                    <div class="bg-light p-4">
+                        <img src="/img/img_welcome/download.jpeg" alt="">
+                    </div>
+                    <div class="bg-light p-4">
+                        <img src="/img/img_welcome/download.jpeg" alt="">
+                    </div>
+                    <div class="bg-light p-4">
+                        <img src="/img/img_welcome/download.jpeg" alt="">
+                    </div>
+                    <div class="bg-light p-4">
+                        <img src="/img/img_welcome/download.jpeg" alt="">
+                    </div>
+                    <div class="bg-light p-4">
+                        <img src="/img/img_welcome/download.jpeg" alt="">
+                    </div>
+                    <div class="bg-light p-4">
+                        <img src="/img/img_welcome/download.jpeg" alt="">
+                    </div>
+                    <div class="bg-light p-4">
+                        <img src="/img/img_welcome/download.jpeg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Vendor End -->
+    <!-- Vendor End -->
 </x-main>

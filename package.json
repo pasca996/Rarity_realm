@@ -12,6 +12,8 @@
     },
     "dependencies": {
         "bootstrap": "^4.6.2",
-        "composer": "^4.1.0"
+        "composer": "^4.1.0",
+        "flag-icon-css": "^4.1.7",
+        "flag-icons": "^7.2.0"
     }
 }

@@ -1,8 +1,11 @@
 @import 'bootstrap';
+@import "/node_modules/flag-icons/css/flag-icons.min.css";
 /* @import url(style.css);  */
 /* @import url(bootstrap-reboot.css);  */
 /* @import url(bootstrap.css);    */
 /* @import url(bootstrap-grid.css);  */
+
+
 
 .h1, h2, h3 {
   font-weight: 700 !important;

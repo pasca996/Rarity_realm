@@ -27,4 +27,9 @@ class PageController extends Controller
         return view('announcement.search', compact('announcements'));
 
 }
+
+public function setLanguage($lang){
+    session()->put('locale', $lang);
+    return redirect()->back();
+}
 }

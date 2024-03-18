@@ -45,3 +45,4 @@ Route::get('/ricerca/annuncio', [PageController::class,'searchAnnouncements'])->
 
 Route::get('profilo/annunci', [AnnouncementController::class, 'showAnnouncementProfile'])->name('profiles.show');
 
+Route::post('lingua/{lang}',[PageController::class, 'setLanguage' ])->name('setLocale');
