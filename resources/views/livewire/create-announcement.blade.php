@@ -7,9 +7,9 @@
         
         <div class="col-sm-12 col-xs-4 col-md-4 col-10">
             <div class="space-top">
-                <h2 class="text-center text-green">Crea il tuo annuncio</h2>
+                <h2 class="text-center text-green">{{__('ui.ann14')}}</h2>
                 <form wire:submit.prevent="store" class="form-signin ml-5" class="form-horizontal">
-                    <label for="title" class=""> Titolo Annuncio </label>
+                    <label for="title" class=""> {{__('ui.ann15')}} </label>
                     <input wire:model.live="title" type="text"
                     class="form-control @error('title') is-invalid @enderror">
                     @error('title')
@@ -17,16 +17,16 @@
                     @enderror
                     <br>
                     
-                    <label for="description" class=""> Descrizione Annuncio </label>
+                    <label for="description" class=""> {{__('ui.ann16')}} </label>
                     <textarea wire:model.live="description" type="text" class="form-control @error('description') is-invalid @enderror"></textarea>
                     @error('description')
                     {{ $message }}
                     @enderror
                     <br>
                     
-                    <label for="category">Categoria</label>
+                    <label for="category">{{__('ui.ann17')}}</label>
                     <select wire:model="category_id" id="category" class="form-control">
-                        <option value="">Seleziona Categoria</option>
+                        <option value="">{{__('ui.ann18')}}</option>
                         @foreach ($categories as $category)
                         <option value="{{$category->id}}">{{$category->name }}</option>
                         @endforeach
@@ -36,7 +36,7 @@
                     @enderror
                     <br>
                     
-                    <label for="price" class=""> Prezzo </label>
+                    <label for="price" class="">{{__('ui.ann19')}} </label>
                     <input wire:model.live="price" type="number"
                     class="form-control @error('price') is-invalid @enderror">
                     @error('price')
@@ -55,13 +55,13 @@
                     @if(!empty($images))
                     <div class="row mb-5">
                         <div class="col-12">
-                            <p> Anteprima foto:</p>
+                            <p> {{__('ui.ann20')}}:</p>
                             <div class="row border border-4 border-info rounded shadow py-4">
                                 @foreach ($images as $key => $image)
                                
                                 <div class="col my-5">
                                     <img class="img-fluid w-100" src="{{$image->temporaryUrl()}}" alt="">
-                                    <button type="button" class="btn btn-danger shadow d-block text-center mt-2 mx-auto" wire:click="removeImage({{$key}})">Cancella foto</button>
+                                    <button type="button" class="btn btn-danger shadow d-block text-center mt-2 mx-auto" wire:click="removeImage({{$key}})">{{__('ui.ann21')}}</button>
                                 </div>
                                 @endforeach
                                 
@@ -70,7 +70,7 @@
                     </div>
                     @endif
                     <button class="button-71 gradient-custom-2 btn-lg btn-block" type="submit">
-                        Crea Annuncio
+                        {{__('ui.ann22')}}
                     </button>
                     <br>
                     @if (session('status'))

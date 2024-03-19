@@ -3,7 +3,7 @@
             <img class="img-fluid w-100" src="/img/img_welcome/quality.png" alt="">
     <section class="p-3 p-lg-5 d-flex flex-column" style="width: 100%;">
         <div class="my-auto">
-          <h2 class="mb-5">Linee guida e politiche di accettazione per gli annunci da revisionare.</h2>
+          <h2 class="mb-5">{{__('ui.revisor')}}</h2>
           <div id="accordion" role="tablist" aria-multiselectable="true">
   
             <!-- Accordion Item 1 -->
@@ -14,7 +14,7 @@
                     <a data-toggle="collapse" data-parent="#accordion" href="#accordionBodyOne" aria-expanded="false" aria-controls="accordionBodyOne"
                       class="collapsed ">
                       <i class="fa fa-angle-down text-green" aria-hidden="true" style="font-size: 2.5em; float: right;"></i>
-                      <h3  style="color: #000000 !important;">1. Panoramica</h3>
+                      <h3  style="color: #000000 !important;">1. {{__('ui.revisor1')}}</h3>
                     </a>
                   </div>
                 </div>
@@ -22,8 +22,8 @@
   
               <div id="accordionBodyOne" class="collapse" role="tabpanel" aria-labelledby="accordionHeadingOne" aria-expanded="false">
                 <div class="card-block col-12">
-                  <p>Politiche di accettazione</p>
-                  <p>Le politiche contenute in questa sezione si applicano agli annunci inseriti dagli utenti, qualora non diversamente specificato. Tale responsabilità include l'ottenimento da parte delle autorità di regolamentazione locali di tutte le autorizzazioni o approvazioni per la vendita, la distribuzione o la pubblicizzazione dei prodotti da promuovere con Rarity Realm o da includere negli annunci.</p>
+                  <p>{{__('ui.revisor2')}}</p>
+                  <p>{{__('ui.revisor3')}}</p>
                 </div>
               </div>
             </div>
@@ -34,7 +34,7 @@
                     <a data-toggle="collapse" data-parent="#accordion" href="#accordionBodyTwo" aria-expanded="false" aria-controls="accordionBodyTwo"
                       class="collapsed ">
                       <i class="fa fa-angle-down text-green" aria-hidden="true" style="font-size: 2.5em; float: right"></i>
-                      <h3 style="color: #000000 !important;">2. Formato e funzionalità degli annunci</h3>
+                      <h3 style="color: #000000 !important;">2. {{__('ui.revisor4')}}</h3>
                     </a>
                   </div>
                 </div>
@@ -42,10 +42,10 @@
   
               <div id="accordionBodyTwo" class="collapse" role="tabpanel" aria-labelledby="accordionHeadingTwo" aria-expanded="false">
                 <div class="card-block col-12">
-                  <p>Assicurati che il formato degli annunci inseriti, rispetti le seguenti linee guida:</p>
+                  <p>{{__('ui.revisor5')}}</p>
                   <ul>
-                    <li>tutte le immagini e i video devono essere leggibili e ad alta risoluzione;</li>
-                    <li>i contenuti creativi non devono interferire con la leggibilità dei modelli di annunci;</li>
+                    <li>{{__('ui.revisor6')}}</li>
+                    <li>{{__('ui.revisor7')}}</li>
                   </ul>
                     
                 </div>
@@ -58,7 +58,7 @@
                     <a data-toggle="collapse" data-parent="#accordion" href="#accordionBodyThree" aria-expanded="false" aria-controls="accordionBodyThree"
                       class="collapsed ">
                       <i class="fa fa-angle-down text-green" aria-hidden="true" style="font-size: 2.5em; float: right;"></i>
-                      <h3 style="color: #000000 !important;">3. Requisiti dei contenuti</h3>
+                      <h3 style="color: #000000 !important;">3. {{__('ui.revisor25')}}</h3>
                     </a>
                   </div>
                 </div>
@@ -66,13 +66,13 @@
   
               <div id="accordionBodyThree" class="collapse" role="tabpanel" aria-labelledby="accordionHeadingThree" aria-expanded="false">
                 <div class="card-block col-12">
-                    <p>I seguenti requisiti relativi ai contenuti si applicano a tutti gli elementi degli annunci: testo e titolo personalizzati, immagini e video.</p>
+                    <p>{{__('ui.revisor8')}}</p>
                     <ul>
-                      <li>essere adatti al grande pubblico;</li>
-                      <li>rispecchiare accuratamente i contenuti della landing page;</li>
-                      <li>essere redatti nella lingua principale del sito Rarity Realm su cui vengono mostrati;</li>
-                      <li>essere chiari e precisi, affinché i clienti dispongano di informazioni corrette prima di interagire con un annuncio o decidere di acquistare un prodotto;</li>
-                      <li>promuovere solo i prodotti di cui si è titolari o per cui si dispone dell'autorizzazione per la rivendita o la distribuzione.</li>
+                      <li>{{__('ui.revisor9')}}</li>
+                      <li>{{__('ui.revisor10')}}</li>
+                      <li>{{__('ui.revisor11')}}</li>
+                      <li>{{__('ui.revisor12')}}</li>
+                      <li>{{__('ui.revisor13')}}</li>
                     </ul>
                 
                 </div>
@@ -85,7 +85,7 @@
                     <a data-toggle="collapse" data-parent="#accordion" href="#accordionBodyFour" aria-expanded="false" aria-controls="accordionBodyFour"
                       class="collapsed">
                       <i class="fa fa-angle-down text-green" aria-hidden="true" style="font-size: 2.5em; float: right;"></i>
-                      <h3 style="color: #000000 !important;">4. Accettabilità dei prodotti</h3>
+                      <h3 style="color: #000000 !important;">4. {{__('ui.revisor14')}}</h3>
                     </a>
                   </div>
                 </div>
@@ -93,15 +93,15 @@
   
               <div id="accordionBodyFour" class="collapse" role="tabpanel" aria-labelledby="accordionHeadingFour" aria-expanded="false">
                 <div class="card-block col-12">
-                  <p>Questa sezione elenca i prodotti non idonei per la pubblicità, nonché le restrizioni applicabili al formato o metodo di promozione dei prodotti idonei. Queste politiche si applicano a tutti gli annunci, salvo ove diversamente indicato.</p>
-                  <p>Gli inserzionisti possono promuovere solo i prodotti di cui sono titolari o per i quali dispongono dell'autorizzazione alla rivendita o alla distribuzione.</p>
+                  <p>{{__('ui.revisor15')}}</p>
+                  <p>{{__('ui.revisor16')}}</p>
                   <br>
-                  <p>I prodotti indicati di seguito sono vietati in tutto il mondo.</p>
+                  <p>{{__('ui.revisor17')}}</p>
                   <ul>
-                    <li>Kit per test antidroga.</li>
-                    <li>Servizi e prodotti di pirateria digitale e informatica.</li>
-                    <li>Servizi di falsificazione dei documenti.</li>
-                    <li>Creme, gel e liquidi caustici o soluzioni simili.</li>
+                    <li>{{__('ui.revisor18')}}</li>
+                    <li>{{__('ui.revisor19')}}</li>
+                    <li>{{__('ui.revisor20')}}</li>
+                    <li>{{__('ui.revisor21')}}</li>
                   </ul>
 
                 </div>
@@ -129,7 +129,7 @@
                     <h6 class="text-muted ml-2"><del>{{$announcement_to_check->price *1.15}}</del>€</h6>
                     <h5>{{$announcement_to_check->price}}€</h5>
                     
-                    <p>Pubblicato il: {{$announcement_to_check->created_at->format('d/m/Y')}}</p>
+                    <p>{{__('ui.revisor22')}}: {{$announcement_to_check->created_at->format('d/m/Y')}}</p>
                   </div>
                   <div class="col-2">
                     
@@ -141,14 +141,14 @@
                     <form action="{{route('revisor.accept_announcement',['announcement'=>$announcement_to_check])}}" method="POST">
                         @csrf
                         @method('PATCH')
-                        <button type="submit" class="btn searchAnimation m-3" style="background-color: #65cbad">Accetta</button>
+                        <button type="submit" class="btn searchAnimation m-3" style="background-color: #65cbad">{{__('ui.revisor23')}}</button>
                         </form>
                 </div>
                 <div class="">
                     <form action="{{route('revisor.reject_announcement',['announcement'=>$announcement_to_check])}}" method="POST">
                         @csrf
                         @method('PATCH')
-                        <button type="submit" class="btn searchAnimation m-3 bg-danger">Rifiuta</button>
+                        <button type="submit" class="btn searchAnimation m-3 bg-danger">{{__('ui.revisor24')}}</button>
                         </form>
                 </div>
               </div>
