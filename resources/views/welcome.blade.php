@@ -153,9 +153,9 @@
     <!-- Categories Start -->
     <div class="container-fluid pt-5">
         <div class="col-12 border-bottom">
-            <h3 class="text-center">Il market place delle passioni:</h3>
-            <h4 class="text-center">
-                Esplora tutte le categorie </h4>
+            <h3 class="text-center">{{__('ui.cat1')}}</h3>
+            <h4 class="text-center">{{__('ui.cat2')}}
+                 </h4>
         </div>
         <div class="row px-xl-5 pb-3 mt-5">
             @foreach ($categories as $category)
@@ -171,7 +171,7 @@
                                 <h6 class="text-dark">{{ $category['name'] }}</h6>
                                 <small
                                     class="text-body">{{ $category->announcements->where('is_accepted', true)->count() }}
-                                    Annunci</small>
+                                    {{__('ui.cat3')}}</small>
                             </div>
                         </div>
                     </a>
@@ -185,9 +185,9 @@
     <!-- Products Start -->
     <div class="container-fluid pt-5 pb-3">
         <div class="col-12 border-bottom">
-            <h3 class="text-center">Ultimi annunci</h3>
+            <h3 class="text-center">{{__('ui.product1')}}</h3>
             <h4 class="text-center">
-                Visualizza tutti gli ultimi annunci inseriti dai collezionisti</h4>
+                {{__('ui.product2')}}</h4>
         </div>
         <div class="row px-xl-5">
             @foreach ($announcements as $announcement)
@@ -223,10 +223,9 @@
 
     <!-- Products End -->
     <div class="col-12 border-bottom">
-        <h3 class="text-center">Cosa dicono di noi</h3>
+        <h3 class="text-center">{{__('ui.feedback1')}}</h3>
         <h4 class="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, nobis? Impedit vitae deserunt, aut ullam
-            quaerat tempore magni itaque distinctio harum. .</h4>
+            {{__('ui.feedback2')}}</h4>
     </div>
     <!-- Vendor Start -->
     <div class="container-fluid py-5">
