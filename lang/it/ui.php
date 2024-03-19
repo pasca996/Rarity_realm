@@ -48,7 +48,7 @@ return [
 'navbar' => 'Crea Nuovo Annuncio',
 'navbar1' => 'Annunci',
 'navbar2' => 'Categorie',
-'navbar3' => 'Conttatci',
+'navbar3' => 'Contattaci',
 'navbar4' => 'Revisore',
 'navbar5' => 'Richieste in sospeso',
 'navbar6' => 'Cerca',
