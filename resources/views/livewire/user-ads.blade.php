@@ -3,23 +3,23 @@
 
         <div class="container mt-5">
             <div class="align-middle gap-2 d-flex justify-content-between">
-                <h3>Elenco annunci inseriti</h3>
+                <h3>{{__('ui.ann30')}}</h3>
                 <form class="d-flex" action="{{ route('announcement.search') }}" method="GET">
-                    <input class="form-control me-2" name="searched" type="search" placeholder="Cerca"
+                    <input class="form-control me-2" name="searched" type="search" placeholder="{{__('ui.navbar6')}}"
                     aria-label="Search">
                 </form>
                 <a href="{{ route('announcement.create') }}" class="btn searchAnimation bg-green me-md-2">
-                    Crea Nuovo Articolo
+                    {{__('ui.ann14')}}
                 </a>
             </div>
             <table class="table border mt-2">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Immagine</th>
-                        <th scope="col">Titolo</th>
-                        <th scope="col">Prezzo</th>
-                        <th scope="col">Categoria</th>
+                        <th scope="col">{{__('ui.ann32')}}</th>
+                        <th scope="col">{{__('ui.ann31')}}</th>
+                        <th scope="col">{{__('ui.ann19')}}</th>
+                        <th scope="col">{{__('ui.ann17')}}</th>
                         <th scope="col"></th>
                     </tr>
                 </thead>
@@ -38,12 +38,12 @@
 
                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                     <a href="{{route('announcement.show',  ['announcement' => $announcement->id])}}" class="btn searchAnimation mx-2">
-                                        Vedi annuncio
+                                        {{__('ui.ann35')}}
                                     </a>
                                         <button wire:click="edit({{$announcement}})" type="button" class="btn searchAnimation mx-2" data-toggle="modal" data-target="#exampleModal">
-                                            Modifica
+                                            {{__('ui.ann33')}}
                                         </button>
-                                        <button wire:click="delete({{ $announcement }})" class="btn rounded-lg searchAnimation btn-danger mx-2">Elimina</button>
+                                        <button wire:click="delete({{ $announcement }})" class="btn rounded-lg searchAnimation btn-danger mx-2">{{__('ui.ann34')}}</button>
                                 </div>
                             </td>
                         </tr>
