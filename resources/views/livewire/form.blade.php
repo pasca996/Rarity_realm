@@ -12,7 +12,7 @@
                     <form wire:submit.prevent="store">
                         <div class="modal-body">
                             <div class="form-floating mb-3">
-                                <label for="title">Nome</label>
+                                <label for="title">{{__('ui.ann27')}}</label>
                                 <input class="form-control" wire:model.live="title" type="text">
                                 @error('title')
                                     <div class="alert alert-danger" role="alert">
@@ -20,7 +20,7 @@
                                     </div>
                                 @enderror
 
-                                <label for="title">Descrizione</label>
+                                <label for="title">{{__('ui.ann1')}}</label>
                                 <textarea class="form-control" wire:model.live="description" type="text"></textarea>
                                 @error('description')
                                     <div class="alert alert-danger" role="alert">
@@ -28,7 +28,7 @@
                                     </div>
                                 @enderror
 
-                                <label for="price">Prezzo</label>
+                                <label for="price">{{__('ui.ann19')}}</label>
                                 <input class="form-control" wire:model.live="price" type="number">
                                 @error('price')
                                     <div class="alert alert-danger" role="alert">
@@ -36,7 +36,7 @@
                                     </div>
                                 @enderror
                                     
-                                <label for="category">Categoria</label>
+                                <label for="category">{{__('ui.navbar2')}}</label>
                                 <select wire:model.live="category_id" id="category" class="form-control">
                                         {{-- <option value="">{{$category}}</option> --}}
                                 @foreach ($categories as $category)
@@ -52,12 +52,12 @@
                                         </div>
                                     @endif
 
-                                    <button type="submit" class="btn searchAnimation mt-2 bg-green me-md-2">Save changes</button>
+                                    <button type="submit" class="btn searchAnimation mt-2 bg-green me-md-2">{{__('ui.ann28')}}</button>
                             </div>
                         </div>
                     </form>
                 <div class="modal-footer">
-                  <button type="button" class="btn searchAnimation btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn searchAnimation btn-secondary" data-dismiss="modal">{{__('ui.ann29')}}</button>
                 </div>
               </div>
             </div>
