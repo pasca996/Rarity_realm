@@ -17,7 +17,7 @@
     <!-- Shop Detail Start -->
     <div class="container-fluid pb-5">
         <div class="row px-xl-5">
-            <div class="col-lg-5 mb-30">
+            <div>
             <div id="product-carousel" class="carousel slide" data-ride="carousel">   
                 <div class="carousel-inner bg-light">
                     @if ($announcement->images->isEmpty())
@@ -29,7 +29,7 @@
 
                         @foreach ($announcement->images as $image)
                             <div class="carousel-item{{ $loop->first ? ' active' : '' }}">
-                                <img class="img-fluid w-100" src="{{ Storage::url($image->path) }}" alt="">
+                                <img class="img-fluid w-100" src="{{ $announcement->images()->first()->getUrl(300,300) }}" alt="">
                             </div>
                         @endforeach
 
