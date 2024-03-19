@@ -2,9 +2,11 @@
 
 namespace App\Livewire;
 
+use App\Jobs\ResizeImage;
 use App\Models\Announcement;
 use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\File;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use Symfony\Contracts\Service\Attribute\Required;
@@ -71,10 +73,10 @@ class CreateAnnouncement extends Component
         public function store()
         {
             
-             $this->validate();
-
-             $this->announcement = Category::find($this->category_id)->announcements()->create([
-
+            $this->validate();
+            
+            $this->announcement = Category::find($this->category_id)->announcements()->create([
+                
                 'title' => $this->title,
                 'description' => $this->description,
                 'price' => $this->price,
@@ -83,17 +85,24 @@ class CreateAnnouncement extends Component
                 'temporary_images' =>$this->temporary_images,
                 'images.*' =>$this->images,
                 
-                 
+                
             ]);
-
-
-             if(count($this->images)){
+            
+            
+            if(count($this->images)){
                 foreach ($this->images as $image) {
-                $this->announcement->images()->create(['path' => $image->store('images', 'public')]);
-                }
+                    // $this->announcement->images()->create(['path' => $image->store('images', 'public')]);
+                    $newFileName = "announcements/{$this->announcement->id}";
+                    $newImage = $this->announcement->images()->create(['path'=>$image->store($newFileName, 'public')]);
+                    
+                    dispatch(new ResizeImage($newImage->path , 300 , 300));
                 }
 
-
+                File::deleteDirectory(storage_path('/app/livewire-tmp'));
+                
+            }
+            
+            
             session()->flash('status', 'Annuncio inserito correttamente, sarà pubblicato dopo la revisione');
             
             $this->cleanForm();
