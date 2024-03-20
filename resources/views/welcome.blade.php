@@ -233,10 +233,10 @@
             <div class="col" >
                 <div class="owl-carousel vendor-carousel">
                     <div class="p-4 rounded-lg" style=" background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.525)); background-color: #8260c25b">
-                        <img class="mb-3 rounded-circle " src="/img/logo/logo_senza_sfondo.png" alt="">
+                        <img class="mb-3 rounded-circle"  src="" alt="">
 			            <h5 class="card-title text-white">Delbert Simonas</h5>
                         <p class="card-text text-white">"Online reviews can make or break a customer's decision to make a purchase. Read about these customer review on site"</p>
-                        <span>
+                        <span class="text-warning"> 
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -244,11 +244,11 @@
                             <i class="fas fa-star"></i>
                             </span>
                     </div>
-                    <div class="bg-light p-4">
-                        <img class="mb-3" src="/img/img_welcome/download.jpeg" alt="">
-			            <h5 class="card-title">Delbert Simonas</h5>
-                        <p class="card-text">"Online reviews can make or break a customer's decision to make a purchase. Read about these customer review on site"</p>
-                        <span>
+                    <div class="p-4 rounded-lg" style=" background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.525)); background-color: #8260c25b">
+                        <img class="mb-3 rounded-circle" src="" alt="">
+			            <h5 class="card-title text-white">Delbert Simonas</h5>
+                        <p class="card-text text-white">"Online reviews can make or break a customer's decision to make a purchase. Read about these customer review on site"</p>
+                        <span class="text-warning"> 
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -256,11 +256,11 @@
                             <i class="fas fa-star"></i>
                             </span>
                     </div>
-                    <div class="bg-light p-4">
-                        <img class="mb-3" src="/img/img_welcome/download.jpeg" alt="">
-			            <h5 class="card-title">Delbert Simonas</h5>
-                        <p class="card-text">"Online reviews can make or break a customer's decision to make a purchase. Read about these customer review on site"</p>
-                        <span>
+                    <div class="p-4 rounded-lg" style=" background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.525)); background-color: #8260c25b">
+                        <img class="mb-3 rounded-circle"  src="" alt="">
+			            <h5 class="card-title text-white">Delbert Simonas</h5>
+                        <p class="card-text text-white">"Online reviews can make or break a customer's decision to make a purchase. Read about these customer review on site"</p>
+                        <span class="text-warning"> 
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -268,11 +268,11 @@
                             <i class="fas fa-star"></i>
                             </span>
                     </div>
-                    <div class="bg-light p-4">
-                        <img class="mb-3" src="/img/img_welcome/download.jpeg" alt="">
-			            <h5 class="card-title">Delbert Simonas</h5>
-                        <p class="card-text">"Online reviews can make or break a customer's decision to make a purchase. Read about these customer review on site"</p>
-                        <span>
+                    <div class="p-4 rounded-lg" style=" background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.525)); background-color: #8260c25b">
+                        <img class="mb-3 rounded-circle" src="" alt="">
+			            <h5 class="card-title text-white">Delbert Simonas</h5>
+                        <p class="card-text text-white">"Online reviews can make or break a customer's decision to make a purchase. Read about these customer review on site"</p>
+                        <span class="text-warning"> 
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -280,11 +280,11 @@
                             <i class="fas fa-star"></i>
                             </span>
                     </div>
-                    <div class="bg-light p-4">
-                        <img class="mb-3" src="/img/img_welcome/download.jpeg" alt="">
-			            <h5 class="card-title">Delbert Simonas</h5>
-                        <p class="card-text">"Online reviews can make or break a customer's decision to make a purchase. Read about these customer review on site"</p>
-                        <span>
+                    <div class="p-4 rounded-lg" style=" background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.525)); background-color: #8260c25b">
+                        <img class="mb-3 rounded-circle"  src="" alt="">
+			            <h5 class="card-title text-white">Delbert Simonas</h5>
+                        <p class="card-text text-white">"Online reviews can make or break a customer's decision to make a purchase. Read about these customer review on site"</p>
+                        <span class="text-warning"> 
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -292,11 +292,11 @@
                             <i class="fas fa-star"></i>
                             </span>
                     </div>
-                    <div class="bg-light p-4">
-                        <img class="mb-3" src="/img/img_welcome/download.jpeg" alt="">
-			            <h5 class="card-title">Delbert Simonas</h5>
-                        <p class="card-text">"Online reviews can make or break a customer's decision to make a purchase. Read about these customer review on site"</p>
-                        <span>
+                    <div class="p-4 rounded-lg" style=" background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.525)); background-color: #8260c25b">
+                        <img class="mb-3 rounded-circle"  src="" alt="">
+			            <h5 class="card-title text-white">Delbert Simonas</h5>
+                        <p class="card-text text-white">"Online reviews can make or break a customer's decision to make a purchase. Read about these customer review on site"</p>
+                        <span class="text-warning"> 
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -304,30 +304,8 @@
                             <i class="fas fa-star"></i>
                             </span>
                     </div>
-                    <div class="bg-light p-4" >
-                        <img class="mb-3" src="/img/img_welcome/download.jpeg" alt="">
-			            <h5 class="card-title">Delbert Simonas</h5>
-                        <p class="card-text">"Online reviews can make or break a customer's decision to make a purchase. Read about these customer review on site"</p>
-                        <span>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            </span>
-                    </div>
-                    <div class="bg-light p-4">
-                        <img class="mb-3" src="/img/img_welcome/download.jpeg" alt="">
-			            <h5 class="card-title">Delbert Simonas</h5>
-                        <p class="card-text">"Online reviews can make or break a customer's decision to make a purchase. Read about these customer review on site"</p>
-                        <span>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            </span>
-                    </div>
+
+
                 </div>
             </div>
         </div>
