@@ -52,12 +52,12 @@
                             @endauth
                         </div>
                         <div>
-                            <div>
-                                <span class="nav-item rounded">
+                            <div class="mx-2">
+                                <span class="nav-item searchAnimation mr-1 mb-1">
                                     <x-_locale lang='it' nation='it' />
                                 </span>
 
-                                <span class="nav-item">
+                                <span class="nav-item searchAnimation mr-1">
                                     <x-_locale lang='en' nation='gb' />
                                 </span>
                             </div>

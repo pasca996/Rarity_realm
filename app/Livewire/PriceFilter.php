@@ -1,33 +1,40 @@
 <?php
 
 namespace App\Livewire;
-
+use Livewire\WithPagination;
 use App\Models\Announcement;
 use Livewire\Component;
 
 class PriceFilter extends Component
 {
+
+    use WithPagination;
+
     public $prices;
     public $announcements;
     public $category;
     public function updatedPrices()
     {
-        if ($this->prices) {
-            $range = explode('-', $this->prices);
-            $min = $range[0];
-            $max = $range[1];
-            $filteredProducts = Announcement::where('price', '>=', $min)->where('price', '<=', $max)->get();
-        } else {
-            $filteredProducts = Announcement::all();
-        }
-        
-        $this->announcements = $filteredProducts;
+        $this->resetPage();
         
     }
 
 
     public function render()
     {
-        return view('livewire.price-filter');
+
+        if ($this->prices) {
+            $range = explode('-', $this->prices);
+            $min = $range[0];
+            $max = $range[1];
+            $filteredProducts = Announcement::where('price', '>=', $min)->where('price', '<=', $max)->paginate(4);
+        } else {
+            $filteredProducts = Announcement::paginate(4);
+        }
+        
+       
+
+        
+        return view('livewire.price-filter',['annunci' => $filteredProducts]);
     }
 }
