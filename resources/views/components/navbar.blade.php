@@ -19,9 +19,9 @@
                     <div class="collapse navbar-collapse  justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
                             <a href="{{ route('welcome') }}" class="nav-item nav-link active h5">Home</a>
-                            <a href="{{ route('announcement.index') }}" class="nav-item nav-link h5">Annunci</a>
+                            <a href="{{ route('announcement.index') }}" class="nav-item nav-link h5">{{__('ui.navbar1')}}</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle h5" data-toggle="dropdown">Categorie
+                                <a href="#" class="nav-link dropdown-toggle h5" data-toggle="dropdown">{{__('ui.navbar2')}}
                                     <i class="fa fa-angle-down mt-1"></i></a>
                                 <div class="dropdown-menu rounded-5 border-0 m-0">
                                     @foreach ($categories as $category)
@@ -30,21 +30,20 @@
                                     @endforeach
                                 </div>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link h5">Contattaci</a>
-                            <a href="{{ route('announcement.create') }}" class="nav-item nav-link h5">Crea annuncio</a>
+                            <a href="contact.html" class="nav-item nav-link h5">{{__('ui.navbar3')}}</a>
+                            <a href="{{ route('announcement.create') }}" class="nav-item nav-link h5">{{__('ui.navbar')}}</a>
                             @auth
                                 @if (Auth::user()->is_revisor)
                                     <div class="nav-item dropdown">
                                         <a href="" class="nav-link dropdown-toggle h5"
-                                            data-toggle="dropdown">Revisore <i class="fa fa-angle-down mt-1">
+                                            data-toggle="dropdown">{{__('ui.navbar4')}} <i class="fa fa-angle-down mt-1">
 
                                             </i>
                                         </a>
                                         <div class="dropdown-menu rounded-5 border-0 m-0">
 
                                             <a href="{{ route('revisor.index') }}" class="dropdown-item">
-                                                {{ App\Models\Announcement::toBeRevisionedCount() }} Richieste in
-                                                sospeso
+                                                {{ App\Models\Announcement::toBeRevisionedCount() }} {{__('ui.navbar5')}}
                                             </a>
                                         </div>
                                     </div>
@@ -64,7 +63,7 @@
                             </div>
                         </div>
                         <form action="{{ route('announcement.search') }}" method="GET" class="form-inline">
-                            <input class="form-control mr-sm-2" name="searched" type="search" placeholder="Cerca"
+                            <input class="form-control mr-sm-2" name="searched" type="search" placeholder="{{__('ui.navbar6')}}"
                                 aria-label="Search">
                             <button class="btn searchAnimation my-2 my-sm-0" style="background-color: #65cbad"
                                 type="submit"><i class="fas fa-search"></i></button>
@@ -73,17 +72,16 @@
                             @auth
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><span
-                                            class="h5"> Ciao, {{ Auth::user()->name }}</span> <i
+                                            class="h5"> {{__('ui.navbar7')}}, {{ Auth::user()->name }}</span> <i
                                             class="fa fa-angle-down mt-1"></i></a>
                                     <div class="dropdown-menu dropdown-menu-right rounded-5 border-0 m-0 mt-2">
                                         <form action="{{ route('logout') }}" method="POST">
                                             @csrf
-                                            <a href="{{ route('page.profile') }}" class="dropdown-item h5">Profilo</a>
-                                            <a href="{{ route('profiles.show') }}" class="dropdown-item h5">I miei
-                                                annunci</a>
+                                            <a href="{{ route('page.profile') }}" class="dropdown-item h5">{{__('ui.navbar8')}}</a>
+                                            <a href="{{ route('profiles.show') }}" class="dropdown-item h5">{{__('ui.navbar9')}}</a>
                                             <button class="dropdown-item h5"
                                                 onclick="event.preventDefault(); this.closest('form').submit();">
-                                                Esci
+                                                {{__('ui.navbar1a')}}
                                             </button>
                                         </form>
                                     </div>
@@ -93,11 +91,11 @@
                                 {{-- //Da visualizzare se sono un OSPITE (guest) --}}
                                 <li class="nav-item">
                                     <a class="btn m-3 searchAnimation" style="background-color: #65cbad"
-                                        href="{{ route('login') }}">Accedi</a>
+                                        href="{{ route('login') }}">{{__('ui.navbar2a')}}</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="btn m-3 searchAnimation" style="background-color: #65cbad"
-                                        href="{{ route('register') }}">Registrati</a>
+                                        href="{{ route('register') }}">{{__('ui.navbar3a')}}</a>
                                 </li>
                             @endguest
                         </ul>

@@ -12,16 +12,16 @@
             <div class="col-md-5 border-right">
                 <div class="p-3 py-5">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <h4 class="text-right">Profilo</h4>
+                        <h4 class="text-right">{{__('ui.profile')}}</h4>
                     </div>
                         <form class="row mt-2" wire:submit.prevent="store">
                             <div class="container">
                                 <div class="col-md-12 mb-2 align-items-center">
-                                    <label class="labels ml-3">Nome
+                                    <label class="labels ml-3">{{__('ui.profile1')}}
                                     </label>
                                     <div class="col-md-12 d-flex">
                                         <input @disabled($nameDisabled) type="text"
-                                            class="form-control move-input" placeholder="Inserisci il tuo nome"
+                                            class="form-control move-input" placeholder="{{__('ui.profile2')}}"
                                             wire:model="name" value="">
                                      
                                         <button class="btn searchAnimation fa-lg bg-green text-white mx-3"
@@ -34,11 +34,11 @@
 
                             <div class="container">
                                 <div class="col-md-12 mb-2 align-items-center">
-                                    <label class="labels ml-3">Age
+                                    <label class="labels ml-3">{{__('ui.profile3')}}
                                     </label>
                                     <div class="col-md-12 d-flex">
                                         <input @disabled($ageDisabled) type="text"
-                                            class="form-control move-input" placeholder="Inserisci la tua età"
+                                            class="form-control move-input" placeholder="{{__('ui.profile4')}}"
                                             wire:model="age" value="">
                                         <button class="btn searchAnimation fa-lg bg-green text-white mx-3"
                                             wire:click.prevent="toggleAge">
@@ -55,10 +55,10 @@
                                     <div class="col-md-12 d-flex">
                                         <select @disabled($genderDisabled) type="text" class="form-control move-input"
                                         wire:model="gender">
-                                            <option value="" hidden>Inserisci genere</option>
-                                            <option value="male">Maschio</option>
-                                            <option value="female">Femmina</option>
-                                            <option value="other">Non voglio specificare</option>
+                                            <option value="" hidden>{{__('ui.profile5')}}</option>
+                                            <option value="male">{{__('ui.profile6')}}</option>
+                                            <option value="female">{{__('ui.profile7')}}</option>
+                                            <option value="other">{{__('ui.profile8')}}</option>
                                         </select>
                                      
                                         <button class="btn searchAnimation fa-lg bg-green text-white mx-3"
@@ -75,7 +75,7 @@
                                     </label>
                                     <div class="col-md-12 d-flex">
                                         <input @disabled($hobbiesDisabled) type="text"
-                                            class="form-control move-input" placeholder="Inserisci i tuoi hobbies"
+                                            class="form-control move-input" placeholder="{{__('ui.profile9')}}"
                                             wire:model="hobbies" value=""> 
                                         <button class="btn searchAnimation fa-lg bg-green text-white mx-3"
                                             wire:click.prevent="toggleHobbies">
@@ -87,11 +87,11 @@
 
                             <div class="container">
                                 <div class="col-md-12 mb-2 align-items-center">
-                                    <label class="labels ml-3">Occupazione
+                                    <label class="labels ml-3">{{__('ui.profile10')}}
                                     </label>
                                     <div class="col-md-12 d-flex">
                                         <input @disabled($jobDisabled) type="text"
-                                            class="form-control move-input" placeholder="Inserisci la tua occupazione"
+                                            class="form-control move-input" placeholder="{{__('ui.profile11')}}"
                                             wire:model="job" value="">
                                      
                                         <button class="btn searchAnimation fa-lg bg-green text-white mx-3"
@@ -103,7 +103,7 @@
                             </div>
                         <div class="container mt-5">
                             <div class="row justify-content-center">
-                                <button class="btn button-71 fa-lg gradient-custom-2 mb-3 text-white mt-1" type="submit">Save Profile</button>
+                                <button class="btn button-71 fa-lg gradient-custom-2 mb-3 text-white mt-1" type="submit">{{__('ui.profile12')}}</button>
                                 <div>
                                     <a wire:loading wire:target="store" class="buttonNone" href="#"><i
                                             class="fas fa-spinner"></i></a>

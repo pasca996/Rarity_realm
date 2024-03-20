@@ -3,7 +3,7 @@
         <div class="row px-xl-5 pt-5">
             <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
                 <h5 class="text-secondary text-uppercase mb-4">Get In Touch</h5>
-                <p class="mb-4">Contattaci per avere maggiori informazioni </p>
+                <p class="mb-4">{{__('ui.footer')}}</p>
                 <p class="mb-2 "><i class="fa fa-map-marker-alt mr-3" style="color: #65cbad"></i>123 Street, New York, USA
                 </p>
                 <p class="mb-2"><i class="fa fa-envelope  mr-3" style="color: #65cbad"></i>info@rarityrealm.com</p>
@@ -15,23 +15,22 @@
                         <h5 class="text-secondary text-uppercase mb-4">Quick Shop</h5>
                         <div class="d-flex flex-column justify-content-start">
                             <a class="text-secondary mb-2" href="{{route('welcome')}}"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                            <a class="text-secondary mb-2" href="{{route('announcement.index')}}"><i class="fa fa-angle-right mr-2"></i>Annunci</a>
-                            <a class="text-secondary" href="#"><i class="fa fa-angle-right mr-2"></i>Contact
-                                Us</a>
+                            <a class="text-secondary mb-2" href="{{route('announcement.index')}}"><i class="fa fa-angle-right mr-2"></i>{{__('ui.footer1')}}</a>
+                            <a class="text-secondary" href="#"><i class="fa fa-angle-right mr-2"></i>{{__('ui.footer2')}}</a>
                         </div>
                     </div>
                     <div class="col-md-4 mb-5">
                         <h5 class="text-secondary text-uppercase mb-4">My Account</h5>
                         <div class="d-flex flex-column justify-content-start">
                             <a class="text-secondary mb-2" href="{{route('welcome')}}"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                            <a class="text-secondary mb-2" href="{{route('page.profile')}}"><i class="fa fa-angle-right mr-2"></i>Profile</a>
-                            <a class="text-secondary mb-2" href="{{route ('announcement.create')}}"><i class="fa fa-angle-right mr-2"></i>Crea Annuncio</a>
+                            <a class="text-secondary mb-2" href="{{route('page.profile')}}"><i class="fa fa-angle-right mr-2"></i>{{__('ui.footer3')}}</a>
+                            <a class="text-secondary mb-2" href="{{route ('announcement.create')}}"><i class="fa fa-angle-right mr-2"></i>{{__('ui.footer4')}}</a>
                             
                         </div>
                     </div>
                     <div class="col-md-4 mb-5">
                         <h5 class="text-secondary text-uppercase mb-4">Newsletter</h5>
-                        <p>Registrati alla nostra Newsletter per non perdere fantastiche novità e seguici sui nostri canali Social</p>
+                        <p>{{__('ui.footer5')}}</p>
                         <form action="">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Your Email Address">

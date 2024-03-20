@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="\owlcarousel\assets\owl.carousel.css">
     <link rel="stylesheet" href="\owlcarousel\assets\owl.theme.default.css">
     <link rel="stylesheet" href="\owlcarousel\assets\owl.theme.green.css">
+    
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="192x192"  href="/img/logo/icona_192x192.png">
     <meta name="msapplication-TileColor" content="#ffffff">
