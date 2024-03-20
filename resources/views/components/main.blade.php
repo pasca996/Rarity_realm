@@ -37,7 +37,6 @@
     <!-- JavaScript Libraries -->
 
     {{-- @livewireScriptConfig  --}}
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="/easing/easing.min.js"></script>
     {{-- owlcarousel --}}

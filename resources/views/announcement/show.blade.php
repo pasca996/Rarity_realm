@@ -169,6 +169,7 @@
                                     <a class="btn btn-outline-dark btn-square" href="{{ route('announcement.show', ['announcement' => $announcementCategory->id]) }}"><i
                                             class="fa fa-search"></i></a>
                                 </div>
+                                
                             </div>
                             <div class="text-center py-4">
                                 <a class="h6 text-decoration-none text-truncate"
