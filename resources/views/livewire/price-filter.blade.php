@@ -69,7 +69,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 pb-1">
                         <div class="product-item bg-light mb-4">
                             <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(300,300) :  'https://picsum.photos/200/300'}}" alt="">
+                                <img class="img-fluid w-100" src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(300,300) :  'https://picsum.photos/300/300'}}" alt="">
                                 <div class="product-action">
                                     
                                     <a class="btn btn-outline-dark btn-square" href="{{ route('announcement.show', ['announcement' => $announcement->id]) }}"><i class="fa fa-search"></i></a>
