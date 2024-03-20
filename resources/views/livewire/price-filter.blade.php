@@ -65,7 +65,7 @@
                         </div>
                     </div> --}}
 
-                    @forelse ($announcements as $announcement)
+                    @forelse ($annunci as $announcement)
                     <div class="col-lg-3 col-md-6 col-sm-6 pb-1">
                         <div class="product-item bg-light mb-4">
                             <div class="product-img position-relative overflow-hidden">
@@ -89,7 +89,7 @@
                         <p>{{__('ui.ann26')}}!</p>
                     </div>
                     @endforelse
-                    
+                    {{ $annunci->links() }}
                     <div class="col-12">
                         <nav>
                           <ul class="pagination justify-content-center">
