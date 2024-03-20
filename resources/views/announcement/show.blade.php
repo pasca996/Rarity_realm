@@ -22,7 +22,7 @@
                 <div class="carousel-inner bg-light">
                     @if ($announcement->images->isEmpty())
                         <div class="carousel-item active">
-                            <img class="img-fluid w-100" src="https://picsum.photos/200/200" alt="">
+                            <img class="img-fluid w-100" src="https://picsum.photos/300/300" alt="">
                         </div>
 
                     @else
