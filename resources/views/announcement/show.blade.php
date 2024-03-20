@@ -18,31 +18,31 @@
     <div class="container-fluid pb-5">
         <div class="row px-xl-5">
             <div>
-            <div id="product-carousel" class="carousel slide" data-ride="carousel">   
-                <div class="carousel-inner bg-light">
-                    @if ($announcement->images->isEmpty())
-                        <div class="carousel-item active">
-                            <img class="img-fluid w-100" src="https://picsum.photos/300/300" alt="">
-                        </div>
-
-                    @else
-
-                        @foreach ($announcement->images as $image)
-                            <div class="carousel-item{{ $loop->first ? ' active' : '' }}">
-                                <img class="img-fluid w-100" src="{{ $announcement->images()->first()->getUrl(300,300) }}" alt="">
+                <div id="product-carousel" class="carousel slide" data-ride="carousel">   
+                    <div class="carousel-inner bg-light">
+                        @if ($announcement->images->isEmpty())
+                            <div class="carousel-item active">
+                                <img class="img-fluid w-100" src="https://picsum.photos/300/300" alt="">
                             </div>
-                        @endforeach
 
-                    @endif 
+                        @else
+
+                            @foreach ($announcement->images as $image)
+                                <div class="carousel-item{{ $loop->first ? ' active' : '' }}">
+                                    <img class="img-fluid w-100" src="{{ $announcement->images()->first()->getUrl(300,300) }}" alt="">
+                                </div>
+                            @endforeach
+
+                        @endif 
+                    </div>
+                    <a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
+                        <i class="fa fa-2x fa-angle-left text-dark"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#product-carousel" data-slide="next">
+                        <i class="fa fa-2x fa-angle-right text-dark"></i>
+                    </a>
                 </div>
-        <a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
-            <i class="fa fa-2x fa-angle-left text-dark"></i>
-        </a>
-        <a class="carousel-control-next" href="#product-carousel" data-slide="next">
-            <i class="fa fa-2x fa-angle-right text-dark"></i>
-        </a>
-    </div>
-                
+  
             </div>
 
             <div class="col-lg-7 h-auto mb-30">
@@ -146,6 +146,11 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
                         
     <!-- Shop Detail End -->
 
@@ -195,6 +200,7 @@
                     @endforelse
                 </div>
             </div>
+        </div>
         </div>
     </div>
     <!-- Products End -->
