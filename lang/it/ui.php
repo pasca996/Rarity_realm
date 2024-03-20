@@ -44,7 +44,6 @@ return [
     'feedback1' => 'Cosa dicono di noi',
     'feedback2' => 'Lascia una recensione riguardo la tua esperienza con noi ',
 
-<<<<<<< HEAD
 // navbar
 'navbar' => 'Crea Nuovo Annuncio',
 'navbar1' => 'Annunci',
@@ -59,22 +58,6 @@ return [
 'navbar1a' => 'Esci',
 'navbar2a' => 'Accedi',
 'navbar3a' => 'Registrati',
-=======
-    // navbar
-    'navbar' => 'Crea Nuovo Annuncio',
-    'navbar1' => 'Annunci',
-    'navbar2' => 'Categorie',
-    'navbar3' => 'Conttatci',
-    'navbar4' => 'Revisore',
-    'navbar5' => 'Richieste in sospeso',
-    'navbar6' => 'Cerca',
-    'navbar7' => 'Ciao',
-    'navbar8' => 'Profilo',
-    'navbar9' => 'I miei Annunci',
-    'navbar1a' => 'Esci',
-    'navbar2a' => 'Accedi',
-    'navbar3a' => 'Registrati',
->>>>>>> d8b8e869b2dbb8e07781dd56e9d50521ad94464a
 
     //footer
     'footer' => 'Contattaci ora per avere maggiori informazioni',
