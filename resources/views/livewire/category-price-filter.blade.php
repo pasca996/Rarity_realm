@@ -89,7 +89,9 @@
                         <p>{{__('ui.ann26')}}!</p>
                     </div>
                     @endforelse
-                    
+
+                    {{ $announcements->links() }}
+
                     <div class="col-12">
                         <nav>
                           <ul class="pagination justify-content-center">
