@@ -228,97 +228,63 @@
             {{__('ui.feedback2')}}</h4>
     </div>
     <!-- Vendor Start -->
-    <div class="container-fluid py-5">
-        <div class="row px-xl-5">
-            <div class="col" >
-                <div class="owl-carousel vendor-carousel">
-                    <div class="p-4 rounded-lg h-100" style=" background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.525)); background-color: #8260c25b">
-                        <img class="mb-3 rounded-circle"  src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80" width="200" height="200" alt="">
-                        <div class="card-body">
-                          <h5 class="card-title text-white">Alessandro Trentini</h5>
-                          <p class="card-text text-white">“Rarity Realm è la mia piattaforma preferita nonché quella che offre più protezioni,è presente un ottimo servizio clienti e procedure chiare.”</p>
-                          <span class="text-warning"> 
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  </span>
-                        </div>
-                      </div>
-                      <div class="p-4 rounded-lg" style=" background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.525)); background-color: #8260c25b">
-                        <img class="mb-3 rounded-circle"  src="/img/img-review/2.jpg" width="200" height="200" alt="">
-                        <div class="card-body">
-                          <h5 class="card-title text-white">Chiara Folliero</h5>
-                          <p class="card-text text-white">“Rarity Realm è la mia piattaforma preferita nonché quella che offre più protezioni,è presente un ottimo servizio clienti e procedure chiare.”</p>
-                          <span class="text-warning"> 
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  </span>
-                        </div>
-                      </div>
-                      <div class="p-4 rounded-lg" style=" background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.525)); background-color: #8260c25b">
-                        <img class="mb-3 rounded-circle"  src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" width="200" height="200" alt="">
-                        <div class="card-body">
-                          <h5 class="card-title text-white">Claudio Bellucci</h5>
-                          <p class="card-text text-white">“Rarity Realm è la mia piattaforma preferita nonché quella che offre più protezioni,è presente un ottimo servizio clienti e procedure chiare.”</p>
-                          <span class="text-warning"> 
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  </span>
-                        </div>
-                      </div>
-                      <div class="p-4 rounded-lg" style=" background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.525)); background-color: #8260c25b">
-                        <img class="mb-3 rounded-circle"  src="/img/img-review/3.jpg" width="200" height="200" alt="">
-                        <div class="card-body">
-                          <h5 class="card-title text-white">Luana Toscano</h5>
-                          <p class="card-text text-white">“Rarity Realm è la mia piattaforma preferita nonché quella che offre più protezioni,è presente un ottimo servizio clienti e procedure chiare.”</p>
-                          <span class="text-warning"> 
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  </span>
-                        </div>
-                      </div>
-                      <div class="p-4 rounded-lg" style=" background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.525)); background-color: #8260c25b">
-                        <img class="mb-3 rounded-circle"  src="https://images.unsplash.com/photo-1614574762522-6ac2fbba2208?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjY2fHxtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" width="200" height="200" alt="">
-                        <div class="card-body">
-                          <h5 class="card-title text-white">Ryan Loton</h5>
-                          <p class="card-text text-white">“Rarity Realm è la mia piattaforma preferita nonché quella che offre più protezioni,è presente un ottimo servizio clienti e procedure chiare.”</p>
-                          <span class="text-warning"> 
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  </span>
-                        </div>
-                      </div>
-                      <div class="p-4 rounded-lg" style=" background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.525)); background-color: #8260c25b">
-                        <img class="mb-3 rounded-circle"  src="/img/img-review/1.jpg" width="200" height="200" alt="">
-                        <div class="card-body">
-                          <h5 class="card-title text-white">Hannah Houlding</h5>
-                          <p class="card-text text-white">“Rarity Realm è la mia piattaforma preferita nonché quella che offre più protezioni,è presente un ottimo servizio clienti e procedure chiare.”</p>
-                          <span class="text-warning"> 
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  <i class="fas fa-star"></i>
-                                                  </span>
-                        </div>
-                      </div>
-                </div>
+        <!-- TESTIMONIALS -->
+<section class="testimonials mt-5">
+	<div class="container">
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="customers-testimonials" class="owl-carousel">
+
+            <!--TESTIMONIAL 1 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="rounded-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial5.jpg" alt="">
+                <p>“Rarity Realm è la mia piattaforma preferita nonché quella che offre più protezioni,è presente un ottimo servizio clienti e procedure chiare.”</p>
+              </div>
+              <div class="testimonial-name">EMILIANO AQUILANI</div>
             </div>
+            <!--END OF TESTIMONIAL 1 -->
+            <!--TESTIMONIAL 2 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="rounded-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial1.jpg" alt="">
+                <p>“Per quel che riguarda i miei acquisti fatti su Rarity Realm non ho mai avuto problemi, i venditori rispondono alle mie domande sui prodotti e il sito garantisce la sicurezza nelle transazioni.”</p>
+              </div>
+              <div class="testimonial-name">LUANA TOSCANO</div>
+            </div>
+            <!--END OF TESTIMONIAL 2 -->
+            <!--TESTIMONIAL 3 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="rounded-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial2.jpg" alt="">
+                <p>“Excellent site and very reliable, I can only recommend it. Since I have been shopping on Rarity Realm, I have always found extreme seriousness and correctness.”</p>
+              </div>
+              <div class="testimonial-name">LARA ATKINSON</div>
+            </div>
+            <!--END OF TESTIMONIAL 3 -->
+            <!--TESTIMONIAL 4 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="rounded-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
+                <p>“Acquisto da anni su Rarity Realm e ho trovato ottimi venditori. Ho avuto anche assistenza e dei rimborsi in alcuni casi e pertanto lo consiglio a tutti.”</p>
+              </div>
+              <div class="testimonial-name">CLAUDIA TODISCO</div>
+            </div>
+            <!--END OF TESTIMONIAL 4 -->
+            <!--TESTIMONIAL 5 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="rounded-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial4.jpg" alt="">
+                <p>“It is the first time I have purchased on this site and, for the items I purchased, I must say that I was very satisfied with both the price and the fast shipping. Thanks until next purchase.”</p>
+              </div>
+              <div class="testimonial-name">VANESSA LOTON</div>
+            </div>
+            <!--END OF TESTIMONIAL 5 -->
+          </div>
         </div>
-    </div>
+      </div>
+      </div>
+    </section>
     <!-- Vendor End -->
 </x-main>

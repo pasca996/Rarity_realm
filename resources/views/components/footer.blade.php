@@ -41,13 +41,13 @@
                         </form>
                         <h6 class="text-secondary text-uppercase mt-4 mb-3">Follow Us</h6>
                         <div class="d-flex">
-                            <a class="btn  btn-square mr-2" style="background-color: #65cbad" href="#"><i
+                            <a class="btn  btn-square mr-2" href="#"><i
                                     class="fab fa-twitter"></i></a>
-                            <a class="btn  btn-square mr-2" style="background-color: #65cbad" href="#"><i
+                            <a class="btn  btn-square mr-2" href=""><i
                                     class="fab fa-facebook-f"></i></a>
-                            <a class="btn  btn-square mr-2" style="background-color: #65cbad" href="#"><i
+                            <a class="btn  btn-square mr-2" href=""><i
                                     class="fab fa-linkedin-in"></i></a>
-                            <a class="btn  btn-square" style="background-color: #65cbad" href="#"><i
+                            <a class="btn  btn-square"  href="#"><i
                                     class="fab fa-instagram"></i></a>
                         </div>
                     </div>
