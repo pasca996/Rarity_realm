@@ -55,7 +55,6 @@ public function send(Request $request)
         ];
 
         Mail::to($request->email)->send(new sendContactMail($data));
-        return redirect()->route('welcome');
         
 
     }

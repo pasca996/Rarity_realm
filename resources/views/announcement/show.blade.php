@@ -98,58 +98,6 @@
                 </div>
             </div>
         </div>
-        <div class="row px-xl-5">
-            <div class="col">
-                <div class="bg-light p-30">
-                    <div class="nav nav-tabs mb-4">
-
-                        <a class="nav-item nav-link text-dark" data-toggle="tab" href="#tab-pane-2">Information</a>
-
-                    </div>
-                    <div class="tab-content">
-                       
-                        <div class="tab-pane fade show active" id="tab-pane-1">
-                            <h4 class="mb-3">{{__('ui.ann5')}}</h4>
-                            <p>{{__('ui.ann6')}} </p>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item px-0">
-                                            {{__('ui.ann7')}} :
-                                        </li>
-                                        <li class="list-group-item px-0">
-                                            {{__('ui.ann8')}} :
-                                        </li>
-                                        <li class="list-group-item px-0">
-                                            {{__('ui.ann9')}} :
-                                        </li>
-                                        <li class="list-group-item px-0">
-                                            {{__('ui.ann10')}} :
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item px-0">
-                                            Sit erat duo lorem duo ea consetetur, et eirmod takimata.
-                                        </li>
-                                        <li class="list-group-item px-0">
-                                            Amet kasd gubergren sit sanctus et lorem eos sadipscing at.
-                                        </li>
-                                        <li class="list-group-item px-0">
-                                            Duo amet accusam eirmod nonumy stet et et stet eirmod.
-                                        </li>
-                                        <li class="list-group-item px-0">
-                                            Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
                         
     <!-- Shop Detail End -->

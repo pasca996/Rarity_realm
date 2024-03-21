@@ -184,7 +184,7 @@
 
     <!-- Products Start -->
     <div class="container-fluid pt-5 pb-3">
-        <div class="col-12 border-bottom">
+        <div class="col-12 border-bottom mb-5">
             <h3 class="text-center">{{__('ui.product1')}}</h3>
             <h4 class="text-center">
                 {{__('ui.product2')}}</h4>
