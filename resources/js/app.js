@@ -217,15 +217,3 @@ jQuery(document).ready(function($) {
     });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-

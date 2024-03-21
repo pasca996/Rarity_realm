@@ -43,14 +43,17 @@
                     {{ $message }}
                     @enderror
                     <br>
-                    <div class="mb-3">
-                        <input wire:model="temporary_images" type="file" name="images" multiple class="form-control @error('temporary_images.*') is-invalid @enderror"/>
 
+                    <div class="custom-file mb-3">
+                        <input wire:model="temporary_images" type="file" class="custom-file-input" id="customFile" name="images" multiple>
+                        <label class="custom-file-label" for="customFile">Scegli file</label>
                         @error('temporary_images.*')
-                        {{ $message }}
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
                         @enderror
                     </div>
-                    
+
                     <br>
                     @if(!empty($images))
                     <div class="row mb-5">
