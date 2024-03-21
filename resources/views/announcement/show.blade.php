@@ -29,7 +29,7 @@
 
                             @foreach ($announcement->images as $image)
                                 <div class="carousel-item{{ $loop->first ? ' active' : '' }}">
-                                    <img class="img-fluid w-100" src="{{ $announcement->images()->first()->getUrl(300,300) }}" alt="">
+                                    <img class="img-fluid w-100" src="{{ $image->getUrl(600,600) }}" alt="">
                                 </div>
                             @endforeach
 
@@ -204,7 +204,11 @@
         </div>
     </div>
     <!-- Products End -->
-
+<script>
+    $('.carousel').carousel({
+  interval: 2000
+})
+</script>
 
 </x-main>
 

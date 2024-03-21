@@ -160,7 +160,7 @@ return [
 'revisor26' => 'Ecco gli annunci da revisionare',
 
 //profile dashboard
-// {{__('ui.xx')}}
+// {{__('ui.profile')}}
 'profile' => 'Profilo',
 'profile1' => 'Nome',
 'profile2' => 'Inserisci il tuo nome',
@@ -174,6 +174,16 @@ return [
 'profile10' => 'Occupazione',
 'profile11' => 'Inserisci la tua occupazione',
 'profile12' => 'Salva',
+
+//contact
+// {{__('ui.contact')}}
+'contact' => 'Come possiamo aiutarti',
+'contact1' => 'Rarity Realm offre assistenza 24 ore su 24 e supporto, 7 giorni su 7, tutti i giorni dell\'anno.',
+'contact2' => 'Se hai bisogno di assistenza, Rarity Realm offre numerose opzioni per il supporto clienti. Ottieni assistenza per i tuoi ordini, account e altro',
+'contact3' => 'Dove siamo',
+'contact4' => 'Invia messaggio',
+'contact5' => 'Inserisci la tua email',
+'contact6' => 'Messaggio',
 
 
 ];
