@@ -2,7 +2,7 @@
     <div class="container-fluid navbar-light mb-30 mt-5 pt-5" style="background-color: #f2f6fa">
         <div class="row px-xl-5 pt-5">
             <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
-                <h5 class="text-secondary text-uppercase mb-4">Get In Touch</h5>
+                <h5 class="text-secondary text-uppercase mb-4">Contact us</h5>
                 <p class="mb-4">{{__('ui.footer')}}</p>
                 <p class="mb-2 "><i class="fa fa-map-marker-alt mr-3" style="color: #65cbad"></i>123 Street, New York, USA
                 </p>
