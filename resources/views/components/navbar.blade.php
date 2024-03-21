@@ -30,7 +30,7 @@
                                     @endforeach
                                 </div>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link h5">{{__('ui.navbar3')}}</a>
+                            <a href="{{ route('contact') }}" class="nav-item nav-link h5">{{__('ui.navbar3')}}</a>
                             <a href="{{ route('announcement.create') }}" class="nav-item nav-link h5">{{__('ui.navbar')}}</a>
                             @auth
                                 @if (Auth::user()->is_revisor)

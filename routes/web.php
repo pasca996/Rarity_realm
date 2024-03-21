@@ -22,6 +22,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PageController::class, 'welcome'])->name('welcome');
 
+Route::get('/contattaci', [PageController::class, 'contact'])->name('contact');
+
+Route::post('/invio-messaggio', [PageController::class, 'send'])->name('send');
+
+
 //Route::get($announcement_create, [AnnouncementController::class, 'createAnnouncement'])->name('announcement.create');
 
 // Route::get('/nuovo/annuncio', [AnnouncementController::class, 'createAnnouncement'])->name('announcement.create')->middleware('auth');
