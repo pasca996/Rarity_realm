@@ -17,7 +17,7 @@
     <!-- Shop Detail Start -->
     <div class="container-fluid pb-5">
         <div class="row px-xl-5">
-            <div>
+            <div class="col-lg-5">
                 <div id="product-carousel" class="carousel slide" data-ride="carousel">   
                     <div class="carousel-inner bg-light">
                         @if ($announcement->images->isEmpty())
