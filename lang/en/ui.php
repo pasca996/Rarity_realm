@@ -177,4 +177,14 @@ return [
 'profile11' => 'Insert your job',
 'profile12' => 'Save',
 
+
+//contact
+// {{__('ui.contact')}}
+'contact' => 'Do you need our help',
+'contact1' => 'Rarity Realm offers 24/7 help and support,every day of the year without any exception.',
+'contact2' => 'If you need assistance, Rarity Realm offers numerous customer support options. Get help with your orders, accounts and much more',
+'contact3' => 'How to find us',
+'contact4' => 'Send Message',
+'contact5' => 'Insert your email',
+'contact6' => 'Messagge',
 ];

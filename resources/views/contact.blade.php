@@ -11,8 +11,8 @@
             <div class="slide-1"></div>
             <div class="hero">
               <hgroup>       
-                  <h3>Come possiamo aiutarti?</h3>
-                  <h4>Rarity Realm offre assistenza 24 ore su 24 e supporto, 7 giorni su 7, tutti i giorni dell'anno.</h4>
+                  <h3>{{__('ui.contact')}}?</h3>
+                  <h4>{{__('ui.contact1')}}</h4>
               </hgroup>
             </div>
           </div>
@@ -39,29 +39,29 @@
                         <form action="{{route('send')}}" method="POST" name="sentMessage" id="contactForm" novalidate="novalidate">
                             @csrf
                             <div class="control-group">
-                                <input type="text" name="name" value="{{old('name')}}" class="form-control" id="name" placeholder="Inserisci il tuo nome" required>
+                                <input type="text" name="name" value="{{old('name')}}" class="form-control" id="name" placeholder="{{__('ui.profile2')}}" required>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="email" class="form-control" name="email" value="{{old('email')}}" id="email" placeholder="Inserisci la tua email" required>
+                                <input type="email" class="form-control" name="email" value="{{old('email')}}" id="email" placeholder="{{__('ui.contact5')}}" required>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control" name="message" rows="5" placeholder="Messaggio" required>{{old('message')}}</textarea>
+                                <textarea class="form-control" name="message" rows="5" placeholder="{{__('ui.contact6')}}" required>{{old('message')}}</textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
-                                <button class="btn buttonAnimation py-2 px-4 mt-3" style="background-color: #65cbad" type="submit" id="sendMessageButton">Invia messaggio</button>
+                                <button class="btn buttonAnimation py-2 px-4 mt-3" style="background-color: #65cbad" type="submit" id="sendMessageButton">{{__('ui.contact4')}}</button>
                             </div>
                         </form>
                     </div>
                 </div>
                 <div class="col-lg-5 mb-5">
-                    <h5 class="font-weight-semi-bold mb-3">Contattaci</h5>
-                    <p>Se hai bisogno di assistenza, Rarity Realm offre numerose opzioni per il supporto clienti. Ottieni assistenza per i tuoi ordini, account e altro.</p>
+                    <h5 class="font-weight-semi-bold mb-3">{{__('ui.footer2')}}</h5>
+                    <p>{{__('ui.contact2')}}.</p>
 
                     <div class="d-flex flex-column">
-                        <h5 class="font-weight-semi-bold mb-3">Dove siamo</h5>
+                        <h5 class="font-weight-semi-bold mb-3">{{__('ui.contact3')}}</h5>
                         <p class="mb-2"><i class="fa fa-map-marker-alt text-green mr-3"></i>123 Street, New York, USA</p>
                         <p class="mb-2"><i class="fa fa-envelope text-green mr-3"></i>info@rarityrealm.com</p>
                         <p class="mb-0"><i class="fa fa-phone-alt text-green mr-3"></i>+012 345 67890</p>
