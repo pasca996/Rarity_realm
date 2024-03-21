@@ -230,7 +230,7 @@
     <!-- Vendor Start -->
         <!-- TESTIMONIALS -->
 <section class="testimonials mt-5">
-	<div class="container">
+	<div class="container-fluid">
 
       <div class="row">
         <div class="col-sm-12">
@@ -281,6 +281,15 @@
               <div class="testimonial-name">VANESSA LOTON</div>
             </div>
             <!--END OF TESTIMONIAL 5 -->
+            <!--TESTIMONIAL 5 -->
+            <div class="item">
+                <div class="shadow-effect">
+                  <img class="rounded-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial4.jpg" alt="">
+                  <p>“It is the first time I have purchased on this site and, for the items I purchased, I must say that I was very satisfied with both the price and the fast shipping. Thanks until next purchase.”</p>
+                </div>
+                <div class="testimonial-name">PASCARO ANDRELLA</div>
+              </div>
+              <!--END OF TESTIMONIAL 5 -->
           </div>
         </div>
       </div>
