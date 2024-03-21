@@ -59,7 +59,7 @@
                     <div class="row mb-5">
                         <div class="col-12">
                             <p> {{__('ui.ann20')}}:</p>
-                            <div class="row border border-4 border-info rounded shadow py-4">
+                            <div class="row border-4 border-info rounded shadow py-4">
                                 @foreach ($images as $key => $image)
                                
                                 <div class="col my-5">
