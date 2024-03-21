@@ -1,7 +1,7 @@
 <div>
     <!-- Shop Start -->
     <div class="container-fluid">
-        <h2 class="text-center">{{$category->name}}</h2>
+        <h2 class="text-center my-5">{{$category->name}}</h2>
         <div class="row px-xl-5">
             <!-- Shop Sidebar Start -->
             <div class="col-lg-3 col-md-4">
@@ -90,16 +90,12 @@
                     </div>
                     @endforelse
 
-                    {{ $announcements->links() }}
+                    
 
                     <div class="col-12">
                         <nav>
-                          <ul class="pagination justify-content-center">
-                            <li class="page-item disabled"><a class="page-link" href="#">Previous</span></a></li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                          <ul class=" justify-content-center">
+                            {{ $announcements->links() }}
                           </ul>
                         </nav>
                     </div>
