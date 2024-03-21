@@ -4,17 +4,19 @@ namespace App\Livewire;
 
 use App\Models\Announcement;
 use Livewire\Component;
+use Livewire\WithPagination;
 use LivewireUI\Modal\ModalComponent;
 
 class UserAds extends Component
 {
+    use WithPagination;
     
-    public $announcements;
-
+    // public $announcements;
 
     public function render()
     {
-        return view('livewire.user-ads');
+        $announcements = Announcement::paginate(10);
+        return view('livewire.user-ads', ['announcements' => $announcements]);
     }
 
     public function delete(Announcement $Announcement)
