@@ -197,7 +197,7 @@ jQuery(document).ready(function($) {
     $('#customers-testimonials').owlCarousel({
         loop: true,
         center: true,
-        items: 3,
+        items: 5,
         margin: 0,
         autoplay: true,
         dots:true,
