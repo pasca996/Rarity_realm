@@ -628,10 +628,7 @@ Fade content bs-carousel with hero headers
 Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
 Image credits: unsplash.com
 */
-
-/********************************/
 /*       Fade Bs-carousel       */
-/********************************/
 .fade-carousel {
   position: relative;
   height: 100vh;
@@ -651,9 +648,7 @@ height: 10px;
 opacity: 1;
 }
 
-/********************************/
 /*          Hero Headers        */
-/********************************/
 .hero {
   position: absolute;
   top: 50%;
@@ -686,9 +681,7 @@ opacity: 1;
           transition: 2s all ease-in-out .1s;    
 }
 
-/********************************/
 /*            Overlay           */
-/********************************/
 .overlay {
   position: absolute;
   width: 100%;
@@ -698,9 +691,7 @@ opacity: 1;
   opacity: .7;
 }
 
-/********************************/
 /*          Custom Buttons      */
-/********************************/
 .btn.btn-lg {padding: 10px 40px;}
 .btn.btn-hero,
 .btn.btn-hero:hover,
@@ -712,9 +703,7 @@ opacity: 1;
   margin: 20px auto;
 }
 
-/********************************/
 /*       Slides backgrounds     */
-/********************************/
 .fade-carousel .slides .slide-1, 
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3 {
@@ -728,13 +717,30 @@ background-image: url(https://a.cdn-hotels.com/gdcs/production181/d1859/85a824df
 }
 
 
-
-/********************************/
 /*          Media Queries       */
-/********************************/
 @media screen and (min-width: 980px){
   .hero { width: 980px; }    
 }
 @media screen and (max-width: 640px){
   .hero h1 { font-size: 4em; }    
+}
+
+/* per anteprima img */
+#carouselExampleIndicators {
+  margin-top: 20px;
+}
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+/* Stili personalizzati per le anteprime */
+.thumbnail {
+  width: 100px;
+  height: auto;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.thumbnail img {
+  width: 100%;
+  height: auto;
 }

@@ -29,7 +29,7 @@
 
                             @foreach ($announcement->images as $image)
                                 <div class="carousel-item{{ $loop->first ? ' active' : '' }}">
-                                    <img class="img-fluid w-100" src="{{ $image->getUrl(600,600) }}" alt="">
+                                    <img class="img-fluid w-100" src="{{ $image->getUrl(300,300) }}" alt="">
                                 </div>
                             @endforeach
 
@@ -42,7 +42,16 @@
                         <i class="fa fa-2x fa-angle-right text-dark"></i>
                     </a>
                 </div>
-  
+
+                <div class="d-flex justify-content-center mt-4">
+                    @if (!$announcement->images->isEmpty())
+                        @foreach ($announcement->images as $index => $image)
+                            <div class="thumbnail" data-target="#product-carousel" data-slide-to="{{ $index }}">
+                                <img src="{{ $image->getUrl(100,100) }}" alt="">
+                            </div>
+                        @endforeach
+                    @endif
+                </div>
             </div>
 
             <div class="col-lg-7 h-auto mb-30">
