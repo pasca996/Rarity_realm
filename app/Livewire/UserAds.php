@@ -11,12 +11,13 @@ class UserAds extends Component
 {
     use WithPagination;
     
-    // public $announcements;
+    public $announcements;
 
     public function render()
     {
-        $announcements = Announcement::paginate(10);
-        return view('livewire.user-ads', ['announcements' => $announcements]);
+        // $announcements = Announcement::paginate(10);
+        // return view('livewire.user-ads', ['announcements' => $announcements]);
+        return view('livewire.user-ads');
     }
 
     public function delete(Announcement $Announcement)

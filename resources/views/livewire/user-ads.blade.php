@@ -50,7 +50,7 @@
                     @endforeach
                 </tbody>
             </table>
-            {{ $announcements->links() }}
+            {{-- {{ $announcements->links() }} --}}
             <livewire:form >
         </div>
     </div>
