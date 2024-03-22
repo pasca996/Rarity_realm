@@ -119,7 +119,7 @@
                     {{__('ui.ann12')}} </h4>
             </div>
         <div class="row px-xl-5 justify-content-around mt-5">
-            <div class="col-md-8 ">
+            <div class="col-md-10">
                 <div class="owl-carousel related-carousel ">
                     @forelse ($announcementCategories as $announcementCategory)
                         <div class="product-item bg-light ">
