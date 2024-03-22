@@ -59,7 +59,6 @@
 
 
                     <h3 class="font-weight-semi-bold mb-4">{{ $announcement->price }} €</h3>
-                    <h3 class="text-muted mb-4"><del>{{ $announcement->price * 1.15 }} €</del></h3>
                     <p class="mb-4"></p>
                     <div class="d-flex align-items-center mb-4 pt-2">
                         <div>

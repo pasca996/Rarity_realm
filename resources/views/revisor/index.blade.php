@@ -126,7 +126,6 @@
                 <div class="row">
                   <div class="col-10">
                     <h4 class="card-title">{{$announcement_to_check->title}}</h4>
-                    <h6 class="text-muted ml-2"><del>{{$announcement_to_check->price *1.15}}</del>€</h6>
                     <h5>{{$announcement_to_check->price}}€</h5>
                     
                     <p>{{__('ui.revisor22')}}: {{$announcement_to_check->created_at->format('d/m/Y')}}</p>
