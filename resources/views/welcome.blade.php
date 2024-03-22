@@ -210,7 +210,6 @@
                                 href="">{{ $announcement->category->name }}</a>
                             <div class="d-flex align-items-center justify-content-center mt-2">
                                 <h5>{{ $announcement->price }} €</h5>
-                                <h6 class="text-muted ml-2"><del>{{ $announcement->price * 1.15 }} €</del></h6>
                             </div>
 
                         </div>
