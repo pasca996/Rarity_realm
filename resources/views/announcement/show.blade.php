@@ -17,22 +17,20 @@
     <!-- Shop Detail Start -->
     <div class="container-fluid pb-5">
         <div class="row px-xl-5">
-            <div class="col-lg-5">
+            <div class="col-lg-5 text-center">
                 <div id="product-carousel" class="carousel slide" data-ride="carousel">   
-                    <div class="carousel-inner bg-light">
+                    <div class="carousel-inner">
                         @if ($announcement->images->isEmpty())
                             <div class="carousel-item active">
                                 <img class="img-fluid w-100" src="https://picsum.photos/300/300" alt="">
                             </div>
 
                         @else
-
                             @foreach ($announcement->images as $image)
                                 <div class="carousel-item{{ $loop->first ? ' active' : '' }}">
-                                    <img class="img-fluid w-100" src="{{ $image->getUrl(300,300) }}" alt="">
+                                    <img class="img-fluid" src="{{ $image->getUrl(600,600) }}" alt="">
                                 </div>
                             @endforeach
-
                         @endif 
                     </div>
                     <a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
@@ -161,11 +159,7 @@
         </div>
     </div>
     <!-- Products End -->
-<script>
-    $('.carousel').carousel({
-  interval: 2000
-})
-</script>
+
 
 </x-main>
 

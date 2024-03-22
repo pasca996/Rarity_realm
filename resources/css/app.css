@@ -729,10 +729,10 @@ background-image: url(https://a.cdn-hotels.com/gdcs/production181/d1859/85a824df
 #carouselExampleIndicators {
   margin-top: 20px;
 }
-.carousel-item img {
+/* .carousel-item img {
   width: 100%;
   height: auto;
-}
+} */
 /* Stili personalizzati per le anteprime */
 .thumbnail {
   width: 100px;
