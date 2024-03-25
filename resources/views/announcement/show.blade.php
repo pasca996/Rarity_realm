@@ -17,22 +17,20 @@
     <!-- Shop Detail Start -->
     <div class="container-fluid pb-5">
         <div class="row px-xl-5">
-            <div class="col-lg-5">
+            <div class="col-lg-5 text-center">
                 <div id="product-carousel" class="carousel slide" data-ride="carousel">   
-                    <div class="carousel-inner bg-light">
+                    <div class="carousel-inner">
                         @if ($announcement->images->isEmpty())
                             <div class="carousel-item active">
                                 <img class="img-fluid w-100" src="https://picsum.photos/300/300" alt="">
                             </div>
 
                         @else
-
                             @foreach ($announcement->images as $image)
                                 <div class="carousel-item{{ $loop->first ? ' active' : '' }}">
-                                    <img class="img-fluid w-100" src="{{ $image->getUrl(600,600) }}" alt="">
+                                    <img class="img-fluid" src="{{ $image->getUrl(600,600) }}" alt="">
                                 </div>
                             @endforeach
-
                         @endif 
                     </div>
                     <a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
@@ -42,7 +40,16 @@
                         <i class="fa fa-2x fa-angle-right text-dark"></i>
                     </a>
                 </div>
-  
+
+                <div class="d-flex justify-content-center mt-4">
+                    @if (!$announcement->images->isEmpty())
+                        @foreach ($announcement->images as $index => $image)
+                            <div class="thumbnail" data-target="#product-carousel" data-slide-to="{{ $index }}">
+                                <img src="{{ $image->getUrl(100,100) }}" alt="">
+                            </div>
+                        @endforeach
+                    @endif
+                </div>
             </div>
 
             <div class="col-lg-7 h-auto mb-30">
@@ -52,7 +59,6 @@
 
 
                     <h3 class="font-weight-semi-bold mb-4">{{ $announcement->price }} €</h3>
-                    <h3 class="text-muted mb-4"><del>{{ $announcement->price * 1.15 }} €</del></h3>
                     <p class="mb-4"></p>
                     <div class="d-flex align-items-center mb-4 pt-2">
                         <div>
@@ -112,12 +118,12 @@
                     {{__('ui.ann12')}} </h4>
             </div>
         <div class="row px-xl-5 justify-content-around mt-5">
-            <div class="col-md-8 ">
+            <div class="col-md-10">
                 <div class="owl-carousel related-carousel ">
                     @forelse ($announcementCategories as $announcementCategory)
                         <div class="product-item bg-light ">
                             <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) :  'https://picsum.photos/200/300'}}" alt="">
+                                <img class="img-fluid w-100" src="{{!$announcementCategory->images()->get()->isEmpty() ? Storage::url($announcementCategory->images()->first()->path) :  'https://picsum.photos/200/300'}}" alt="">
                                 <div class="product-action">
                                     <a class="btn btn-outline-dark btn-square" href="{{ route('announcement.show', ['announcement' => $announcementCategory->id]) }}"><i
                                             class="fa fa-search"></i></a>
@@ -152,11 +158,7 @@
         </div>
     </div>
     <!-- Products End -->
-<script>
-    $('.carousel').carousel({
-  interval: 2000
-})
-</script>
+
 
 </x-main>
 

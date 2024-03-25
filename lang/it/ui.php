@@ -124,7 +124,7 @@ return [
     'ann29' => 'Chiudi',
     'ann30' => 'Lista annunci inseriti',
     'ann31' => 'Titolo',
-    'ann32' => 'Imamagine',
+    'ann32' => 'Immagine',
     'ann33' => 'Modifica',
     'ann34' => 'Elimina',
     'ann35' => 'Visita Annuncio',

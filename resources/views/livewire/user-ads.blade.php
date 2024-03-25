@@ -15,7 +15,6 @@
             <table class="table border mt-2">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
                         <th scope="col">{{__('ui.ann32')}}</th>
                         <th scope="col">{{__('ui.ann31')}}</th>
                         <th scope="col">{{__('ui.ann19')}}</th>
@@ -50,7 +49,7 @@
                     @endforeach
                 </tbody>
             </table>
-            {{ $announcements->links() }}
+            {{-- {{ $announcements->links() }} --}}
             <livewire:form >
         </div>
     </div>

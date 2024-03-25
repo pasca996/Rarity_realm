@@ -19,31 +19,31 @@
                         <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
                             <input type="radio" wire:model.live="prices" value="0-50" class="custom-control-input"
                                 id="price-1">
-                            <label class="custom-control-label" for="price-1">$0 - $50</label>
+                            <label class="custom-control-label" for="price-1">€0 - €50</label>
                         </div>
 
                         <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
                             <input type="radio" wire:model.live="prices" value="50-100" class="custom-control-input"
                                 id="price-2">
-                            <label class="custom-control-label" for="price-2">$50 - $100</label>
+                            <label class="custom-control-label" for="price-2">€50 - €100</label>
                         </div>
 
                         <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
                             <input type="radio" wire:model.live="prices" value="100-200" class="custom-control-input"
                                 id="price-3">
-                            <label class="custom-control-label" for="price-3">$100 - $200</label>
+                            <label class="custom-control-label" for="price-3">€100 - €200</label>
                         </div>
 
                         <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
                             <input type="radio" wire:model.live="prices" value="200-500" class="custom-control-input"
                                 id="price-4">
-                            <label class="custom-control-label" for="price-4">$200 - $500</label>
+                            <label class="custom-control-label" for="price-4">€200 - €500</label>
                         </div>
 
                         <div class="custom-control custom-radio d-flex align-items-center justify-content-between">
                             <input type="radio" wire:model.live="prices" value="500-9999999"
                                 class="custom-control-input" id="price-5">
-                            <label class="custom-control-label" for="price-5">+$500</label>
+                            <label class="custom-control-label" for="price-5">+€500</label>
                         </div>
                     </form>
                 </div>
@@ -54,24 +54,6 @@
             <!-- Shop Product Start -->
             <div class="col-lg-9 col-md-8">
                 <div class="row pb-3">
-                    {{-- <div class="col-12 pb-1">
-                        <div class="d-flex align-items-center justify-content-between mb-4">
-                            <div>
-                                <button class="btn btn-sm btn-light"><i class="fa fa-th-large"></i></button>
-                                <button class="btn btn-sm btn-light ml-2"><i class="fa fa-bars"></i></button>
-                            </div>
-                            <div class="ml-2">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">Ordina</button>
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                        <a class="dropdown-item">Dal più recente</a>
-                                        <a class="dropdown-item">Dal più vecchio</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
-
                     @forelse ($annunci as $announcement)
                         <div class="col-lg-3 col-md-6 col-sm-6 pb-1">
                             <div class="product-item bg-light mb-4">
@@ -91,7 +73,6 @@
                                         href="{{ route('announcement.show', ['announcement' => $announcement->id]) }}">{{ $announcement->title }}</a>
                                     <div class="d-flex align-items-center justify-content-center mt-2">
                                         <h5>{{ $announcement->price }} €</h5>
-                                        <h6 class="text-muted ml-2"><del>{{ $announcement->price * 1.15 }} €</del></h6>
                                     </div>
                                 </div>
                             </div>
