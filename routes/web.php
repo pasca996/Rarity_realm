@@ -28,8 +28,8 @@ Route::post('/invio-messaggio', [PageController::class, 'send'])->name('send');
 
 
 //Route::get($announcement_create, [AnnouncementController::class, 'createAnnouncement'])->name('announcement.create');
-
 // Route::get('/nuovo/annuncio', [AnnouncementController::class, 'createAnnouncement'])->name('announcement.create')->middleware('auth');
+
 Route::get('/nuovo/annuncio', [AnnouncementController::class, 'createAnnouncement'])->name('announcement.create')->middleware('auth');
 
 Route::get('annunci/{announcement}/show', [AnnouncementController::class, 'showAnnouncement'])->name('announcement.show');
@@ -49,6 +49,6 @@ Route::get('/rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])-
 
 Route::get('/ricerca/annuncio', [PageController::class,'searchAnnouncements'])->name('announcement.search');
 
-Route::get('profilo/annunci', [AnnouncementController::class, 'showAnnouncementProfile'])->name('profiles.show');
+Route::get('profilo/annunci', [AnnouncementController::class, 'showAnnouncementProfile'])->middleware('auth')->name('profiles.show');
 
 Route::post('lingua/{lang}',[PageController::class, 'setLanguage' ])->name('setLocale');

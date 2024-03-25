@@ -36,7 +36,7 @@
     <x-footer />
     
     <!-- Back to Top -->
-    <a href="#" class="btn gradient-custom-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <a href="#" class="btn gradient-custom-2 back-to-top rounded-circle"><i class="fa fa-angle-double-up"></i></a>
     <!-- JavaScript Libraries -->
 
     {{-- @livewireScriptConfig  --}}
