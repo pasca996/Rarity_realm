@@ -127,7 +127,7 @@
                     <p>Adulti: <span class="{{$image->adult}}"></span></p>
                     <p>Satira: <span class="{{$image->spoof}}"></span></p>
                     <p>Medicina: <span class="{{$image->medical}}"></span></p>
-                    <p>Violenza: <span class="{{$image->vilence}}"></span></p>
+                    <p>Violenza: <span class="{{$image->violence}}"></span></p>
                     <p>Razzismo: <span class="{{$image->racy}}"></span></p>
                   
                
