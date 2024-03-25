@@ -744,3 +744,8 @@ background-image: url(https://a.cdn-hotels.com/gdcs/production181/d1859/85a824df
   width: 100%;
   height: auto;
 }
+
+.txt-contact,
+.txt-contact:hover {
+  color: black;
+}

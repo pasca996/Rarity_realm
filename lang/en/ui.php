@@ -66,7 +66,7 @@ return [
     'footer2' => 'Contact Us',
     'footer3' => 'Profile',
     'footer4' => 'Create New',
-    'footer5' => 'Sign up now to our newsletter and follow us on our social channels',
+    'footer5' => 'Leave us a feedback about your experience.',
 
     //login form
     'login' => 'Log In into',

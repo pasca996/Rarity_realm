@@ -121,9 +121,9 @@
             <div class="col-md-10">
                 <div class="owl-carousel related-carousel ">
                     @forelse ($announcementCategories as $announcementCategory)
-                        <div class="product-item bg-light ">
+                        <div class="product-item bg-light">
                             <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="{{!$announcementCategory->images()->get()->isEmpty() ? Storage::url($announcementCategory->images()->first()->path) :  'https://picsum.photos/200/300'}}" alt="">
+                                <img class="img-fluid w-100" src="{{!$announcementCategory->images()->get()->isEmpty() ? $announcementCategory->images()->first()->getUrl(300,300) :  'https://picsum.photos/200/300'}}" alt="">
                                 <div class="product-action">
                                     <a class="btn btn-outline-dark btn-square" href="{{ route('announcement.show', ['announcement' => $announcementCategory->id]) }}"><i
                                             class="fa fa-search"></i></a>
@@ -132,12 +132,10 @@
                             </div>
                             <div class="text-center py-4">
                                 <a class="h6 text-decoration-none text-truncate"
-                                    href="">{{ $announcementCategory->title }}</a>
+                                    href="{{ route('announcement.show', ['announcement' => $announcementCategory->id]) }}">{{ $announcementCategory->title }}</a>
                                 <p>{{ $announcementCategory->category->name }}</p>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
                                     <h5>{{ $announcementCategory->price }} €</h5>
-                                    <h6 class="text-muted ml-2"><del>{{ $announcementCategory->price * 1.15 }} €</del>
-                                    </h6>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-center mb-1">
                                     <small class="fa text-primary mr-1">{{ $announcementCategory->created_at->diffForHumans() }}</small>
@@ -149,7 +147,7 @@
                                 </div>
                             </div>
                         </div>
-                    @empty
+                        @empty
                         <p>{{__('ui.ann13')}}</p>
                     @endforelse
                 </div>
