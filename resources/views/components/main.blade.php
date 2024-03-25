@@ -13,6 +13,9 @@
     <!-- Libraries Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     {{-- owlcarousel --}}
+
+    
+
     <link rel="stylesheet" href="\owlcarousel\assets\owl.carousel.css">
     <link rel="stylesheet" href="\owlcarousel\assets\owl.theme.default.css">
     <link rel="stylesheet" href="\owlcarousel\assets\owl.theme.green.css">

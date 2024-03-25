@@ -2,6 +2,8 @@
 
 namespace App\Livewire;
 
+use App\Jobs\GoogleVisionLabelImage;
+use App\Jobs\GoogleVisionSafeSearch;
 use App\Jobs\ResizeImage;
 use App\Models\Announcement;
 use App\Models\Category;
@@ -95,6 +97,8 @@ class CreateAnnouncement extends Component
                     $newFileName = "announcements/{$this->announcement->id}";
                     $newImage = $this->announcement->images()->create(['path'=>$image->store($newFileName, 'public')]);
 
+                    
+
                     dispatch(new ResizeImage($newImage->path, 50 , 50));
                     dispatch(new ResizeImage($newImage->path, 80 , 80));
                     dispatch(new ResizeImage($newImage->path, 100 , 100));
@@ -104,6 +108,9 @@ class CreateAnnouncement extends Component
                     dispatch(new ResizeImage($newImage->path, 300 , 300));
                     dispatch(new ResizeImage($newImage->path, 500 , 500));
                     dispatch(new ResizeImage($newImage->path, 600 , 600));
+
+                    dispatch(new GoogleVisionSafeSearch($newImage->id));
+                    dispatch(new GoogleVisionLabelImage($newImage->id));
                 }
 
                 File::deleteDirectory(storage_path('/app/livewire-tmp'));
