@@ -47,24 +47,6 @@
             <!-- Shop Product Start -->
             <div class="col-lg-9 col-md-8">
                 <div class="row pb-3">
-                    {{-- <div class="col-12 pb-1">
-                        <div class="d-flex align-items-center justify-content-between mb-4">
-                            <div>
-                                <button class="btn btn-sm btn-light"><i class="fa fa-th-large"></i></button>
-                                <button class="btn btn-sm btn-light ml-2"><i class="fa fa-bars"></i></button>
-                            </div>
-                            <div class="ml-2">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">Ordina</button>
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                        <a class="dropdown-item">Dal più recente</a>
-                                        <a class="dropdown-item">Dal più vecchio</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
-
                     @forelse ($announcements as $announcement)
                     <div class="col-lg-3 col-md-6 col-sm-6 pb-1">
                         <div class="product-item bg-light mb-4">
@@ -78,7 +60,7 @@
                             <div class="text-center py-4">
                                 <a class="h6 text-decoration-none text-truncate text-dark" href="{{route('announcement.show',  ['announcement' => $announcement->id])}}">{{$announcement->title}}</a>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
-                                    <h5>{{$announcement->price}} €</h5><h6 class="text-muted ml-2"><del>{{$announcement->price *1.15}} €</del></h6>
+                                    <h5>{{$announcement->price}} €</h5>
                                 </div>
                             </div>
                         </div>
