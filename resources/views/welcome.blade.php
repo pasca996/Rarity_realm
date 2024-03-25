@@ -239,7 +239,7 @@
             <!--TESTIMONIAL 1 -->
             <div class="item">
               <div class="shadow-effect">
-                <img class="rounded-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial5.jpg" alt="">
+                <img class="rounded-circle covaOriginal" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial5.jpg" alt="">
                 <p>“Rarity Realm è la mia piattaforma preferita nonché quella che offre più protezioni,è presente un ottimo servizio clienti e procedure chiare.”</p>
               </div>
               <div class="testimonial-name">EMILIANO AQUILANI</div>
@@ -248,7 +248,7 @@
             <!--TESTIMONIAL 2 -->
             <div class="item">
               <div class="shadow-effect">
-                <img class="rounded-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial1.jpg" alt="">
+                <img class="rounded-circle covaOriginal" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial1.jpg" alt="">
                 <p>“Per quel che riguarda i miei acquisti fatti su Rarity Realm non ho mai avuto problemi, i venditori rispondono alle mie domande sui prodotti e il sito garantisce la sicurezza nelle transazioni.”</p>
               </div>
               <div class="testimonial-name">LUANA TOSCANO</div>
@@ -257,7 +257,7 @@
             <!--TESTIMONIAL 3 -->
             <div class="item">
               <div class="shadow-effect">
-                <img class="rounded-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial2.jpg" alt="">
+                <img class="rounded-circle covaOriginal" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial2.jpg" alt="">
                 <p>“Excellent site and very reliable, I can only recommend it. Since I have been shopping on Rarity Realm, I have always found extreme seriousness and correctness.”</p>
               </div>
               <div class="testimonial-name">LARA ATKINSON</div>
@@ -266,7 +266,7 @@
             <!--TESTIMONIAL 4 -->
             <div class="item">
               <div class="shadow-effect">
-                <img class="rounded-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
+                <img class="rounded-circle covaOriginal" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
                 <p>“Acquisto da anni su Rarity Realm e ho trovato ottimi venditori. Ho avuto anche assistenza e dei rimborsi in alcuni casi e pertanto lo consiglio a tutti.”</p>
               </div>
               <div class="testimonial-name">CLAUDIA TODISCO</div>
@@ -275,7 +275,7 @@
             <!--TESTIMONIAL 5 -->
             <div class="item">
               <div class="shadow-effect">
-                <img class="rounded-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial4.jpg" alt="">
+                <img class="rounded-circle covaOriginal" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial4.jpg" alt="">
                 <p>“It is the first time I have purchased on this site and, for the items I purchased, I must say that I was very satisfied with both the price and the fast shipping. Thanks until next purchase.”</p>
               </div>
               <div class="testimonial-name">VANESSA LOTON</div>
@@ -284,7 +284,7 @@
             <!--TESTIMONIAL 5 -->
             <div class="item">
                 <div class="shadow-effect">
-                  <img class="rounded-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial4.jpg" alt="">
+                  <img class="rounded-circle covaOriginal" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial4.jpg" alt="">
                   <p>“It is the first time I have purchased on this site and, for the items I purchased, I must say that I was very satisfied with both the price and the fast shipping. Thanks until next purchase.”</p>
                 </div>
                 <div class="testimonial-name">PASCARO ANDRELLA</div>
