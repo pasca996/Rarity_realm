@@ -62,7 +62,6 @@
 
                     <div class="d-flex flex-column">
                         <h5 class="font-weight-semi-bold mb-3">{{__('ui.contact3')}}</h5>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt text-green mr-3"></i>123 Street, New York, USA</p>
                         <p class="mb-2"><i class="fa fa-envelope text-green mr-3"></i>info@rarityrealm.com</p>
                         <p class="mb-0"><i class="fa fa-phone-alt text-green mr-3"></i>+012 345 67890</p>
                     </div>
