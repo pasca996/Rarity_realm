@@ -21,9 +21,9 @@ return [
 
 
     // header C
-    'specialOffer1' => 'Offerte Speciali',
-    'specialOffer2' => 'Compra Ora',
-    'specialOffer3' => 'Sconti fino al 70%',
+    'specialOffer1' => 'La tua opinione è importante',
+    'specialOffer2' => 'Contattaci',
+    'specialOffer3' => 'Scrivici cosa pensi di noi',
 
     // services
     'service1' => 'Qualità Certificata',

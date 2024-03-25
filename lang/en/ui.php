@@ -20,9 +20,9 @@ return [
 
 
     // header C
-    'specialOffer1' => 'Special Offers',
-    'specialOffer2' => 'Shop Now',
-    'specialOffer3' => 'Off to 70%',
+    'specialOffer1' => 'your opinion is very important to us',
+    'specialOffer2' => 'Contact Us',
+    'specialOffer3' => 'Tell us what you think of us',
 
     // services
     'service1' => 'Certified Quality',

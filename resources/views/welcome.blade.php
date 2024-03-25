@@ -93,7 +93,7 @@
                     <div class="offer-text">
                         <h6 class="text-white text-uppercase">{{__('ui.specialOffer3')}}</h6>
                         <h3 class="text-white mb-3">{{__('ui.specialOffer1')}}</h3>
-                        <a href="{{ route('announcement.index') }}" class="btn buttonAnimation py-2 px-4 mt-3"
+                        <a href="{{ route('contact') }}" class="btn buttonAnimation py-2 px-4 mt-3"
                             style="background-color: #65cbad">{{__('ui.specialOffer2')}}</a>
                     </div>
                 </div>
