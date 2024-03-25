@@ -121,6 +121,16 @@
             <div class="card border-0 rounded-0 shadow" style="width: 18rem;">
               @foreach ($announcement_to_check->images as $image)
                 <img class="img-fluid w-100" src="{{Storage::url($image->path)}}" alt="">
+                
+                  
+                   
+                    <p>Adulti: <span class="{{$image->adult}}"></span></p>
+                    <p>Satira: <span class="{{$image->spoof}}"></span></p>
+                    <p>Medicina: <span class="{{$image->medical}}"></span></p>
+                    <p>Violenza: <span class="{{$image->vilence}}"></span></p>
+                    <p>Razzismo: <span class="{{$image->racy}}"></span></p>
+                  
+               
                 @endforeach
               <div class="card-body mt-3 mb-3">
                 <div class="row">
@@ -130,9 +140,7 @@
                     
                     <p>{{__('ui.revisor22')}}: {{$announcement_to_check->created_at->format('d/m/Y')}}</p>
                   </div>
-                  <div class="col-2">
-                    
-                  </div>
+                  
                 </div>
               </div>
               <div class="row align-items-center text-center g-0 col-xs-12 col-md-12">
@@ -151,6 +159,8 @@
                         </form>
                 </div>
               </div>
+
+
             </div>
           </div>
           
