@@ -65,7 +65,7 @@ return [
     'footer2' => 'Contattaci',
     'footer3' => 'Profilo',
     'footer4' => 'Crea Nuovo Annuncio',
-    'footer5' => 'Registrati ora alla Newsletter e seguici sui nostri canali Social',
+    'footer5' => 'Lascia una recensione della tua esperienza.',
 
     //login form
     'login' => 'Accedi a ',

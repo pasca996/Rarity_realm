@@ -111,25 +111,25 @@
     <div class="container-fluid pt-5">
         <div class="row px-xl-5 pb-3">
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-                <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
+                <div class="d-flex align-items-center bg-light mb-4 rounded-lg" style="padding: 30px;">
                     <h1 class="fa fa-check m-0 mr-3" style="color: #65cbad"></h1>
                     <h5 class="font-weight-semi-bold m-0">{{__('ui.service1')}}</h5>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-                <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
+                <div class="d-flex align-items-center bg-light mb-4 rounded-lg" style="padding: 30px;">
                     <h1 class="fa fa-shipping-fast  m-0 mr-2" style="color: #65cbad"></h1>
                     <h5 class="font-weight-semi-bold m-0">{{__('ui.service2')}}</h5>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-                <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
+                <div class="d-flex align-items-center bg-light mb-4 rounded-lg" style="padding: 30px;">
                     <h1 class="fas fa-exchange-alt  m-0 mr-3" style="color: #65cbad"></h1>
                     <h5 class="font-weight-semi-bold m-0">{{__('ui.service3')}}</h5>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-                <div class="d-flex align-items-center bg-light mb-4" style="padding: 30px;">
+                <div class="d-flex align-items-center bg-light mb-4 rounded-lg" style="padding: 30px;">
                     <h1 class="fa fa-phone-volume  m-0 mr-3" style="color: #65cbad"></h1>
                     <h5 class="font-weight-semi-bold m-0">{{__('ui.service4')}}</h5>
                 </div>

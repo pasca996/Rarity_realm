@@ -3,6 +3,8 @@
 namespace App\Livewire;
 
 use App\Models\Announcement;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 use Livewire\WithPagination;
 use LivewireUI\Modal\ModalComponent;
@@ -11,13 +13,13 @@ class UserAds extends Component
 {
     use WithPagination;
     
-    public $announcements;
+    // public $announcements;
 
     public function render()
     {
-        // $announcements = Announcement::paginate(10);
-        // return view('livewire.user-ads', ['announcements' => $announcements]);
-        return view('livewire.user-ads');
+        $announcements = Auth::user()->announcements()->paginate(10);
+        return view('livewire.user-ads', ['announcements' => $announcements]);
+        // return view('livewire.user-ads');
     }
 
     public function delete(Announcement $Announcement)

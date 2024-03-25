@@ -25,11 +25,11 @@
                 <tbody wire:poll.15ms wire:target="delete">
                     @foreach ($announcements as $announcement)
                         <tr>
-                            <th scope="row">#{{ $announcement->id }}</th>
-                            <td>
-                                <img class="card-img-top" style="width:3rem" src=""
-                                    alt="..." />
-                            </td>
+                            <th scope="row">
+                                <img class="card-img-top rounded-lg" style="width:9rem" src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(300,300) :  'https://picsum.photos/300/300'}}"
+                                alt="..." />
+                            </th>
+                          
                             <td>{{ $announcement->title }}</td>
                             <td>{{ $announcement->price }}</td>
                             <td>{{ $announcement->category->name }}</td>
@@ -49,7 +49,7 @@
                     @endforeach
                 </tbody>
             </table>
-            {{-- {{ $announcements->links() }} --}}
+            {{ $announcements->links() }}
             <livewire:form >
         </div>
     </div>
