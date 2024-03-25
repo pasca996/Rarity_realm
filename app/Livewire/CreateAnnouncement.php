@@ -99,12 +99,7 @@ class CreateAnnouncement extends Component
                     $newImage = $this->announcement->images()->create(['path'=>$image->store($newFileName, 'public')]);
 
                     RemoveFaces::withChain([
-                    (new ResizeImage($newImage->path, 50 , 50)),
-                    (new ResizeImage($newImage->path, 80 , 80)),
                     (new ResizeImage($newImage->path, 100 , 100)),
-                    (new ResizeImage($newImage->path, 120 , 120)),
-                    (new ResizeImage($newImage->path, 125 , 120)),
-                    (new ResizeImage($newImage->path, 130 , 120)),
                     (new ResizeImage($newImage->path, 300 , 300)),
                     (new ResizeImage($newImage->path, 500 , 500)),
                     (new ResizeImage($newImage->path, 600 , 600)),
