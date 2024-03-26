@@ -5,10 +5,15 @@
             alt="" class="center-block img-responsive w-100" />
         </div>
         
-        <div class="col-sm-12 col-xs-4 col-md-4 col-10">
+        <div class="col-sm-12 col-xs-4 col-md-4 col-10 ">
             <div class="space-top">
                 <h2 class="text-center text-green">{{__('ui.ann14')}}</h2>
                 <form wire:submit.prevent="store" class="form-signin ml-5" class="form-horizontal">
+                    @if (session('status'))
+                    <div class="alert alert-success">
+                        {{ session('status') }}
+                    </div>
+                    @endif
                     <label for="title" class=""> {{__('ui.ann15')}} </label>
                     <input wire:model.live="title" type="text"
                     class="form-control @error('title') is-invalid @enderror">
@@ -76,11 +81,7 @@
                         {{__('ui.ann22')}}
                     </button>
                     <br>
-                    @if (session('status'))
-                    <div class="alert alert-success">
-                        {{ session('status') }}
-                    </div>
-                    @endif
+                    
                 </form>
             </div>
         </div>
