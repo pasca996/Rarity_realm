@@ -40,6 +40,18 @@
                         </div>
                     </form>
                 </div>
+                {{-- <div class="bg-light p-4 mb-30 mt-5">
+                    <form>
+                        <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+                            <input class="custom-control-input" type="radio" id="radioDesc" name="order" value="desc">
+                            <label class="custom-control-label" for="radioDesc">Dal più vecchio al più recente</label>
+                        </div>
+                        <div class="custom-control custom-radio d-flex align-items-center justify-content-between">
+                            <input class="custom-control-input" type="radio" id="radioAsc" name="order" value="asc">
+                            <label class="custom-control-label" for="radioAsc">Dal più recente al più vecchio</label>
+                        </div>
+                    </form>
+                </div> --}}
                 <!-- Price End -->
             </div>
             <!-- Shop Sidebar End -->

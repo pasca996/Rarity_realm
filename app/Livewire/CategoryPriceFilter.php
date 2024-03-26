@@ -20,9 +20,9 @@ class CategoryPriceFilter extends Component
             $min = $range[0];
             $max = $range[1];
 
-            $filteredProducts = Announcement::where('category_id', $this->category->id)->where('price', '>=', $min)->where('price', '<=', $max)->where('is_accepted', true)->paginate(4);
+            $filteredProducts = Announcement::where('category_id', $this->category->id)->where('price', '>=', $min)->where('price', '<=', $max)->where('is_accepted', true)->paginate(12);
         } else {
-            $filteredProducts = Announcement::where('category_id', $this->category->id)->where('is_accepted', true)->paginate(4);
+            $filteredProducts = Announcement::where('category_id', $this->category->id)->where('is_accepted', true)->paginate(12);
         }
         return view('livewire.category-price-filter', ['announcements' => $filteredProducts]);
     }

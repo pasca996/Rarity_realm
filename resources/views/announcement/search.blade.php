@@ -63,7 +63,7 @@
                                 <div class="text-center py-4">
                                     <a class="h6 text-decoration-none text-truncate"
                                         href="{{ route('announcement.show', ['announcement' => $announcement->id]) }}">{{ $announcement->title }}</a>
-                                    <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <div class="d-flex align-items-center justify-content-center mt-2 prezzo">
                                         <h5>{{ $announcement->price }} €</h5>
                                     </div>
                                 </div>

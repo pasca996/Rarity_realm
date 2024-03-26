@@ -17,7 +17,7 @@ class UserAds extends Component
 
     public function render()
     {
-        $announcements = Auth::user()->announcements()->paginate(10);
+        $announcements = Auth::user()->announcements()->where('is_accepted', true)->paginate(10);
         return view('livewire.user-ads', ['announcements' => $announcements]);
         // return view('livewire.user-ads');
     }
