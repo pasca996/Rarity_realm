@@ -8,7 +8,7 @@
                     @foreach ($announcement_to_check->images as $image)
                       <div class="col-md-4">
                           <div class="d-flex flex-column align-items-center mb-3">
-                              <img class="img-fluid" src="{{$image->getUrl(300,300)}}" alt="">
+                              <img class="img-fluid" src="{{$image->getUrl(400,400)}}" alt="">
                               <div class="d-flex">
                                   <p>Adulti: <span class="{{$image->adult}} mr-1"></span></p>
                                   <p>Satira: <span class="{{$image->spoof}} mr-1"></span></p>
