@@ -22,7 +22,7 @@
                     <div class="carousel-inner">
                         @if ($announcement->images->isEmpty())
                             <div class="carousel-item active">
-                                <img class="img-fluid w-100" src="https://picsum.photos/300/300" alt="">
+                                <img class="img-fluid w-100" src="\img\logo\logo_con_sfondo_600.png" alt="">
                             </div>
 
                         @else
@@ -123,7 +123,7 @@
                     @forelse ($announcementCategories as $announcementCategory)
                         <div class="product-item bg-light">
                             <div class="product-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100 cova" src="{{!$announcementCategory->images()->get()->isEmpty() ? $announcementCategory->images()->first()->getUrl(300,300) :  'https://picsum.photos/600/600'}}" alt="">
+                                <img class="img-fluid w-100 cova" src="{{!$announcementCategory->images()->get()->isEmpty() ? $announcementCategory->images()->first()->getUrl(300,300) :  '\img\logo\logo_con_sfondo_600.png'}}" alt="">
                                 <div class="product-action">
                                     <a class="btn btn-outline-dark btn-square" href="{{ route('announcement.show', ['announcement' => $announcementCategory->id]) }}"><i
                                             class="fa fa-search"></i></a>
