@@ -7,7 +7,7 @@
             <div class="col-lg-3 col-md-4">
                 <!-- Price Start -->
                 <h5 class=" text-uppercase text-center my-3"><span class="bg-green rounded-lg px-2 py-2">{{__('ui.ann23')}}</span></h5>
-                <div class="bg-light p-4 mb-30 mt-5">
+                <div class="bg-light p-4 mb-30 mt-5 rounded-lg shadow-crd">
                     <form>
                         <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
                             <input type="radio" wire:model.live="prices" value="0-9999999" class="custom-control-input" id="price-all" name="price-option">
@@ -61,7 +61,7 @@
                 <div class="row pb-3">
                     @forelse ($announcements as $announcement)
                     <div class="col-lg-3 col-md-6 col-sm-6 pb-1">
-                        <div class="product-item bg-light mb-4">
+                        <div class="product-item bg-light mb-4 shadow-crd">
                             <div class="product-img position-relative overflow-hidden">
                                 <img class="img-fluid w-100" src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(300,300) :  'https://picsum.photos/300/300'}}" alt="">
                                 <div class="product-action">

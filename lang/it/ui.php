@@ -128,6 +128,8 @@ return [
     'ann33' => 'Modifica',
     'ann34' => 'Elimina',
     'ann35' => 'Visita Annuncio',
+    'ann36' => 'Tutti gli Annunci',
+    'ann37' => 'Risultati della ricerca',
 
 //revisor
 // {{__('ui.xx')}}

@@ -539,6 +539,34 @@ body {
   transform: scale(1.10);
 }
 
+.btnPurple {
+  background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.525));
+  background-color: #8260c25b;
+  color: white;
+  
+}
+
+.shadow-ads{
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-prf{
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.shadow-crd{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-btn{
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-light{
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
+}
+
 @media (min-width: 768px) {
   .button-71 {
     padding: 16px 48px;

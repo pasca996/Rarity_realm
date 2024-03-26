@@ -62,10 +62,10 @@
                                 </span>
                             </div>
                         </div>
-                        <form action="{{ route('announcement.search') }}" method="GET" class="form-inline">
-                            <input class="form-control mr-sm-2" name="searched" type="search" placeholder="{{__('ui.navbar6')}}"
+                        <form action="{{ route('announcement.search') }}" method="GET" class="form-inline ">
+                            <input class="form-control shadow-btn mr-sm-2" name="searched" type="search" placeholder="{{__('ui.navbar6')}}"
                                 aria-label="Search">
-                            <button class="btn searchAnimation my-2 my-sm-0" style="background-color: #65cbad"
+                            <button class="btn searchAnimation shadow-btn my-2 my-sm-0" style="background-color: #65cbad"
                                 type="submit"><i class="fas fa-search"></i></button>
                         </form>
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">

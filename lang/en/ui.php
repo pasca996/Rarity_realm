@@ -130,6 +130,8 @@ return [
     'ann33' => 'Edit',
     'ann34' => 'Delete',
     'ann35' => 'Check Announcement',
+    'ann36' => 'All Announcements',
+    'ann37' => 'Search results',
 
 //revisor
 // {{__('ui.xx')}}
