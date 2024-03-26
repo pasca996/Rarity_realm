@@ -16,21 +16,21 @@
                     @endif
                     <label for="title" class=""> {{__('ui.ann15')}} </label>
                     <input wire:model.live="title" type="text"
-                    class="form-control @error('title') is-invalid @enderror">
+                    class="form-control shadow-btn @error('title') is-invalid @enderror">
                     @error('title')
                     {{ $message }}
                     @enderror
                     <br>
                     
                     <label for="description" class=""> {{__('ui.ann16')}} </label>
-                    <textarea wire:model.live="description" type="text" class="form-control @error('description') is-invalid @enderror"></textarea>
+                    <textarea wire:model.live="description" type="text" class="form-control shadow-btn @error('description') is-invalid @enderror"></textarea>
                     @error('description')
                     {{ $message }}
                     @enderror
                     <br>
                     
                     <label for="category">{{__('ui.ann17')}}</label>
-                    <select wire:model="category_id" id="category" class="form-control">
+                    <select wire:model="category_id" id="category" class="form-control shadow-btn">
                         <option value="">{{__('ui.ann18')}}</option>
                         @foreach ($categories as $category)
                         <option value="{{$category->id}}">{{$category->name }}</option>
@@ -43,7 +43,7 @@
                     
                     <label for="price" class="">{{__('ui.ann19')}} </label>
                     <input wire:model.live="price" type="number"
-                    class="form-control @error('price') is-invalid @enderror">
+                    class="form-control shadow-btn @error('price') is-invalid @enderror">
                     @error('price')
                     {{ $message }}
                     @enderror
@@ -51,7 +51,7 @@
 
                     <div class="custom-file mb-3">
                         <input wire:model="temporary_images" type="file" class="custom-file-input" id="customFile" name="images" multiple>
-                        <label class="custom-file-label" for="customFile">Scegli file</label>
+                        <label class="custom-file-label shadow-btn" for="customFile">Scegli file</label>
                         @error('temporary_images.*')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -69,7 +69,7 @@
                                
                                 <div class="col my-5">
                                     <img class="img-fluid w-100" src="{{$image->temporaryUrl()}}" alt="">
-                                    <button type="button" class="btn btn-danger shadow d-block text-center mt-2 mx-auto" wire:click="removeImage({{$key}})">{{__('ui.ann21')}}</button>
+                                    <button type="button" class="btn shadow-btn btn-danger shadow d-block text-center mt-2 mx-auto" wire:click="removeImage({{$key}})">{{__('ui.ann21')}}</button>
                                 </div>
                                 @endforeach
                                 

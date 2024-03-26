@@ -70,7 +70,7 @@
                     <div class=" container d-flex mt-5 justify-content-end">
                         <div class="d-flex align-items-end flex-column">
                             <div class="row mt-5">
-                                <button class="button-71 gradient-custom-2 mb-3 text-white mt-1"> {{__('ui.ann3')}}</button>
+                                <button class="button-71 gradient-custom-2 shadow-btn mb-3 text-white mt-1"> {{__('ui.ann3')}}</button>
                             </div>
                             <div class="row d-flex pt-2">
                                 <strong class="text-dark mr-2">{{__('ui.ann2')}} </strong>
@@ -117,12 +117,12 @@
                 <h4 class="text-center">
                     {{__('ui.ann12')}} </h4>
             </div>
-        <div class="row px-xl-5 justify-content-around mt-5">
-            <div class="col-md-7">
+        <div class="row px-xl-5 justify-content-around mt-5 ">
+            <div class="col-md-7 ">
                 <div class="owl-carousel related-carousel">
                     @forelse ($announcementCategories as $announcementCategory)
-                        <div class="product-item bg-light">
-                            <div class="product-img position-relative overflow-hidden">
+                        <div class="product-item bg-light ">
+                            <div class="product-img position-relative overflow-hidden ">
                                 <img class="img-fluid w-100 cova" src="{{!$announcementCategory->images()->get()->isEmpty() ? $announcementCategory->images()->first()->getUrl(300,300) :  'https://picsum.photos/600/600'}}" alt="">
                                 <div class="product-action">
                                     <a class="btn btn-outline-dark btn-square" href="{{ route('announcement.show', ['announcement' => $announcementCategory->id]) }}"><i
@@ -130,8 +130,8 @@
                                 </div>
                                 
                             </div>
-                            <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate"
+                            <div class="text-center py-4 ">
+                                <a class="h6 text-decoration-none text-truncate text-black"
                                     href="{{ route('announcement.show', ['announcement' => $announcementCategory->id]) }}">{{ $announcementCategory->title }}</a>
                                 <p>{{ $announcementCategory->category->name }}</p>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
