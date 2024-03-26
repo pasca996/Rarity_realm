@@ -1,14 +1,14 @@
 <div>
 
     <div class="container-fluid">
-        <h2 class="text-center"></h2>
+        <h2 class="text-center">{{ __('ui.ann36') }}</h2>
         <div class="row px-xl-5">
             <!-- Shop Sidebar Start -->
             <div class="col-lg-3 col-md-4">
                 <!-- Price Start -->
                 <h5 class=" text-uppercase text-center my-3"><span
                         class="bg-green rounded-lg px-2 py-2">{{ __('ui.ann23') }}</span></h5>
-                <div class="bg-light p-4 mb-30 mt-5">
+                <div class="bg-light p-4 mb-30 mt-5 rounded-lg shadow-crd ">
                     <form>
                         <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
                             <input type="radio" wire:model.live="prices" value="0-9999999" class="custom-control-input"
@@ -52,11 +52,11 @@
             <!-- Shop Sidebar End -->
 
             <!-- Shop Product Start -->
-            <div class="col-lg-9 col-md-8">
+            <div class="col-lg-9 col-md-8 mt-5">
                 <div class="row pb-3">
                     @forelse ($annunci as $announcement)
-                        <div class="col-lg-3 col-md-6 col-sm-6 pb-1">
-                            <div class="product-item bg-light mb-4">
+                        <div class="col-lg-3 col-md-6 col-sm-6 pb-1 ">
+                            <div class="product-item bg-light mb-4 shadow-crd">
                                 <div class="product-img position-relative overflow-hidden">
                                     <img class="img-fluid w-100"
                                         src="{{ !$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(300, 300) : 'https://picsum.photos/300/300' }}"
@@ -69,7 +69,7 @@
                                     </div>
                                 </div>
                                 <div class="text-center py-4">
-                                    <a class="h6 text-decoration-none text-truncate"
+                                    <a class="h6 text-decoration-none text-truncate text-dark"
                                         href="{{ route('announcement.show', ['announcement' => $announcement->id]) }}">{{ $announcement->title }}</a>
                                     <div class="d-flex align-items-center justify-content-center mt-2">
                                         <h5>{{ $announcement->price }} €</h5>

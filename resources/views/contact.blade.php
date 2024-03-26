@@ -39,19 +39,19 @@
                         <form action="{{route('send')}}" method="POST" name="sentMessage" id="contactForm" novalidate="novalidate">
                             @csrf
                             <div class="control-group">
-                                <input type="text" name="name" value="{{old('name')}}" class="form-control" id="name" placeholder="{{__('ui.profile2')}}" required>
+                                <input type="text" name="name" value="{{old('name')}}" class="form-control shadow-btn" id="name" placeholder="{{__('ui.profile2')}}" required>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="email" class="form-control" name="email" value="{{old('email')}}" id="email" placeholder="{{__('ui.contact5')}}" required>
+                                <input type="email" class="form-control shadow-btn" name="email" value="{{old('email')}}" id="email" placeholder="{{__('ui.contact5')}}" required>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control" name="message" rows="5" placeholder="{{__('ui.contact6')}}" required>{{old('message')}}</textarea>
+                                <textarea class="form-control shadow-btn" name="message" rows="5" placeholder="{{__('ui.contact6')}}" required>{{old('message')}}</textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
-                                <button class="btn buttonAnimation py-2 px-4 mt-3" style="background-color: #65cbad" type="submit" id="sendMessageButton">{{__('ui.contact4')}}</button>
+                                <button class="btn shadow-btn buttonAnimation py-2 px-4 mt-3" style="background-color: #65cbad" type="submit" id="sendMessageButton">{{__('ui.contact4')}}</button>
                             </div>
                         </form>
                     </div>
