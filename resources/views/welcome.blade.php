@@ -284,10 +284,11 @@
             <!--TESTIMONIAL 5 -->
             <div class="item">
                 <div class="shadow-effect">
-                  <img class="rounded-circle covaOriginal" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial4.jpg" alt="">
-                  <p>“It is the first time I have purchased on this site and, for the items I purchased, I must say that I was very satisfied with both the price and the fast shipping. Thanks until next purchase.”</p>
+                  <img class="rounded-circle covaOriginal" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
+                  <p>“I have been a Rarity Realm customer for years.
+                    To date, when I decide to buy online, it is the only site I rely on because, in terms of customer availability, reliability and shipping speed, there are no comparisons.”</p>
                 </div>
-                <div class="testimonial-name">PASCARO ANDRELLA</div>
+                <div class="testimonial-name">JENNIFER DALLAS</div>
               </div>
               <!--END OF TESTIMONIAL 5 -->
           </div>
