@@ -27,9 +27,9 @@ class PriceFilter extends Component
             $range = explode('-', $this->prices);
             $min = $range[0];
             $max = $range[1];
-            $filteredProducts = Announcement::where('price', '>=', $min)->where('price', '<=', $max)->paginate(4);
+            $filteredProducts = Announcement::where('price', '>=', $min)->where('price', '<=', $max)->paginate(12);
         } else {
-            $filteredProducts = Announcement::paginate(4);
+            $filteredProducts = Announcement::paginate(12);
         }
         
        
