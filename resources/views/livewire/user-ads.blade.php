@@ -26,7 +26,7 @@
                     @foreach ($announcements as $announcement)
                         <tr>
                             <th scope="row">
-                                <img class="card-img-top rounded-lg" style="width:9rem" src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(300,300) :  'https://picsum.photos/300/300'}}"
+                                <img class="card-img-top rounded-lg" style="width:9rem" src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(300,300) :  '\img\logo\logo_con_sfondo_300.png'}}"
                                 alt="..." />
                             </th>
                           

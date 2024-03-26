@@ -51,7 +51,7 @@
                             <div class="product-item bg-light mb-4 shadow-crd">
                                 <div class="product-img position-relative overflow-hidden">
                                     <img class="img-fluid w-100"
-                                        src="{{ !$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(300, 300) : 'https://picsum.photos/300/300' }}"
+                                        src="{{ !$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(300, 300) : '\img\logo\logo_con_sfondo_300.png' }}"
                                         alt="">
                                     <div class="product-action">
 
