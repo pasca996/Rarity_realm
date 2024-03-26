@@ -1,5 +1,51 @@
 <x-main>
-     
+  <h1 class="text-center mb-5" style="color: #000000 !important;">{{$announcement_to_check ? 'Ecco gli annunci da revisionare' : 'Non ci sono annunci da revisionare'}}</h1>
+  @if ($announcement_to_check)
+  <div class="container-fluid me-5">
+      <div class="card border-0 rounded-0 shadow">
+          <div class="card-body mt-3 mb-3">
+                <div class="row d-flex justify-content-center">
+                    @foreach ($announcement_to_check->images as $image)
+                      <div class="col-md-4">
+                          <div class="d-flex flex-column align-items-center mb-3">
+                              <img class="img-fluid" src="{{$image->getUrl(300,300)}}" alt="">
+                              <div class="d-flex">
+                                  <p>Adulti: <span class="{{$image->adult}} mr-1"></span></p>
+                                  <p>Satira: <span class="{{$image->spoof}} mr-1"></span></p>
+                                  <p>Medicina: <span class="{{$image->medical}} mr-1"></span></p>
+                                  <p>Violenza: <span class="{{$image->violence}} mr-1"></span></p>
+                                  <p>Razzismo: <span class="{{$image->racy}} mr-1"></span></p>
+                              </div>
+                          </div>
+                      </div>
+                    @endforeach
+                        <div class="col-md-12 text-center">
+                          <h4 class="card-title">{{$announcement_to_check->title}}</h4>
+                          <h5>{{$announcement_to_check->price}}€</h5>
+                          <p>{{__('ui.revisor22')}}: {{$announcement_to_check->created_at->format('d/m/Y')}}</p>
+                        </div>
+                </div>
+          </div>
+              <div class="row justify-content-center align-items-center text-center g-0 col-xs-12 col-md-12">
+                    <div class="">
+                        <form action="{{route('revisor.accept_announcement',['announcement'=>$announcement_to_check])}}" method="POST">
+                            @csrf
+                            @method('PATCH')
+                            <button type="submit" class="btn searchAnimation m-3" style="background-color: #65cbad">{{__('ui.revisor23')}}</button>
+                        </form>
+                    </div>
+                    <div class="">
+                        <form action="{{route('revisor.reject_announcement',['announcement'=>$announcement_to_check])}}" method="POST">
+                            @csrf
+                            @method('PATCH')
+                            <button type="submit" class="btn searchAnimation m-3 bg-danger">{{__('ui.revisor24')}}</button>
+                        </form>
+                    </div>
+              </div>
+        </div>
+  </div>
+  @endif
+
             <img class="img-fluid w-100" src="/img/img_welcome/quality.png" alt="">
     <section class="p-3 p-lg-5 d-flex flex-column" style="width: 100%;">
         <div class="my-auto">
@@ -111,58 +157,5 @@
         </div>
       </section>
 
-        <h1 class="text-center mb-5" style="color: #000000 !important;">{{$announcement_to_check ? 'Ecco gli annunci da revisionare' : 'Non ci sono annunci da revisionare'}}</h1>
-
-    
-
-
-        @if ($announcement_to_check)
-        <div class="container m-4">
-            <div class="card border-0 rounded-0 shadow" style="width: 18rem;">
-              @foreach ($announcement_to_check->images as $image)
-                <img class="img-fluid w-100" src="{{Storage::url($image->path)}}" alt="">
-                
-                  
-                   
-                    <p>Adulti: <span class="{{$image->adult}}"></span></p>
-                    <p>Satira: <span class="{{$image->spoof}}"></span></p>
-                    <p>Medicina: <span class="{{$image->medical}}"></span></p>
-                    <p>Violenza: <span class="{{$image->violence}}"></span></p>
-                    <p>Razzismo: <span class="{{$image->racy}}"></span></p>
-                  
-               
-                @endforeach
-              <div class="card-body mt-3 mb-3">
-                <div class="row">
-                  <div class="col-10">
-                    <h4 class="card-title">{{$announcement_to_check->title}}</h4>
-                    <h5>{{$announcement_to_check->price}}€</h5>
-                    
-                    <p>{{__('ui.revisor22')}}: {{$announcement_to_check->created_at->format('d/m/Y')}}</p>
-                  </div>
-                  
-                </div>
-              </div>
-              <div class="row align-items-center text-center g-0 col-xs-12 col-md-12">
-                <div class="">
-                    <form action="{{route('revisor.accept_announcement',['announcement'=>$announcement_to_check])}}" method="POST">
-                        @csrf
-                        @method('PATCH')
-                        <button type="submit" class="btn searchAnimation m-3" style="background-color: #65cbad">{{__('ui.revisor23')}}</button>
-                        </form>
-                </div>
-                <div class="">
-                    <form action="{{route('revisor.reject_announcement',['announcement'=>$announcement_to_check])}}" method="POST">
-                        @csrf
-                        @method('PATCH')
-                        <button type="submit" class="btn searchAnimation m-3 bg-danger">{{__('ui.revisor24')}}</button>
-                        </form>
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-          
-          @endif
+        
 </x-main>

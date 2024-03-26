@@ -100,7 +100,9 @@ class CreateAnnouncement extends Component
 
                     RemoveFaces::withChain([
                     (new ResizeImage($newImage->path, 100 , 100)),
+                    (new ResizeImage($newImage->path, 200 , 200)),
                     (new ResizeImage($newImage->path, 300 , 300)),
+                    (new ResizeImage($newImage->path, 400 , 400)),
                     (new ResizeImage($newImage->path, 500 , 500)),
                     (new ResizeImage($newImage->path, 600 , 600)),
 
