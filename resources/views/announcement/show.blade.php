@@ -70,7 +70,8 @@
                     <div class=" container d-flex mt-5 justify-content-end">
                         <div class="d-flex align-items-end flex-column">
                             <div class="row mt-5">
-                                <button class="button-71 gradient-custom-2 shadow-btn mb-3 text-white mt-1"> {{__('ui.ann3')}}</button>
+                                <button data-toggle="modal" data-target="#exampleModal1" class="button-71 gradient-custom-2 shadow-btn mb-3 text-white mt-1"> {{__('ui.ann3')}}</button>
+                                <livewire:contact-seller :email="$announcement->user->email" :username="$announcement->user->name" :announcement="$announcement->title" :price="$announcement->price"  >
                             </div>
                             <div class="row d-flex pt-2">
                                 <strong class="text-dark mr-2">{{__('ui.ann2')}} </strong>

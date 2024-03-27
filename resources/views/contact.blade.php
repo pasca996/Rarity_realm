@@ -44,7 +44,7 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
-                                <button class="btn shadow-btn buttonAnimation py-2 px-4 mt-3" style="background-color: #65cbad" type="submit" id="sendMessageButton">{{__('ui.contact4')}}</button>
+                                <button class="btn shadow-btn buttonAnimation py-2 px-4 mt-3"  style="background-color: #65cbad" type="submit" id="sendMessageButton">{{__('ui.contact4')}}</button>
                             </div>
                         </form>
                     </div>
