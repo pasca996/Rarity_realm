@@ -131,18 +131,18 @@
                                 
                             </div>
                             <div class="text-center py-4 ">
-                                <a class="h6 text-decoration-none text-truncate text-black"
+                                <a class="h6 text-decoration-none text-truncate text-dark"
                                     href="{{ route('announcement.show', ['announcement' => $announcementCategory->id]) }}">{{ $announcementCategory->title }}</a>
                                 <p>{{ $announcementCategory->category->name }}</p>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
                                     <h5>{{ $announcementCategory->price }} €</h5>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa text-primary mr-1">{{ $announcementCategory->created_at->diffForHumans() }}</small>
+                                    <small class="fa text-dark mr-1">{{ $announcementCategory->created_at->diffForHumans() }}</small>
                                     
                                 </div>
                                 <div class="d-flex align-items-center justify-content-center mb-1">
-                                    <small class="fa text-primary mr-1">{{__('ui.ann2')}} {{ $announcementCategory->user->name }}</small>
+                                    <small class="fa text-dark mr-1">{{__('ui.ann2')}} {{ $announcementCategory->user->name }}</small>
                                     
                                 </div>
                             </div>

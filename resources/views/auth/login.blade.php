@@ -10,13 +10,13 @@
         </ul>
       </div>
       @endif
-      <div class="container py-5 h-100">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col-xl-10">
+      <div class="container py-5 h-100 ">
+        <div class="row d-flex justify-content-center align-items-center h-100 ">
+          <div class="col-xl-10 ">
             <div class="card rounded-3 text-black">
               <div class="row g-0">
                 <div class="col-lg-6 bg-white rounded-lg">
-                  <div class="card-body p-md-5 mx-md-4">
+                  <div class="card-body p-md-5 mx-md-4 ">
     
                     <div class="text-center">
                       <img src="/img/logo/logo_senza_sfondo.png"style="width: 300px;" alt="logo">
@@ -27,7 +27,7 @@
                       @csrf
                       <div class="move-form-group">
                         <input type="text" id="email" name="email" placeholder=" " required class="move-input">
-                        <label for="email" class="move-label">Email</label>
+                        <label for="email" class="move-label ">Email</label>
                       </div>
                       
                       <div class="move-form-group">
@@ -40,14 +40,14 @@
                       </div>
     
                       <div class="text-center pt-1 mb-5 pb-1">
-                        <button class="btn searchAnimation btn-block fa-lg gradient-custom-2 mb-3 text-white" type="submit">{{__('ui.loginx')}}</button>
+                        <button class="btn searchAnimation shadow-btn btn-block fa-lg gradient-custom-2 mb-3 text-white" type="submit">{{__('ui.loginx')}}</button>
                         
                       </div>
     
                       <div class="d-flex align-items-center justify-content-center pb-4">
                         <p class="mb-0 me-2">{{__('ui.login3')}}</p>
                         
-                        <a href="{{route('register')}}" class="btn searchAnimation fa-lg gradient-custom-2 mb-3 ml-3 px-4 text-white">{{__('ui.login4')}}</a>
+                        <a href="{{route('register')}}" class="btn shadow-btn searchAnimation fa-lg gradient-custom-2 mb-3 ml-3 px-4 text-white">{{__('ui.login4')}}</a>
                       </div>
     
                     </form>
