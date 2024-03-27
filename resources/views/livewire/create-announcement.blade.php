@@ -31,33 +31,36 @@
                     @error('description')
                         {{ $message }}
                     @enderror
-                </div>
+                    </div>
                     <br>
-                    <div></div>
-                    <label for="category">{{ __('ui.ann17') }}</label>
-                    <select wire:model="category_id" id="category" class="border-0 ">
-                        <option value="">{{ __('ui.ann18') }}</option>
+                    <div class="move-form-group">
+                    <label class="move-label" for="category">{{ __('ui.ann17') }}</label>
+                    <br>
+                    <select wire:model="category_id" id="category" class="mt-4 move-input">
+                        <option class="move-input" value="">{{ __('ui.ann18') }}</option>
                         @foreach ($categories as $category)
-                            <option value="{{ $category->id }}">{{ $category->name }}</option>
+                            <option class="" value="{{ $category->id }}">{{ $category->name }}</option>
                         @endforeach
                     </select>
                     @error('category_id')
                         {{ $message }}
                     @enderror
+                    </div>
                     <br>
-
-                    <label for="price" class="">{{ __('ui.ann19') }} </label>
+                    <div class="move-form-group">
                     <input wire:model.live="price" type="number"
-                        class="form-control shadow-btn @error('price') is-invalid @enderror">
-                    @error('price')
+                        class="move-input @error('price') is-invalid @enderror">
+                        @error('price')
                         {{ $message }}
-                    @enderror
+                        @enderror
+                    <label for="price" class="move-label">{{ __('ui.ann19') }} </label>
+                    </div>
                     <br>
 
-                    <div class="custom-file mb-3">
-                        <input wire:model="temporary_images" type="file" class="custom-file-input" id="customFile"
-                            name="images" multiple>
-                        <label class="custom-file-label shadow-btn" for="customFile">Scegli file</label>
+                    <div class="move-form-group">   
+                        <input wire:model="temporary_images" type="file" class="move-input mt-3" id="customFile"
+                        name="images" multiple>
+                        <label class="move-label" for="customFile">Scegli file</label>
                         @error('temporary_images.*')
                             <div class="invalid-feedback">
                                 {{ $message }}
