@@ -51,11 +51,11 @@ public function send(Request $request)
         $data = [
             'name'=> $request->name ,
             'email'=> $request->email ,
-             'message'=> $request->message,
+            'message'=> $request->message,
         ];
 
-        Mail::to($request->email)->send(new sendContactMail($data));
-        
+        Mail::to('admin@rarityrealm.it')->send(new sendContactMail($data));
+        return redirect()->back()->with('message', 'Messaggio inviato correttamente.');
 
     }
 

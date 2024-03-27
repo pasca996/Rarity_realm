@@ -661,72 +661,20 @@ display: inline-block;
 }
 
 
-/*
-Fade content bs-carousel with hero headers
-Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
-Image credits: unsplash.com
-*/
-/*       Fade Bs-carousel       */
-.fade-carousel {
-  position: relative;
-  height: 100vh;
+
+
+/*          Media Queries       */
+@media screen and (min-width: 980px){
+  .hero { width: 980px; }    
 }
-.fade-carousel .carousel-inner .item {
-  height: 100vh;
-}
-.fade-carousel .carousel-indicators > li {
-  margin: 0 2px;
-  background-color: #f39c12;
-  border-color: #f39c12;
-  opacity: .7;
-}
-.fade-carousel .carousel-indicators > li.active {
-width: 10px;
-height: 10px;
-opacity: 1;
+@media screen and (max-width: 640px){
+  .hero h1 { font-size: 4em; }    
 }
 
-/*          Hero Headers        */
-.hero {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 3;
-  color: #fff;
-  text-align: center;
-  text-shadow: 1px 1px 0 rgba(0,0,0,.75);
-    -webkit-transform: translate3d(-50%,-50%,0);
-       -moz-transform: translate3d(-50%,-50%,0);
-        -ms-transform: translate3d(-50%,-50%,0);
-         -o-transform: translate3d(-50%,-50%,0);
-            transform: translate3d(-50%,-50%,0);
-}
 
-.fade-carousel .carousel-inner .item .hero {
-  opacity: 0;
-  -webkit-transition: 2s all ease-in-out .1s;
-     -moz-transition: 2s all ease-in-out .1s; 
-      -ms-transition: 2s all ease-in-out .1s; 
-       -o-transition: 2s all ease-in-out .1s; 
-          transition: 2s all ease-in-out .1s; 
-}
-.fade-carousel .carousel-inner .item.active .hero {
-  opacity: 1;
-  -webkit-transition: 2s all ease-in-out .1s;
-     -moz-transition: 2s all ease-in-out .1s; 
-      -ms-transition: 2s all ease-in-out .1s; 
-       -o-transition: 2s all ease-in-out .1s; 
-          transition: 2s all ease-in-out .1s;    
-}
-
-/*            Overlay           */
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: #080d15;
-  opacity: .7;
+.txt-contact,
+.txt-contact:hover {
+  color: black;
 }
 
 /*          Custom Buttons      */
@@ -741,49 +689,19 @@ opacity: 1;
   margin: 20px auto;
 }
 
-/*       Slides backgrounds     */
-.fade-carousel .slides .slide-1, 
-.fade-carousel .slides .slide-2,
-.fade-carousel .slides .slide-3 {
-height: 100vh;
-background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-}
-.fade-carousel .slides .slide-1 {
-background-image: url(https://a.cdn-hotels.com/gdcs/production181/d1859/85a824df-acb1-4849-95bb-1f9a5871ac9f.jpg); 
-}
 
 
-/*          Media Queries       */
-@media screen and (min-width: 980px){
-  .hero { width: 980px; }    
-}
-@media screen and (max-width: 640px){
-  .hero h1 { font-size: 4em; }    
-}
-
-/* per anteprima img */
-#carouselExampleIndicators {
-  margin-top: 20px;
-}
-/* .carousel-item img {
-  width: 100%;
-  height: auto;
-} */
-/* Stili personalizzati per le anteprime */
-.thumbnail {
-  width: 100px;
-  height: auto;
-  margin: 0 10px;
-  cursor: pointer;
-}
-.thumbnail img {
-  width: 100%;
-  height: auto;
-}
-
-.txt-contact,
-.txt-contact:hover {
-  color: black;
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+    -webkit-transform: translate3d(-50%,-50%,0);
+       -moz-transform: translate3d(-50%,-50%,0);
+        -ms-transform: translate3d(-50%,-50%,0);
+         -o-transform: translate3d(-50%,-50%,0);
+            transform: translate3d(-50%,-50%,0);
 }

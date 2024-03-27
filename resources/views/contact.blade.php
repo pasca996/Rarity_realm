@@ -1,28 +1,15 @@
 <x-main>
 
-
-    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-        <!-- Overlay -->
-        <div class="overlay"></div>
-      
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item slides active">
-            <div class="slide-1"></div>
-            <div class="hero">
-              <hgroup>       
-                  <h3>{{__('ui.contact')}}?</h3>
-                  <h4>{{__('ui.contact1')}}</h4>
-              </hgroup>
-            </div>
-          </div>
-
-
-        </div> 
+    <img class="w-100 img-fluid mb-5 overlay" src="/img/img-contact/3.jpg" alt="">
+    <div class="hero">
+        <hgroup>       
+            <h3>{{__('ui.contact')}}?</h3>
+            <h4>{{__('ui.contact1')}}</h4>
+        </hgroup>
       </div>
     
         <!-- Contact Start -->
-        <div class="container-fluid pt-5">
+        <div class="container-fluid mt-3">
             @if ($errors->any())
             <div class="alert alert-danger">
               <ul>
@@ -32,6 +19,12 @@
               </ul>
             </div>
             @endif
+
+            @if (session('message'))
+            <div class="container alert alert-success mb-5">
+                {{ session('message') }}
+            </div>
+        @endif
             <div class="row px-xl-5">
                 <div class="col-lg-7 mb-5">
                     <div class="contact-form">
@@ -69,5 +62,6 @@
             </div>
         </div>
         <!-- Contact End -->
+
     
 </x-main>
