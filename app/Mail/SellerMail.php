@@ -15,11 +15,13 @@ class sellerMail extends Mailable
 
     public $description;
     public $argument;
+    public $username;
 
-    public function __construct($description, $argument)
+    public function __construct($description, $argument, $username)
     {
         $this->description = $description;
         $this->argument = $argument;
+        $this->username = $username;
     }
 
     /**

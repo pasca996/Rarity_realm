@@ -4,7 +4,7 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title text-center" id="exampleModalLabel">Contatta venditore</h5>
+                        <h5 class="modal-title text-center" id="exampleModalLabel">Contatta {{$username}}</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -12,7 +12,7 @@
                         <form wire:submit.prevent="sendMail">
                             <div class="modal-body">
                                 <div class="form-floating mb-3">
-                                    <h6 class="text-right">{{$username}}</h6>
+                                    
                                     <h4>{{$announcement}}</h4>
                                     <h5>{{$price}}€</h5>
                                     <label for="title">Scrivi un messaggio</label>
@@ -23,9 +23,9 @@
                                         </div>
                                     @enderror
                                         
-                                    <label for="category">Perchè stai contattando il venditore?</label>
+                                    <label for="category">Seleziona argomento</label>
                                     <select wire:model="argument" id="" class="form-control">
-                                            <option value="">Seleziona argomento</option>
+                                            
                                             <option value="Dettagli sull'oggetto">Dettagli sull'oggetto</option>
                                             <option value="Spedizione">Spedizione</option>
                                             <option value="Restituzione">Restituzione</option>

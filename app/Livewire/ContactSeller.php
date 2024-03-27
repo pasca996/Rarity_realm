@@ -25,7 +25,7 @@ class ContactSeller extends Component
 
     public function sendMail()
     {   
-        Mail::to($this->email)->send(new SellerMail($this->description, $this->argument ));
+        Mail::to($this->email)->send(new SellerMail($this->description, $this->argument, $this->username));
     }
 
     public function render()
