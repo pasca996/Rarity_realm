@@ -4,10 +4,10 @@
         <div class="container mt-5 ">
             <div class="align-middle gap-2 d-flex justify-content-between">
                 <h3>{{__('ui.ann30')}}</h3>
-                <form class="d-flex" action="{{ route('announcement.search') }}" method="GET">
+                {{-- <form class="d-flex" action="{{ route('announcement.search') }}" method="GET">
                     <input class="form-control me-2" name="searched" type="search" placeholder="{{__('ui.navbar6')}}"
                     aria-label="Search">
-                </form>
+                </form> --}}
                 <a href="{{ route('announcement.create') }}" class="btn searchAnimation text-white shadow-btn gradient-custom-2 me-md-2">
                     {{__('ui.ann14')}}
                 </a>
