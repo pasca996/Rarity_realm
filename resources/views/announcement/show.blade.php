@@ -111,6 +111,7 @@
 
 
     <!-- Products Start -->
+    @if ($announcementCategories->isNotEmpty())
     <div class="container-fluid py-5 ">
         <div class="container-fluid pt-5 pb-3">
             <div class="col-12 border-bottom">
@@ -118,10 +119,11 @@
                 <h4 class="text-center">
                     {{__('ui.ann12')}} </h4>
             </div>
+
         <div class="row px-xl-5 justify-content-around mt-5 ">
             <div class="col-md-7 ">
                 <div class="owl-carousel related-carousel">
-                    @forelse ($announcementCategories as $announcementCategory)
+                    @foreach($announcementCategories as $announcementCategory)
                         <div class="product-item bg-light">
                             <div class="product-img position-relative overflow-hidden">
                                 <img class="img-fluid w-100 cova" src="{{!$announcementCategory->images()->get()->isEmpty() ? $announcementCategory->images()->first()->getUrl(300,300) :  'https://picsum.photos/600/600'}}" alt="">
@@ -148,14 +150,13 @@
                                 </div>
                             </div>
                         </div>
-                        @empty
-                        <p>{{__('ui.ann13')}}</p>
-                    @endforelse
+                    @endforeach
                 </div>
             </div>
         </div>
-        </div>
+       </div>
     </div>
+    @endif
     <!-- Products End -->
 
 

@@ -26,7 +26,7 @@ class AnnouncementController extends Controller
         ->take(6)
         ->get();
         $categories = Category::all();
-
+        
         return view('announcement.show', compact ('announcement', 'categories', 'announcementCategories'));
     }
 
