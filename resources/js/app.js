@@ -223,4 +223,8 @@ jQuery(document).ready(function($) {
     });
 });
 
-
+window.addEventListener('resize', function() {
+    if (window.innerWidth < 620) {
+      document.getElementById('navbar').removeAttribute('id');
+    } 
+  });
