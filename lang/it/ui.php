@@ -65,7 +65,8 @@ return [
     'footer2' => 'Contattaci',
     'footer3' => 'Profilo',
     'footer4' => 'Crea Nuovo Annuncio',
-    'footer5' => 'Lascia una recensione della tua esperienza.',
+    'footer5' => 'Supporto h24 7/7',
+    'footer6' => 'Hai bisogno di supporto?',
 
     //login form
     'login' => 'Accedi a ',

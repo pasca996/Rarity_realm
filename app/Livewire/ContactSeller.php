@@ -5,6 +5,7 @@ namespace App\Livewire;
 use App\Mail\sellerMail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Session;
 use Livewire\Component;
 
 class ContactSeller extends Component
@@ -26,6 +27,7 @@ class ContactSeller extends Component
     public function sendMail()
     {   
         Mail::to($this->email)->send(new SellerMail($this->description, $this->argument, $this->username));
+        Session::flash('message', 'Complimenti, hai inviato il messaggio correttamente.');
     }
 
     public function render()

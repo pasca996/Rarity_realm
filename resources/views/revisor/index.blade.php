@@ -5,11 +5,10 @@
         {{ $announcement_to_check ? 'Ecco gli annunci da revisionare' : 'Non ci sono annunci da revisionare' }}</h1>
     @if ($announcement_to_check)
 
-        <div class="container ">
-            <div class="card border-0 rounded-0 shadow shadow-crd col-6">
+        <div class="container">
+            <div class="card border-0 rounded-0 shadow shadow-crd">
                 <div class="card-body mt-3 mb-3">
                     <div class="row d-flex justify-content-center">
-
                         <div id="product-carousel" class="carousel slide col-md-8" data-ride="carousel">
                             <div class="carousel-inner">
                                 @foreach ($announcement_to_check->images as $image)
@@ -31,10 +30,7 @@
                             <a class="carousel-control-next" href="#product-carousel" data-slide="next">
                                 <i class="fa fa-2x fa-angle-right text-dark"></i>
                             </a>
-
                         </div>
-
-
                     </div>
                 </div>
 

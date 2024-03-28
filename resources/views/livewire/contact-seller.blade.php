@@ -22,10 +22,8 @@
                                             {{ $message }}
                                         </div>
                                     @enderror
-                                        
                                     <label for="category">Seleziona argomento</label>
                                     <select wire:model="argument" id="" class="form-control">
-                                            
                                             <option value="Dettagli sull'oggetto">Dettagli sull'oggetto</option>
                                             <option value="Spedizione">Spedizione</option>
                                             <option value="Restituzione">Restituzione</option>
@@ -35,20 +33,19 @@
                                     @error('category_id')
                                         {{ $message }}
                                     @enderror
-                                        @if (session('success'))
-                                            <div class="container alert alert-success">
-                                                {{ session('success') }}
+                                        @if (session('message'))
+                                            <div class="mt-3 container alert alert-success">
+                                                {{ session('message') }}
                                             </div>
                                         @endif
-                                        <div class="d-flex justify-content-end">
-                                            <button type="submit" class="btn searchAnimation mt-2 bg-green me-md-2">Invia</button>
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn searchAnimation bg-green">Invia</button>
+                                            <button type="button" class="btn searchAnimation btn-secondary" data-dismiss="modal">{{__('ui.ann29')}}</button>
                                         </div>
                                 </div>
                             </div>
                         </form>
-                    <div class="modal-footer">
-                      <button type="button" class="btn searchAnimation btn-secondary" data-dismiss="modal">{{__('ui.ann29')}}</button>
-                    </div>
+                    
                   </div>
                 </div>
         </div>

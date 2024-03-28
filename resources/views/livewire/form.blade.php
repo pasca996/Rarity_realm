@@ -51,14 +51,14 @@
                                             {{ session('success') }}
                                         </div>
                                     @endif
-
-                                    <button type="submit" class="btn searchAnimation mt-2 bg-green me-md-2">{{__('ui.ann28')}}</button>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn searchAnimation btn-secondary" data-dismiss="modal">{{__('ui.ann29')}}</button>
+                                        <button type="submit" class="btn searchAnimation bg-green">{{__('ui.ann28')}}</button>
+                                    </div>
                             </div>
                         </div>
                     </form>
-                <div class="modal-footer">
-                  <button type="button" class="btn searchAnimation btn-secondary" data-dismiss="modal">{{__('ui.ann29')}}</button>
-                </div>
+               
               </div>
             </div>
     </div>

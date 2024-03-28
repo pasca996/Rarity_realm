@@ -221,15 +221,15 @@
     </div>
 
     <!-- Products End -->
-    <div class="col-12 border-bottom">
+    {{-- <div class="col-12 border-bottom">
         <h3 class="text-center">{{__('ui.feedback1')}}</h3>
         <a href="{{ route('contact') }}" class="text-center " style="color: black;">
             <h4>{{__('ui.feedback2')}}</h4>
         </a>
-    </div>
+    </div> --}}
     <!-- Vendor Start -->
         <!-- TESTIMONIALS -->
-<section class="testimonials mt-5">
+{{-- <section class="testimonials mt-5">
 	<div class="container-fluid">
 
       <div class="row">
@@ -295,6 +295,6 @@
         </div>
       </div>
       </div>
-    </section>
+    </section> --}}
     <!-- Vendor End -->
 </x-main>

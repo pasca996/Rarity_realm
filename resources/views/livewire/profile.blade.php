@@ -11,7 +11,13 @@
             </div>
             <div class="col-md-5  shadow-prf">
                 <div class="p-3 py-5">
+                    @if (session('status'))
+                                <div class="alert alert-success  ">
+                                    {{ session('status') }}
+                                </div>
+                            @endif
                     <div class="d-flex justify-content-between align-items-center mb-3">
+                        
                         <h4 class="text-right">{{__('ui.profile')}}</h4>
                     </div>
                         <form class="row mt-2" wire:submit.prevent="store">
@@ -110,11 +116,6 @@
                                 </div>
                            </div>
                         </div>
-                            @if (session('status'))
-                                <div class="alert alert-success  ">
-                                    {{ session('status') }}
-                                </div>
-                            @endif
                     </form>
                 </div>
             </div>

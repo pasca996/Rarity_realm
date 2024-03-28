@@ -27,9 +27,9 @@
                         </div>
                     </div>
                     <div class="col-md-4 mb-5">
-                        <h5 class="text-secondary text-uppercase mb-4">Cosa ne pensi di noi?</h5>
+                        <h5 class="text-secondary text-uppercase mb-4">{{__('ui.footer6')}}</h5>
                         <p>{{__('ui.footer5')}}</p>
-                            <a href="{{ route('contact') }}"><button class="btn shadow-btn searchAnimation" style="background-color: #65cbad">Contattaci</button></a>
+                            <a href="{{ route('contact') }}"><button class="btn shadow-btn searchAnimation" style="background-color: #65cbad">{{__('ui.footer2')}}</button></a>
                         <h6 class="text-secondary text-uppercase mt-4 mb-3">Follow Us</h6>
                         <div class="d-flex">
                             <a class="btn  btn-square mr-2" href="https://twitter.com/?lang=it"><i

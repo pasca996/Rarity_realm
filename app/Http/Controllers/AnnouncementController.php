@@ -7,12 +7,14 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use app\Models\Image;
+use Illuminate\Support\Facades\Session;
 
 class AnnouncementController extends Controller
 {
     
     public function createAnnouncement()
     {
+
         return view('announcement.create');
     }
 

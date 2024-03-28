@@ -61,7 +61,7 @@ class Form extends Component
         $this->announcement->save();
 
         // $this->newAnnouncement();
-        session()->flash('success', 'Annuncio modificato correttamente.');
+        session()->flash('success', 'Annuncio modificato correttamente, dovrà essere rivisionato di nuovo.');
         // $this->dispatch('user-ads');
     }
 

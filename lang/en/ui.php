@@ -66,7 +66,9 @@ return [
     'footer2' => 'Contact Us',
     'footer3' => 'Profile',
     'footer4' => 'Create New',
-    'footer5' => 'Leave us a feedback about your experience.',
+    'footer5' => 'Support 24/7',
+    'footer6' => 'Do you need a support?',
+    
 
     //login form
     'login' => 'Log In into',
