@@ -15,28 +15,38 @@
                         </div>
 
                         <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
-                            <input type="radio" wire:model.live="prices" value="0-50" class="custom-control-input" id="price-1">
-                            <label class="custom-control-label" for="price-1">€0 - €50</label>
+                            <input type="radio" wire:model.live="prices" value="0-100" class="custom-control-input" id="price-1">
+                            <label class="custom-control-label" for="price-1">€0 - €100</label>
                         </div>
 
                         <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
-                            <input type="radio" wire:model.live="prices" value="50-100" class="custom-control-input" id="price-2">
-                            <label class="custom-control-label" for="price-2">€50 - €100</label>
+                            <input type="radio" wire:model.live="prices" value="100-250" class="custom-control-input" id="price-2">
+                            <label class="custom-control-label" for="price-2">€100 - €250</label>
                         </div>
 
                         <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
-                            <input type="radio" wire:model.live="prices" value="100-200" class="custom-control-input" id="price-3">
-                            <label class="custom-control-label" for="price-3">€100 - €200</label>
+                            <input type="radio" wire:model.live="prices" value="250-500" class="custom-control-input" id="price-3">
+                            <label class="custom-control-label" for="price-3">€250 - €500</label>
                         </div>
 
                         <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
-                            <input type="radio" wire:model.live="prices" value="200-500" class="custom-control-input" id="price-4">
-                            <label class="custom-control-label" for="price-4">€200 - €500</label>
+                            <input type="radio" wire:model.live="prices" value="500-1000" class="custom-control-input" id="price-4">
+                            <label class="custom-control-label" for="price-4">€500 - €1000</label>
+                        </div>
+
+                        <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+                            <input type="radio" wire:model.live="prices" value="1000-2000" class="custom-control-input" id="price-5">
+                            <label class="custom-control-label" for="price-5">€1000 - €2000</label>
+                        </div>
+
+                        <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+                            <input type="radio" wire:model.live="prices" value="2000-5000" class="custom-control-input" id="price-6">
+                            <label class="custom-control-label" for="price-6">€2000 - €5000</label>
                         </div>
 
                         <div class="custom-control custom-radio d-flex align-items-center justify-content-between">
-                            <input type="radio" wire:model.live="prices" value="500-9999999" class="custom-control-input" id="price-5">
-                            <label class="custom-control-label" for="price-5">+€500</label>
+                            <input type="radio" wire:model.live="prices" value="5000-9999999" class="custom-control-input" id="price-7">
+                            <label class="custom-control-label" for="price-7">+€5000</label>
                         </div>
                     </form>
                 </div>
