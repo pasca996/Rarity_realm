@@ -70,7 +70,7 @@
                                 </div>
                             </div>
                             <div class="text-center py-4">
-                                <a class="h6 text-decoration-none text-truncate text-dark" href="{{route('announcement.show',  ['announcement' => $announcement->id])}}">{{$announcement->title}}</a>
+                                <a style="max-width: 80%;" class="h6 d-inline-block text-decoration-none text-dark text-truncate" href="{{route('announcement.show',  ['announcement' => $announcement->id])}}">{{$announcement->title}}</a>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
                                     <h5>{{$announcement->price}} €</h5>
                                 </div>
