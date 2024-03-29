@@ -223,6 +223,15 @@ jQuery(document).ready(function($) {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.innerWidth < 620) {
+        let navbar = document.getElementById('navbar');
+        if (navbar) {
+            navbar.removeAttribute('id');
+        }
+    } 
+});
+
 window.addEventListener('resize', function() {
     if (window.innerWidth < 620) {
       document.getElementById('navbar').removeAttribute('id');

@@ -668,7 +668,9 @@ display: inline-block;
   .hero { width: 980px; }    
 }
 @media screen and (max-width: 640px){
-  .hero h1 { font-size: 4em; }    
+  .hero h1 { font-size: 4em; }
+  .hero h3 { font-size: 1em; } 
+  .hero h4 { font-size: 1em; }     
 }
 
 
@@ -688,8 +690,15 @@ display: inline-block;
   outline: none;
   margin: 20px auto;
 }
+.sizes {
+  min-height: 220px;
+  min-width: 350px;
+}
 
 
+.rela {
+  position: relative;
+}
 
 .hero {
   position: absolute;
