@@ -134,7 +134,7 @@
                                 
                             </div>
                             <div class="text-center py-4 ">
-                                <a class="h6 text-decoration-none text-truncate text-dark"
+                                <a style="max-width: 80%" class="h6 d-inline-block text-decoration-none text-truncate text-dark"
                                     href="{{ route('announcement.show', ['announcement' => $announcementCategory->id]) }}">{{ $announcementCategory->title }}</a>
                                 <p>{{ $announcementCategory->category->name }}</p>
                                 <div class="d-flex align-items-center justify-content-center mt-2">
