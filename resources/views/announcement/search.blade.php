@@ -71,7 +71,7 @@
                                     </div>
                                 </div>
                                 <div class="text-center py-4">
-                                    <a class="h6 text-decoration-none text-truncate"
+                                    <a class="h6 text-decoration-none text-truncate d-inline-block" style="max-width: 80%"
                                         href="{{ route('announcement.show', ['announcement' => $announcement->id]) }}">{{ $announcement->title }}</a>
                                     <div class="d-flex align-items-center justify-content-center mt-2 prezzo">
                                         <h5>{{ $announcement->price }} €</h5>
