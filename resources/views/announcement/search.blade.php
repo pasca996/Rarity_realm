@@ -57,7 +57,7 @@
             <div class="col-lg-9 col-md-8 mt-5">
                 <div class="row pb-3">
                     @forelse ($announcements as $announcement)
-                    <div class="col-lg-3 col-md-6 col-sm-6 pb-1">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6 pb-1">
                             <div class="product-item bg-light mb-4 shadow-crd">
                                 <div class="product-img position-relative overflow-hidden">
                                     <img class="img-fluid w-100"

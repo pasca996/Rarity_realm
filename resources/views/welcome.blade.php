@@ -160,7 +160,7 @@
         <div class="row px-xl-5 pb-3 mt-5">
             @foreach ($categories as $category)
                 
-                <div class="col-lg-4 col-md-4 col-sm-6 ">
+                <div class="col-lg-4 col-md-4 col-sm-6">
                     <a class="text-decoration-none rounded-lg d-flex cat-item img-hover "
                         href="{{ route('categories.show', compact('category')) }}">
                         <div class="overflow-hidden" style="width: 125px; height: 125px; ">
@@ -191,7 +191,7 @@
         </div>
         <div class="row px-xl-5">
             @foreach ($announcements as $announcement)
-                <div class="col-lg-2 col-md-3 col-sm-6 pb-1">
+                <div class="col-lg-2 col-md-3 col-sm-6 col-6 pb-1">
                     <div class="product-item bg-light mb-4 shadow-crd">
                         <div class="product-img position-relative overflow-hidden">
                             <img class="img-fluid w-100" src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(300,300) :  '\img\logo\logo_con_sfondo_300.png'}}" alt="">
@@ -203,7 +203,7 @@
                         </div>
                         <div class="text-center py-4">
                             <a class="h4 text-decoration-none d-inline-block text-truncate text-dark"
-                                style="max-width: 80%"
+                                style="max-width: 85%"
                                 href="{{ route('announcement.show', ['announcement' => $announcement->id]) }}">{{ $announcement->title }}</a>
                             <br>
                             <a class="h6 text-decoration-none text-truncate text-dark"
